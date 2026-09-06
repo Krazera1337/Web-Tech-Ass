@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="Diagram comparing three leaf venation patterns">
+  <rect x="0" y="0" width="420" height="160" fill="#F4F0E6"/>
+  <g transform="translate(60,80)">
+    <ellipse cx="0" cy="0" rx="45" ry="65" fill="#A8BFA3" stroke="#2F5D50" stroke-width="2"/>
+    <path d="M0 -65 V65 M0 -50 L-30 -20 M0 -50 L30 -20 M0 -20 L-35 10 M0 -20 L35 10 M0 10 L-30 40 M0 10 L30 40" stroke="#2F5D50" stroke-width="1.5" fill="none"/>
+    <text x="0" y="90" text-anchor="middle" font-size="12" fill="#26322e">Pinnate venation</text>
+  </g>
+  <g transform="translate(210,80)">
+    <ellipse cx="0" cy="0" rx="45" ry="60" fill="#A8BFA3" stroke="#2F5D50" stroke-width="2"/>
+    <path d="M0 -60 C-25 -20 -25 20 0 60 M0 -60 C25 -20 25 20 0 60 M0 -55 C-10 -10 -10 30 0 58 M0 -55 C10 -10 10 30 0 58" stroke="#2F5D50" stroke-width="1.5" fill="none"/>
+    <text x="0" y="90" text-anchor="middle" font-size="12" fill="#26322e">Parallel venation</text>
+  </g>
+  <g transform="translate(360,80)">
+    <ellipse cx="0" cy="0" rx="45" ry="60" fill="#A8BFA3" stroke="#2F5D50" stroke-width="2"/>
+    <path d="M0 -60 V60 M0 -30 L-30 -50 M0 -30 L30 -50 M0 10 L-35 -10 M0 10 L35 -10 M0 40 L-25 25 M0 40 L25 25" stroke="#2F5D50" stroke-width="1.5" fill="none"/>
+    <text x="0" y="90" text-anchor="middle" font-size="12" fill="#26322e">Palmate-pinnate mix</text>
+  </g>
+</svg>

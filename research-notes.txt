@@ -1,0 +1,120 @@
+PLANTSTORY - Research Notes
+============================
+(Updated incrementally as research progresses)
+
+NAME VERIFICATION METHOD
+- Checked each of the 16 species against POWO (powo.science.kew.org, via WebSearch + direct API calls)
+  and cross-confirmed against GBIF Backbone Taxonomy (api.gbif.org/v1/species/match), which mirrors
+  the WCVP/POWO accepted-name backbone. IUCN status pulled from GBIF's aggregated IUCN Red List
+  distribution data (api.gbif.org .../distributions), which cites "The IUCN Red List of Threatened
+  Species" as source. Wikipedia used only for cross-checking spelling / common names, never as primary
+  taxonomic authority.
+
+NAME CORRECTIONS MADE
+1. "Parastemon glaucum" (as given in the task) does NOT exist in POWO, GBIF, or IUCN. The genus
+   Parastemon (Chrysobalanaceae) has only a small number of accepted species, and none is named
+   "glaucum". The clearly intended species is Parastemon grandifructus Prance - an accepted name,
+   endemic to Borneo (Sarawak, Sabah) and Brunei, IUCN status Vulnerable. Used P. grandifructus in
+   place of "P. glaucum" for all data.
+
+All other 15 species names were verified as currently ACCEPTED with no corrections needed:
+- Horsfieldia flocculosa (King) Warb. - accepted
+- Horsfieldia kingii (Hook.f.) Warb. - accepted
+- Knema cinerea (Poir.) Warb. - accepted
+- Knema sumatrana (Blume) W.J.de Wilde - accepted
+- Parastemon urophyllus (Wall. ex A.DC.) A.DC. - accepted
+- Hirtella triandra Sw. - accepted
+- Hirtella racemosa Lam. - accepted
+- Aglaia elliptica (C.DC.) Blume - accepted
+- Aglaia korthalsii (Miq.) Pellegr. - accepted
+- Dysoxylum acutangulum Miq. - accepted
+- Dysoxylum grande Hiern - accepted (task flagged this as possibly suspicious; confirmed genuine and accepted)
+- Diospyros ferrea (Willd.) Bakh. - accepted
+- Diospyros ebenum J.Koenig ex Retz. - accepted
+- Euclea natalensis A.DC. - accepted
+- Euclea racemosa L. - accepted
+
+IMAGES - STATUS LOG
+--------------------
+Family: Myristicaceae
+- family-myristicaceae.jpg: DOWNLOADED (Myristica fragrans, by kadavoor, CC-licensed, Wikimedia Commons)
+- genus-horsfieldia.jpg: DOWNLOADED (Horsfieldia irya, Wikimedia Commons)
+- genus-knema.jpg: DOWNLOADED (Knema globularia in Thailand, Wikimedia Commons)
+- horsfieldia-flocculosa.jpg: NOT FOUND species-specific -> substituted genus photo (Horsfieldia irya)
+- horsfieldia-kingii.jpg: DOWNLOADED - species-specific photo found (File:Horsfieldia kingii.jpg, by
+  Nandini Velho, Pakke Tiger Reserve, Arunachal Pradesh)
+- knema-cinerea.jpg: NOT FOUND species-specific (only herbarium scans exist) -> substituted genus
+  photo (Knema globularia)
+- knema-sumatrana.jpg: NOT FOUND species-specific (only archival/PDF scans exist) -> substituted genus
+  photo (Knema globularia)
+
+Family: Chrysobalanaceae
+- family-chrysobalanaceae.jpg: DOWNLOADED (Maranthes polyandra, Wikimedia Commons)
+- genus-parastemon.jpg: DOWNLOADED (Parastemon urophyllus, Bako NP Sarawak, Wikimedia Commons)
+- genus-hirtella.jpg: DOWNLOADED (Hirtella racemosa, Flickr/Tarciso Leao via Commons)
+- parastemon-urophyllus.jpg: DOWNLOADED - species-specific photo found (Nyilas Padang, Bako National
+  Park, Sarawak, Wikimedia Commons)
+- parastemon-grandifructus.jpg: NOT FOUND species-specific -> substituted genus photo (P. urophyllus)
+- hirtella-triandra.jpg: NOT FOUND species-specific live photo (only herbarium PDF scans) ->
+  substituted genus photo (H. racemosa)
+- hirtella-racemosa.jpg: DOWNLOADED - species-specific photo found (Flickr/Tarciso Leao via Commons)
+
+NOTE ON IMAGE FILE SIZES: Several original Commons files were very large (one was 10.7 MB straight
+from camera). Wikimedia's on-demand thumbnail endpoint (.../thumb/.../NNNpx-filename) returned HTTP 400
+"Use thumbnail sizes listed..." for all widths tried via curl (bot-mitigation on the thumbnail
+renderer), so instead: downloaded full-size originals via curl, then resized every image locally to a
+maximum width of 800px (JPEG quality 82) using a PowerShell/.NET System.Drawing script. All images in
+the folder are now under ~300 KB.
+
+Family: Meliaceae
+- family-meliaceae.jpg: DOWNLOADED (Melia azedarach flower, Wikimedia Commons)
+- genus-dysoxylum.jpg: DOWNLOADED (Dysoxylum sp., Kebun Raya Bogor, Wikimedia Commons)
+- aglaia-elliptica.jpg: DOWNLOADED - species-specific photo found (Kebun Raya Bogor, Wikimedia Commons)
+- aglaia-korthalsii.jpg: DOWNLOADED - species-specific photo found (fruit/foliage "keriat", Wikimedia
+  Commons, uploaded by Surat Layang)
+- dysoxylum-acutangulum.jpg: NOT FOUND species-specific (only 1900s-era herbarium catalogue PDF scans)
+  -> substituted genus photo (Dysoxylum sp.)
+- dysoxylum-grande.jpg: NOT FOUND species-specific (only historical PDF scans) -> substituted genus
+  photo (Dysoxylum sp.)
+
+Family: Ebenaceae
+- family-ebenaceae.jpg: DOWNLOADED (Diospyros kaki / Japanese persimmon, Wikimedia Commons)
+- diospyros-ferrea.jpg: DOWNLOADED - species-specific photo found (Taiwan, Wikimedia Commons)
+- diospyros-ebenum.jpg: DOWNLOADED - species-specific photo found (Kerala, India, Wikimedia Commons)
+- genus-diospyros.jpg: DOWNLOADED (copy of D. ebenum photo, used as genus representative)
+- euclea-natalensis.jpg: DOWNLOADED - species-specific photo found (leaves, eMakhosini, South Africa,
+  Wikimedia Commons)
+- euclea-racemosa.jpg: DOWNLOADED - species-specific photo found ("Sea Guarrie" tree, Cape Town,
+  Wikimedia Commons)
+- genus-euclea.jpg: DOWNLOADED (copy of E. racemosa photo, used as genus representative)
+
+TECHNICAL NOTE ON RATE LIMITING: After downloading roughly 10 full-resolution original images in quick
+succession, Wikimedia's upload.wikimedia.org returned HTTP 429 with "Retry-After: 600" and the
+message: "please... use thumbnail images in sizes listed on https://w.wiki/GHai" (this redirects to
+mediawiki.org/wiki/Common_thumbnail_sizes). The allowed thumbnail widths are exactly: 20, 40, 60, 120,
+250, 330, 500, 960, 1280, 1920, 3840px - NOT arbitrary widths like 800px (which is why earlier 800px
+thumbnail requests returned HTTP 400). Remaining downloads were re-queued as a background job using the
+proper /thumb/.../960px-filename URL format and a 10-minute cooldown wait, per Wikimedia's own
+instructions in the 429 response, and all completed successfully afterwards (two files needed one
+additional short retry). All downloaded images (whether via curl originals + local resize, or via the
+960px Commons thumbnail endpoint) were then normalised to a max width of 800px, JPEG quality ~82, using
+a PowerShell/.NET System.Drawing script, keeping every file in images/ under ~550 KB (most under
+300 KB) - reasonable for a student web page.
+
+FINAL IMAGE COUNT: All 27 expected image files (4 family + 8 genus + 16 species -1 duplicate naming
+overlap... actually: 4 family images + 8 genus images + 16 species images = 28 slots, but genus and
+species images are sometimes identical file copies where no species-specific photo existed) were
+successfully created as valid JPEGs. Every one of the 16 species now has an image file (either a real
+species-specific photo, or a clearly-noted genus-level substitute per the task's fallback instructions)
+- none were skipped as "not available".
+
+ALL SPECIES-SPECIFIC PHOTOS SUCCESSFULLY LOCATED AND DOWNLOADED for (9 of 16 species): Horsfieldia
+kingii, Parastemon urophyllus, Hirtella racemosa, Aglaia elliptica, Aglaia korthalsii, Diospyros
+ferrea, Diospyros ebenum, Euclea natalensis, Euclea racemosa.
+
+GENUS-LEVEL SUBSTITUTE PHOTOS used (imageNote added in JSON) for the remaining 7 species, where no
+species-specific free photo could be found on Commons (only herbarium/archival scans exist for these):
+Horsfieldia flocculosa (-> Horsfieldia irya photo), Knema cinerea (-> Knema globularia photo),
+Knema sumatrana (-> Knema globularia photo), Parastemon grandifructus (-> Parastemon urophyllus photo),
+Hirtella triandra (-> Hirtella racemosa photo), Dysoxylum acutangulum (-> Dysoxylum sp. photo),
+Dysoxylum grande (-> Dysoxylum sp. photo).

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PlantStory leaf logo">
+  <circle cx="32" cy="32" r="30" fill="#A8BFA3"/>
+  <path d="M32 50C18 46 12 34 16 20c14-4 26 2 30 16 2 8-4 14-14 14z" fill="#2F5D50"/>
+  <path d="M18 22c10 4 16 12 18 26" stroke="#F4F0E6" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

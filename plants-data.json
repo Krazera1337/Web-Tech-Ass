@@ -1,0 +1,610 @@
+{
+  "families": [
+    {
+      "name": "Myristicaceae",
+      "image": "images/family-myristicaceae.jpg",
+      "genera": [
+        {
+          "name": "Horsfieldia",
+          "image": "images/genus-horsfieldia.jpg",
+          "species": [
+            {
+              "scientificName": "Horsfieldia flocculosa (King) Warb.",
+              "family": "Myristicaceae",
+              "genus": "Horsfieldia",
+              "commonNames": [],
+              "plantType": "Tree",
+              "description": "Horsfieldia flocculosa is an evergreen tree in the nutmeg family (Myristicaceae), first described as Myristica flocculosa by George King before being transferred to Horsfieldia by Warburg. It is a lowland rainforest tree of limited range in the western Malay Peninsula and Sumatra, and its IUCN Vulnerable rating reflects ongoing loss of its rainforest habitat. As with other Myristicaceae, it likely produces reddish sap and unisexual flowers typical of the family.",
+              "leafDescription": "Not available (species-specific leaf measurements were not found in accessible literature; family members typically have simple, alternate, entire leaves).",
+              "flowerDescription": "Not available (species-specific flower description not found; Myristicaceae flowers are generally small, unisexual, with fused inconspicuous tepals).",
+              "fruitDescription": "Not available (species-specific fruit description not found; Myristicaceae fruit typically dehisces along a single suture with one seed covered by a brightly coloured aril).",
+              "barkDescription": "Not available.",
+              "nativeDistribution": "Restricted to the western Malay Peninsula (Pahang, Negeri Sembilan, Selangor, Johor) and Sumatra, where it grows in lowland rainforest.",
+              "nativeCountries": ["Malaysia (Peninsular)", "Indonesia (Sumatra)"],
+              "distributionStatus": "Native",
+              "habitat": "Lowland tropical rainforest.",
+              "elevation": "Not available",
+              "ecologicalImportance": "As with other Myristicaceae, likely provides fruit with an oily aril attractive to birds (e.g. hornbills, pigeons), aiding seed dispersal, though this has not been specifically documented for this species.",
+              "uses": "Not available (no documented traditional or economic uses found).",
+              "conservationStatus": "Vulnerable (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Originally described in 1891 as Myristica flocculosa by George King, later moved to the genus Horsfieldia by Otto Warburg.",
+                "It is endemic to a small area of the western Malay Peninsula and Sumatra, making it vulnerable to habitat loss from deforestation."
+              ],
+              "imageSearchTerms": ["Horsfieldia flocculosa", "Horsfieldia Myristicaceae Malaysia rainforest tree"],
+              "image": "images/horsfieldia-flocculosa.jpg",
+              "imageNote": "No species-specific photo found on Wikimedia Commons; substituted a genus-level photo of Horsfieldia irya (congener) as a stand-in, per instructions.",
+              "references": [
+                "GBIF Backbone Taxonomy - Horsfieldia flocculosa (King) Warb., https://www.gbif.org/species/5564738",
+                "Wikipedia - Horsfieldia flocculosa (used for cross-check only), https://en.wikipedia.org/wiki/Horsfieldia_flocculosa",
+                "IUCN Red List data via GBIF distributions API"
+              ]
+            },
+            {
+              "scientificName": "Horsfieldia kingii (Hook.f.) Warb.",
+              "family": "Myristicaceae",
+              "genus": "Horsfieldia",
+              "commonNames": ["Ramtamul (Assamese)"],
+              "plantType": "Tree",
+              "description": "Horsfieldia kingii is a dioecious evergreen tree of the nutmeg family found across the eastern Himalayan foothills and mainland Southeast Asia. It was first described as Myristica kingii by Joseph Dalton Hooker in 1886, later transferred to Horsfieldia by Otto Warburg. Its large, bi-coloured arillate fruits are an important food source for hornbills and other large frugivorous birds, and its leaves are eaten by endangered capped langurs.",
+              "leafDescription": "Leaves arranged in 3-5 rows, with petioles 2.5-4 cm long, deeply grooved and glabrous. Leaf blade obovate to oblanceolate, (12-)28-55 x 5-15 cm, papery in texture, glabrous on both surfaces (midvein sometimes pubescent), with an acute to shortly acuminate tip, and 14-18 pairs of lateral veins.",
+              "flowerDescription": "Dioecious (separate male and female trees). Male inflorescences axillary or borne from deciduous leaf axils, 9-15 cm long. Female flower buds nearly globose to obovoid, about 5 mm, with 2-3 perianth lobes and a pubescent, obovoid ovary.",
+              "fruitDescription": "Fruit an ovoid to oblong-ellipsoid arillate capsule, 4-4.5 x about 2.5 cm, narrowed at both ends, becoming glabrous early, with a thick, leathery, bi-coloured pericarp and persistent perianth. Fruiting occurs from February to May, and the large seeds are dispersed by hornbills and imperial pigeons.",
+              "barkDescription": "Twigs hollow, smooth or with small lenticels, puberulent to glabrous, dark brown; detailed trunk bark description not available.",
+              "nativeDistribution": "Ranges from eastern Nepal through northeastern India (Assam, Sikkim, Tripura, West Bengal), Bangladesh, Myanmar (Rakhine), northern Thailand and Vietnam, to southern China (Yunnan, Guangxi, Hainan).",
+              "nativeCountries": ["Nepal", "India", "Bangladesh", "Myanmar", "Thailand", "Vietnam", "China"],
+              "distributionStatus": "Native",
+              "habitat": "Wet tropical/subtropical evergreen forest.",
+              "elevation": "Not available (precise range not confirmed from accessible sources).",
+              "ecologicalImportance": "Fruits are a key food source for large frugivorous birds such as hornbills and imperial pigeons, which disperse its seeds; foliage is browsed by the endangered capped langur (Trachypithecus pileatus).",
+              "uses": "Fruit/seed is sometimes used as a substitute for betel nut, reportedly producing a mild intoxicating effect in humans.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "First described as Myristica kingii by J.D. Hooker in 1886, reclassified into Horsfieldia by Otto Warburg in 1897.",
+                "Its foliage is browsed by the endangered capped langur in Northeast Indian forests such as Pakke Tiger Reserve.",
+                "Known locally in Assamese as 'Ramtamul'."
+              ],
+              "imageSearchTerms": ["Horsfieldia kingii fruit", "Horsfieldia kingii Pakke tiger reserve"],
+              "image": "images/horsfieldia-kingii.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Horsfieldia kingii (Hook.f.) Warb., https://www.gbif.org/species/5564660",
+                "Wikipedia - Horsfieldia kingii, https://en.wikipedia.org/wiki/Horsfieldia_kingii",
+                "IUCN Red List data via GBIF distributions API",
+                "Wikimedia Commons - File:Horsfieldia kingii.jpg (photo by Nandini Velho, Pakke Tiger Reserve)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Knema",
+          "image": "images/genus-knema.jpg",
+          "species": [
+            {
+              "scientificName": "Knema cinerea (Poir.) Warb.",
+              "family": "Myristicaceae",
+              "genus": "Knema",
+              "commonNames": [],
+              "plantType": "Tree",
+              "description": "Knema cinerea is a small to medium tree in the nutmeg family, native to central and eastern Malesia. It is closely related to K. stenophylla, K. patentinervia and K. glauca, sharing a similar habit and floral structure, and several infraspecific varieties are recognised across its range.",
+              "leafDescription": "Leaves membranous to chartaceous, elliptic to oblong-lanceolate, 8-25 x 2.5-9 cm, with an acute-acuminate apex and a rounded to attenuate base; lower leaf surface bears minute, persistent scale-like or stellate hairs.",
+              "flowerDescription": "Flowers small, pedicellate and not fragrant (family is dioecious with unisexual flowers); detailed floral measurements not available.",
+              "fruitDescription": "Fruit 1 or 2 per infructescence, subglobose to somewhat obovoid, apex obtuse and faintly pointed by a style remnant, 1.2-1.8 x 1-1.6 cm, covered in persistent short hairs 0.1-0.3 mm long.",
+              "barkDescription": "Not available.",
+              "nativeDistribution": "Found in the Lesser Sunda Islands (Lombok, Sumbawa, Flores), Sulawesi, the Moluccas (Sula Archipelago, Banda, Tanimbar) and the Philippines (one collection), growing in wet tropical forest.",
+              "nativeCountries": ["Indonesia", "Philippines"],
+              "distributionStatus": "Native",
+              "habitat": "Wet tropical (rain)forest.",
+              "elevation": "Not available",
+              "ecologicalImportance": "Not available (specific ecological role not documented; genus generally provides arillate fruit eaten by birds).",
+              "uses": "Not available (no documented traditional or economic uses found).",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Several infraspecific varieties are recognised in POWO, including var. glauca, var. andamanica and var. sumatrana.",
+                "Its lower leaf surface is covered in tiny scale-like hairs typical of many Knema species, helping distinguish it in the field."
+              ],
+              "imageSearchTerms": ["Knema cinerea Myristicaceae", "Knema cinerea leaves fruit"],
+              "image": "images/knema-cinerea.jpg",
+              "imageNote": "No species-specific photo found on Wikimedia Commons (only herbarium specimen scans exist); substituted a genus-level photo of Knema globularia (congener) as a stand-in.",
+              "references": [
+                "GBIF Backbone Taxonomy - Knema cinerea (Poir.) Warb., https://www.gbif.org/species/7333691",
+                "Flora Malesiana (Naturalis cybertaxonomy portal) - Knema cinerea",
+                "POWO - Knema cinerea (Poir.) Warb., https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585847-1",
+                "IUCN Red List data via GBIF distributions API"
+              ]
+            },
+            {
+              "scientificName": "Knema sumatrana (Blume) W.J.de Wilde",
+              "family": "Myristicaceae",
+              "genus": "Knema",
+              "commonNames": [],
+              "plantType": "Tree",
+              "description": "Knema sumatrana is a medium-sized tree in the nutmeg family, restricted to peninsular Thailand, Peninsular Malaysia and Sumatra. It was originally described as Myristica sumatrana by Blume before being placed in Knema by W.J.J.O. de Wilde.",
+              "leafDescription": "Leaves membranous to chartaceous, elliptic to oblong-lanceolate, 12-30 x 4.5-12 cm, apex obtuse to acute-acuminate, base rounded, subtruncate or shortly attenuate, drying greenish to brown above.",
+              "flowerDescription": "Not available (species-specific floral description not found in accessible sources; genus is dioecious with small unisexual flowers).",
+              "fruitDescription": "Fruits borne 1-3 per infructescence, ovoid-ellipsoid to ellipsoid-oblong, apex and base subacute, 3-4 x 1.4-2 cm, with a fine indumentum that is lost early, leaving a finely granulate surface.",
+              "barkDescription": "Not available.",
+              "nativeDistribution": "Occurs in peninsular Thailand, Peninsular Malaysia (Perak, Kelantan) and Sumatra (including Simeulue Island).",
+              "nativeCountries": ["Thailand", "Malaysia (Peninsular)", "Indonesia (Sumatra)"],
+              "distributionStatus": "Native",
+              "habitat": "Tropical lowland forest.",
+              "elevation": "Not available",
+              "ecologicalImportance": "Not available (specific ecological role not documented).",
+              "uses": "Not available (no documented traditional or economic uses found).",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Originally named Myristica sumatrana by Blume in 1837 before being moved to Knema.",
+                "Is a tree 10-20 m tall, medium-sized for the genus."
+              ],
+              "imageSearchTerms": ["Knema sumatrana Myristicaceae", "Knema sumatrana Sumatra tree"],
+              "image": "images/knema-sumatrana.jpg",
+              "imageNote": "No species-specific photo found on Wikimedia Commons (only herbarium/archival scans exist); substituted a genus-level photo of Knema globularia (congener) as a stand-in.",
+              "references": [
+                "GBIF Backbone Taxonomy - Knema sumatrana (Blume) W.J.de Wilde, https://www.gbif.org/species/3744097",
+                "Flora Malesiana (Naturalis cybertaxonomy portal) - Knema sumatrana",
+                "POWO - Knema sumatrana (Blume) W.J.de Wilde, https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585935-1",
+                "IUCN Red List data via GBIF distributions API"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chrysobalanaceae",
+      "image": "images/family-chrysobalanaceae.jpg",
+      "genera": [
+        {
+          "name": "Parastemon",
+          "image": "images/genus-parastemon.jpg",
+          "species": [
+            {
+              "scientificName": "Parastemon urophyllus (Wall. ex A.DC.) A.DC.",
+              "family": "Chrysobalanaceae",
+              "genus": "Parastemon",
+              "commonNames": ["Nyilas Padang", "Malas"],
+              "plantType": "Tree",
+              "description": "Parastemon urophyllus is a large evergreen tree of the cocoa-plum family, reaching up to 35-40 m tall with a long, straight, often buttressed bole. Its specific epithet 'urophyllus' means 'tail-leaf', referring to the tapering, pointed leaf tip. It is a common component of peat-swamp, kerangas (heath) and secondary forests across western Malesia.",
+              "leafDescription": "Leaves coriaceous (leathery), elliptic-lanceolate, 5-8 x 3-4 cm, with an acute base and an acuminate, tail-like tip; glabrous, with 4-6 pairs of faint lateral nerves.",
+              "flowerDescription": "Inflorescence an axillary (rarely terminal) raceme, 4-14 cm long, sometimes slightly branched, with a glabrous rachis. Flowers polygamo-dioecious, small (about 1.5 mm), with 5 petals, 2 fertile stamens and 3 opposite sterile staminodes.",
+              "fruitDescription": "Fruit a smooth, yellowish, ellipsoid drupe, about 12 x 6 mm.",
+              "barkDescription": "Bark smooth and brownish; the tree often has small buttresses at the base.",
+              "nativeDistribution": "Occurs in the Andaman and Nicobar Islands, Myanmar (Taninthayi), Thailand, Peninsular Malaysia, Singapore, Sumatra, Borneo and Brunei.",
+              "nativeCountries": ["India (Andaman & Nicobar Is.)", "Myanmar", "Thailand", "Malaysia", "Singapore", "Indonesia (Sumatra, Borneo)", "Brunei"],
+              "distributionStatus": "Native",
+              "habitat": "Peat swamp forest, kerangas (heath forest), and secondary lowland forest.",
+              "elevation": "Not available (predominantly lowland).",
+              "ecologicalImportance": "As a common canopy tree of peat-swamp and heath forest, it contributes structurally to these specialised forest ecosystems in Sundaland.",
+              "uses": "Wood is hard and durable but difficult to work due to high silica content; used locally for general construction, posts and firewood.",
+              "conservationStatus": "Not available (no global IUCN assessment found in GBIF-aggregated IUCN data).",
+              "interestingFacts": [
+                "The species epithet 'urophyllus' is Greek for 'tail-leaf', describing its distinctive tapering leaf tip.",
+                "It is known by the Malay/Iban name 'Nyilas Padang' and the trade name 'Malas'.",
+                "It can grow up to 40 m tall with a bole branch-free for 20 m."
+              ],
+              "imageSearchTerms": ["Parastemon urophyllus", "Nyilas Padang tree Borneo"],
+              "image": "images/parastemon-urophyllus.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Parastemon urophyllus, https://www.gbif.org/species/2985237",
+                "ITTO Lesser Used Species - Malas (Parastemon urophyllus), tropicaltimber.info",
+                "Flora Malesiana (Naturalis cybertaxonomy portal) - Parastemon urophyllus",
+                "Wikimedia Commons - File:Nyilas Padang (Parastemon urophyllus) (15146650153).jpg, Bako National Park, Sarawak"
+              ]
+            },
+            {
+              "scientificName": "Parastemon grandifructus Prance",
+              "family": "Chrysobalanaceae",
+              "genus": "Parastemon",
+              "commonNames": [],
+              "plantType": "Tree",
+              "description": "Parastemon grandifructus is a tree endemic to Malaysian Borneo, closely related to the more widespread P. urophyllus. Its specific epithet 'grandifructus' (Latin for 'large fruit') refers to its notably larger fruit compared to its congener. NOTE: this species was substituted for the invalid name 'Parastemon glaucum' given in the original brief; see corrections list.",
+              "leafDescription": "Not available (detailed leaf measurements not found in accessible literature).",
+              "flowerDescription": "Not available (detailed flower description not found in accessible literature).",
+              "fruitDescription": "Fruit ellipsoid, notably large for the genus, up to about 3.5 cm long.",
+              "barkDescription": "Not available.",
+              "nativeDistribution": "Endemic to Borneo, recorded from Sarawak and Sabah (Malaysia) and Brunei.",
+              "nativeCountries": ["Malaysia (Sabah, Sarawak)", "Brunei"],
+              "distributionStatus": "Native",
+              "habitat": "Lowland forest, including swamp forest.",
+              "elevation": "Sea level to about 150 m.",
+              "ecologicalImportance": "Not available (specific ecological role not documented in accessible sources).",
+              "uses": "Not available (no documented traditional or economic uses found).",
+              "conservationStatus": "Vulnerable (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Endemic to Borneo, found only in Sarawak, Sabah and Brunei.",
+                "Described by botanist Ghillean Prance in 1987.",
+                "Has the largest fruit in the genus Parastemon, giving rise to its epithet 'grandifructus' (large-fruited)."
+              ],
+              "imageSearchTerms": ["Parastemon grandifructus Borneo", "Parastemon Chrysobalanaceae Sarawak"],
+              "image": "images/parastemon-grandifructus.jpg",
+              "imageNote": "No species-specific photo found on Wikimedia Commons; substituted a genus-level photo of the congener Parastemon urophyllus as a stand-in.",
+              "references": [
+                "GBIF Backbone Taxonomy - Parastemon grandifructum Prance, https://www.gbif.org/species/2985236",
+                "Wikipedia - Parastemon grandifructus (used for cross-check only)",
+                "IUCN Red List data via GBIF distributions API"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hirtella",
+          "image": "images/genus-hirtella.jpg",
+          "species": [
+            {
+              "scientificName": "Hirtella triandra Sw.",
+              "family": "Chrysobalanaceae",
+              "genus": "Hirtella",
+              "commonNames": ["Pigeonberry"],
+              "plantType": "Shrub or small tree",
+              "description": "Hirtella triandra is a shrub or tree, usually small but capable of reaching up to 15 m, native to lowland humid forests from Mexico through Central America to the Brazilian Amazon. It bears white, aromatic flowers with striking purple stamens, and its soft, sweet, purple fruit is eaten by monkeys and birds.",
+              "leafDescription": "Leaves simple and alternate (specific measurements not found in accessible literature).",
+              "flowerDescription": "Inflorescences terminal and axillary panicles, 3.5-17 cm long, most branches bearing more than one flower; flowers white and aromatic, with 5 glabrous petals and 3 stamens on one side of the flower with short filamentous staminodes opposite them; stamens are conspicuously purple.",
+              "fruitDescription": "Fruit ellipsoid, purple when ripe, soft and sweet; epicarp glabrescent to puberulous or (less often) tomentose, slightly grooved lengthwise when dry; mesocarp thin and fleshy; endocarp thin, hard, bony, hairy within.",
+              "barkDescription": "Bark light brown, somewhat rough-textured, often flaking.",
+              "nativeDistribution": "Ranges from Mexico through Central America and the Caribbean to Colombia, Venezuela, the Guianas, Ecuador, Peru, Bolivia and Brazil (including the Amazon basin).",
+              "nativeCountries": ["Mexico", "Belize", "Guatemala", "Honduras", "Costa Rica", "Panama", "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana", "Ecuador", "Peru", "Bolivia", "Brazil", "Cuba", "Jamaica", "Dominican Republic"],
+              "distributionStatus": "Native",
+              "habitat": "Mature, humid lowland forest with well-drained, organically rich soils, often in shaded understorey.",
+              "elevation": "Low elevations (lowland forest).",
+              "ecologicalImportance": "Its sweet purple fruit is consumed and dispersed by monkeys and birds, making it a minor food-web contributor in Neotropical rainforests.",
+              "uses": "Fruit is harvested from the wild for local food use.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Has three recognised subspecies (subsp. triandra, subsp. media, subsp. punctulata).",
+                "Its purple stamens contrast strikingly against its white, aromatic flowers.",
+                "Fruits are eaten by monkeys and birds, which help disperse its seeds."
+              ],
+              "imageSearchTerms": ["Hirtella triandra flowers", "Hirtella triandra fruit"],
+              "image": "images/hirtella-triandra.jpg",
+              "imageNote": "No species-specific live photo found on Wikimedia Commons (only herbarium specimen PDF scans exist); substituted a genus-level photo of the congener Hirtella racemosa as a stand-in.",
+              "references": [
+                "GBIF Backbone Taxonomy - Hirtella triandra Sw., https://www.gbif.org/species/2985089",
+                "Useful Tropical Plants (tropical.theferns.info) - Hirtella triandra",
+                "IUCN Red List data via GBIF distributions API"
+              ]
+            },
+            {
+              "scientificName": "Hirtella racemosa Lam.",
+              "family": "Chrysobalanaceae",
+              "genus": "Hirtella",
+              "commonNames": ["Azeitona-da-mata (Portuguese, Brazil)"],
+              "plantType": "Shrub or small tree",
+              "description": "Hirtella racemosa is a small evergreen understorey shrub or treelet, usually only 4-5 m tall, widespread from Mexico through Central America to Brazil and Bolivia. It is inconspicuous except when in bloom, when it is decorated with silky racemes of pink to lavender flowers, and it is a common pioneer species in disturbed lowland forest.",
+              "leafDescription": "Leaves simple, alternate, small (about 8 x 2.5 cm) and nearly sessile - distinctively small and alternately arranged for a tree of its stature.",
+              "flowerDescription": "Flowers borne in silky racemes, 3.5-6.0 mm long, with 5 glabrous, pink to lavender petals; insect-pollinated.",
+              "fruitDescription": "Fruit an elongated berry about 2 cm long, plump and juicy when fresh (often shrivelled/pasty later), ripening from green to maroon or black, enclosing a single rod-shaped seed; most fruiting occurs February-March.",
+              "barkDescription": "Trunk small, rarely exceeding 10 cm diameter, covered with smooth grey bark; inner bark dark reddish-brown.",
+              "nativeDistribution": "Ranges from central and southern Mexico through Central America, the Caribbean, and northern South America to Peru, Bolivia and Brazil.",
+              "nativeCountries": ["Mexico", "Guatemala", "Honduras", "Nicaragua", "Costa Rica", "Panama", "Jamaica", "Trinidad and Tobago", "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana", "Ecuador", "Peru", "Bolivia", "Brazil"],
+              "distributionStatus": "Native",
+              "habitat": "Understorey of primary and secondary lowland forest on well-drained soils of hills, slopes and ridges.",
+              "elevation": "Not available (predominantly lowland).",
+              "ecologicalImportance": "A common understorey pioneer species that helps stabilise disturbed lowland forest sites; its fruit is eaten locally.",
+              "uses": "Fruit harvested from the wild for local food; flexible branches traditionally used in roof construction.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Its flexible branches are traditionally used to build roofs in parts of Central America.",
+                "Despite its small stature, it is one of the few small trees in its habitat with such tiny, alternately arranged leaves, making it identifiable at a glance.",
+                "Three varieties are recognised: var. racemosa, var. hexandra and var. hispida."
+              ],
+              "imageSearchTerms": ["Hirtella racemosa flowers", "Hirtella racemosa azeitona-da-mata"],
+              "image": "images/hirtella-racemosa.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Hirtella racemosa Lam., https://www.gbif.org/species/2985122",
+                "Trees of Costa Rica's Pacific Slope (crtrees.org) - Hirtella racemosa",
+                "IUCN Red List data via GBIF distributions API",
+                "Wikimedia Commons - File:Hirtella racemosa - Flickr - Tarciso Leão.jpg"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Meliaceae",
+      "image": "images/family-meliaceae.jpg",
+      "genera": [
+        {
+          "name": "Aglaia",
+          "image": "images/genus-aglaia.jpg",
+          "species": [
+            {
+              "scientificName": "Aglaia elliptica (C.DC.) Blume",
+              "family": "Meliaceae",
+              "genus": "Aglaia",
+              "commonNames": ["Lambunau (Malaysia)"],
+              "plantType": "Tree",
+              "description": "Aglaia elliptica is a tree in the mahogany family most often found along riverbanks and in forest subject to periodic flooding, from Indo-China through western and central Malesia. It bears orange, ellipsoid fruit with an edible, cranberry-like flavoured aril, and its bark and leaves have documented traditional medicinal uses in the Philippines.",
+              "leafDescription": "Leaves compound with several leaflets; indumentum consists of stellate hairs or stellate scales only (unlike some related species, A. elliptica lacks peltate scales on the leaves).",
+              "flowerDescription": "Not available (specific floral measurements not found in accessible sources); as in other Aglaia, flowers are likely small and pollinated mainly by small insects such as flies.",
+              "fruitDescription": "Fruit orange, ellipsoid, up to 35 mm long and 30 mm wide, with two locules each containing up to one seed; a longitudinal ridge nearly always encircles the ripe fruit, which usually bears a dense reddish-brown indumentum. The edible aril has a cranberry-like taste.",
+              "barkDescription": "Not available in detail; bark is boiled and the decoction used medicinally (see uses).",
+              "nativeDistribution": "Ranges from Indo-China (Myanmar, Thailand) through Peninsular Malaysia to western and central Malesia, including Brunei, Indonesia (Borneo, Sumatra, Java, Sulawesi, Lesser Sunda Islands) and the Philippines. Two subspecies are recognised: subsp. elliptica (widespread) and subsp. clementis (Borneo, Sulawesi).",
+              "nativeCountries": ["Myanmar", "Thailand", "Malaysia", "Brunei", "Indonesia", "Philippines"],
+              "distributionStatus": "Native",
+              "habitat": "Riverine forest and forest subject to periodic flooding, from lowland to montane forest.",
+              "elevation": "Sea level to about 2,000 m.",
+              "ecologicalImportance": "Its edible, aril-covered fruit likely attracts birds and other frugivores that aid seed dispersal, as is typical for Aglaia.",
+              "uses": "Fruit is edible (cranberry-like flavour) and harvested from the wild; in the Philippines (Mindanao), a boiled bark decoction is used as a bath against tumours, and leaves are applied to wounds. Wood is also harvested.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Its fruit has a cranberry-like taste and is eaten locally.",
+                "Distinguished from related Aglaia species by lacking peltate leaf scales, having only stellate hairs/scales.",
+                "Traditional Philippine medicine uses its bark decoction as a bath treatment against tumours."
+              ],
+              "imageSearchTerms": ["Aglaia elliptica fruit", "Aglaia elliptica Meliaceae"],
+              "image": "images/aglaia-elliptica.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Aglaia elliptica (C.DC.) Blume, https://www.gbif.org/species/7271396",
+                "PROSEA - Plant Resources of South East Asia, Aglaia elliptica, prosea.prota4u.org",
+                "Useful Tropical Plants (tropical.theferns.info) - Aglaia elliptica",
+                "IUCN Red List data via GBIF distributions API",
+                "Wikimedia Commons - File:Aglaia elliptica Blume.jpg (Kebun Raya Bogor, Indonesia)"
+              ]
+            },
+            {
+              "scientificName": "Aglaia korthalsii (Miq.) Pellegr.",
+              "family": "Meliaceae",
+              "genus": "Aglaia",
+              "commonNames": ["Keriat / Sekiat (Malay)"],
+              "plantType": "Tree",
+              "description": "Aglaia korthalsii is a small to medium dioecious tree of the mahogany family, ranging from Bhutan through mainland Southeast Asia to western Malesia. It is notable for its intensely fragrant, rice-grain-sized yellow flowers and its orange, edible fruit, which was historically cultivated as a village fruit tree in parts of Peninsular Malaysia.",
+              "leafDescription": "Leaves odd-pinnate, up to about 30 cm long, typically with 5 (rarely 3 or 7) elliptic leaflets with pointed tips, 8-20 cm long and 3-8 cm broad, intense green; petiole 7-12 cm long, covered with shiny reddish-brown scales that also occur on the leaf axis and twigs.",
+              "flowerDescription": "Flowers fragrant, yellow, tiny (about the size of a grain of rice) with a very strong perfume; male inflorescences up to 40 cm long and wide, female inflorescences smaller and less branched. All plant parts contain white latex; young branches are covered in thick reddish-brown scales.",
+              "fruitDescription": "Fruit ellipsoid to subglobose, 20-40 mm long and 10-50 mm wide, orange when ripe, each containing up to 3 edible seeds surrounded by a thin layer of edible flesh; the fruit has notably high vitamin C content (about 10 mg/110 g, comparable to apples).",
+              "barkDescription": "Bark pale to dark reddish-brown, pinkish-brown or orange-brown; inner bark dark greenish-pink to pink. Buttresses triangular at the base of the trunk.",
+              "nativeDistribution": "Ranges from Bhutan through the Nicobar Islands, Myanmar, southern Thailand and Vietnam to Peninsular Malaysia, Sumatra, Borneo, Sulawesi, and the Lesser Sunda Islands (Sumbawa, Flores); reportedly also in the Philippines.",
+              "nativeCountries": ["Bhutan", "India (Nicobar Is.)", "Myanmar", "Thailand", "Vietnam", "Malaysia", "Indonesia"],
+              "distributionStatus": "Native",
+              "habitat": "Lowland to hill tropical rainforest.",
+              "elevation": "Not available (precise range not confirmed).",
+              "ecologicalImportance": "Fruit is edible and likely dispersed by birds and mammals; the tree's white latex and scaled foliage are typical Aglaia defences.",
+              "uses": "Fruit is edible, historically grown as a fruit tree in villages in Kelantan and Terengganu (Malaysia); wood is used for house poles. The species contains flavagline compounds under research for insecticidal, antifungal, antibacterial, anti-inflammatory and anticancer properties.",
+              "conservationStatus": "Near Threatened (older IUCN 1998 assessment, version 2.3; cited via Wikipedia referencing IUCN Red List ID 34759/9887989) - NOTE: this assessment is dated and the species does not appear in GBIF's current aggregated IUCN data, so this status should be treated as potentially outdated rather than a confirmed current rating.",
+              "interestingFacts": [
+                "Its tiny yellow flowers, each about the size of a rice grain, produce an unusually strong, sweet fragrance.",
+                "Was traditionally cultivated as a village fruit tree ('keriat') in Kelantan and Terengganu, Malaysia.",
+                "Contains flavagline compounds being studied for anticancer and antimicrobial properties."
+              ],
+              "imageSearchTerms": ["Aglaia korthalsii keriat fruit", "Aglaia korthalsii foliage"],
+              "image": "images/aglaia-korthalsii.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Aglaia korthalsii (Miq.) Pellegr., https://www.gbif.org/species/5597580",
+                "Forest Research Institute Malaysia (FRIM) - 'Aglaia korthalsii: Of fragrant flowers and edible fruits', frim.gov.my",
+                "Useful Tropical Plants (tropical.theferns.info) - Aglaia korthalsii",
+                "Wikimedia Commons - File:Aglaia korthalsii (keriat).jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dysoxylum",
+          "image": "images/genus-dysoxylum.jpg",
+          "species": [
+            {
+              "scientificName": "Dysoxylum acutangulum Miq.",
+              "family": "Meliaceae",
+              "genus": "Dysoxylum",
+              "commonNames": ["Membalo (trade name)", "Bekak (Malaysia)", "Langkang (Borneo)", "Ambalo / Ambalun (Sumatra)"],
+              "plantType": "Tree",
+              "description": "Dysoxylum acutangulum is a massive upper-canopy timber tree of the mahogany family, growing in rainforests from Thailand and Malesia to northern Australia. Known commercially as 'membalo', subspecies acutangulum is one of the most important timber trees in the family Meliaceae across northern Malesia, valued for furniture, coffins and construction.",
+              "leafDescription": "Leaves paripinnate (evenly pinnate), with a rachis about 30 cm long bearing about four pairs of leaflets that are elliptical, acute at the base, acuminate at the apex, without conspicuous secondary veins.",
+              "flowerDescription": "Inflorescence a cauliflorous panicle (borne on the trunk) about 10 cm long; flowers small, with four minute sepals and four yellowish petals.",
+              "fruitDescription": "Fruit a four-valved, orange capsule containing a few black seeds.",
+              "barkDescription": "Bark smooth, yellowish, and lenticelled (dotted with small pores).",
+              "nativeDistribution": "Occurs from peninsular Thailand and Peninsular Malaysia through Sumatra, Borneo, Java, the Lesser Sunda Islands, the Philippines, the Moluccas and New Guinea to the Solomon Islands and northern Australia (Queensland, Northern Territory).",
+              "nativeCountries": ["Thailand", "Malaysia", "Indonesia", "Philippines", "Papua New Guinea", "Solomon Islands", "Australia"],
+              "distributionStatus": "Native",
+              "habitat": "Lowland to hill rainforest, as an upper-canopy emergent.",
+              "elevation": "Sea level to about 950 m.",
+              "ecologicalImportance": "As a large emergent canopy tree, it contributes significantly to rainforest structure; its cauliflorous flowers (borne on the trunk) are typically pollinated by insects able to access the trunk-level blooms.",
+              "uses": "One of the most commercially important Meliaceae timbers in northern Malesia ('membalo'); wood used for furniture, Chinese coffins and construction. In Indonesia, the seeds are used to poison fish.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Can reach 47 m tall with a straight bole branchless for up to 18 m and up to 140 cm in diameter - among the largest trees in its family.",
+                "Its seeds are traditionally used as a fish poison in Indonesia.",
+                "Known in the timber trade as 'membalo'."
+              ],
+              "imageSearchTerms": ["Dysoxylum acutangulum membalo timber", "Dysoxylum acutangulum Meliaceae"],
+              "image": "images/dysoxylum-acutangulum.jpg",
+              "imageNote": "No species-specific photo found on Wikimedia Commons (only historical herbarium-catalogue PDF scans exist); substituted a genus-level photo (Dysoxylum sp., Kebun Raya Bogor) as a stand-in.",
+              "references": [
+                "GBIF Backbone Taxonomy - Dysoxylum acutangulum Miq., https://www.gbif.org/species/7271367",
+                "Useful Tropical Plants (tropical.theferns.info) - Dysoxylum acutangulum",
+                "IUCN Red List data via GBIF distributions API"
+              ]
+            },
+            {
+              "scientificName": "Dysoxylum grande Hiern",
+              "family": "Meliaceae",
+              "genus": "Dysoxylum",
+              "commonNames": [],
+              "plantType": "Tree",
+              "description": "Dysoxylum grande is a large tree in the mahogany family found from Bhutan through southern China, Thailand and mainland Southeast Asia to western and central Malesia. It bears fragrant, creamy-yellow flowers and large, round, orange fruit up to 11 cm in diameter, among the largest fruit in the genus.",
+              "leafDescription": "Not available in detail for this species; related Dysoxylum species have large, imparipinnate (odd-pinnate) compound leaves up to a metre or more long with many leaflet pairs.",
+              "flowerDescription": "Flowers fragrant, creamy-yellow.",
+              "fruitDescription": "Fruit orange, roundish, up to about 11 cm in diameter - notably large for the genus.",
+              "barkDescription": "Bark greyish-brown; trunk diameter up to 70 cm.",
+              "nativeDistribution": "Ranges from Bhutan and northeastern India (Assam) through Bangladesh and Myanmar, to southern China (Yunnan, Guangxi, Guangdong, Hainan), Thailand, Cambodia, Laos and Vietnam, and into western Malesia (Peninsular Malaysia, Sumatra, Borneo).",
+              "nativeCountries": ["Bhutan", "India", "Bangladesh", "Myanmar", "China", "Thailand", "Cambodia", "Laos", "Vietnam", "Malaysia", "Indonesia"],
+              "distributionStatus": "Native",
+              "habitat": "Rainforest, from lowland to montane forest.",
+              "elevation": "Sea level to about 1,400 m.",
+              "ecologicalImportance": "Its large, orange fruit likely provides food for large frugivores across its wide mainland and island Southeast Asian range, though this has not been specifically documented.",
+              "uses": "Not available (no documented traditional or economic uses specific to this species found; related Dysoxylum species are used for timber and traditional medicine).",
+              "conservationStatus": "Not available (no global IUCN assessment found in GBIF-aggregated IUCN data).",
+              "interestingFacts": [
+                "Grows up to 39 m tall with a trunk diameter of up to 70 cm.",
+                "Produces some of the largest fruit in the genus Dysoxylum, up to 11 cm across.",
+                "The task brief flagged this name as possibly suspicious, but it was confirmed as a genuine, currently accepted species (Dysoxylum grande Hiern) via POWO and GBIF."
+              ],
+              "imageSearchTerms": ["Dysoxylum grande fruit flower", "Dysoxylum grande Meliaceae"],
+              "image": "images/dysoxylum-grande.jpg",
+              "imageNote": "No species-specific photo found on Wikimedia Commons (only historical herbarium-catalogue PDF scans exist); substituted a genus-level photo (Dysoxylum sp., Kebun Raya Bogor) as a stand-in.",
+              "references": [
+                "GBIF Backbone Taxonomy - Dysoxylum grande Hiern, https://www.gbif.org/species/3850107",
+                "Wikipedia - Dysoxylum grande (used for cross-check only)",
+                "POWO - Dysoxylum grande Hiern, https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:578149-1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ebenaceae",
+      "image": "images/family-ebenaceae.jpg",
+      "genera": [
+        {
+          "name": "Diospyros",
+          "image": "images/genus-diospyros.jpg",
+          "species": [
+            {
+              "scientificName": "Diospyros ferrea (Willd.) Bakh.",
+              "family": "Ebenaceae",
+              "genus": "Diospyros",
+              "commonNames": ["Black ebony", "English ironwood"],
+              "plantType": "Shrub or small to medium tree",
+              "description": "Diospyros ferrea is a variable evergreen shrub or small tree in the ebony family, distributed extremely widely from South and Southeast Asia across Malesia to Melanesia, Micronesia, Polynesia and Hawaii. It has small, leathery leaves and small yellow-brown fruit, and like other Diospyros, its bark and other parts have documented traditional medicinal uses.",
+              "leafDescription": "Leaves alternate, small (1-2.5 x 1-1.8 cm), obovate-oblong to spathulate, coriaceous (leathery), with a cuneate to attenuate base and an obtuse to emarginate apex; petiole very short, to about 2 mm.",
+              "flowerDescription": "Flowers white (detailed measurements not available in accessible sources).",
+              "fruitDescription": "Fruit a subglobose berry, 5-7 mm long, yellow to brownish-red when ripe, containing 1-3 wedge-shaped seeds about 4 mm long.",
+              "barkDescription": "Bark brown and rough on larger stems; dark grey to black with a black slash and red inner layer reported in some populations; sapwood white to pale straw-coloured; heartwood black.",
+              "nativeDistribution": "Extremely widespread, from Myanmar, Thailand, Indochina and southern China (incl. Taiwan) through Peninsular Malaysia, Sumatra, Java, Borneo, Sulawesi, the Philippines and the Lesser Sundas, to the Moluccas, New Guinea, the Solomon Islands, Vanuatu, New Caledonia, Tonga and Hawaii; also India and Sri Lanka.",
+              "nativeCountries": ["India", "Sri Lanka", "Bangladesh", "Myanmar", "Thailand", "Laos", "Cambodia", "Vietnam", "China (incl. Taiwan)", "Malaysia", "Singapore", "Indonesia", "Philippines", "Papua New Guinea", "Solomon Islands", "Vanuatu", "New Caledonia", "Tonga", "USA (Hawaii)"],
+              "distributionStatus": "Native",
+              "habitat": "Scrub jungle, coastal thickets and lowland to lower-montane forest.",
+              "elevation": "Not available (broad elevational tolerance reported across its vast range).",
+              "ecologicalImportance": "As a widespread understorey/coastal shrub-tree across the Indo-Pacific, it provides small fruit that likely support local frugivores; specific ecological studies were not found.",
+              "uses": "Traditional medicine: leaves used for lumbago; fruit considered carminative and astringent and used against biliousness (Ayurveda); seeds used as a sedative; bark used as a bitter, astringent febrifuge.",
+              "conservationStatus": "Not available (no current global IUCN Red List assessment found in GBIF-aggregated IUCN data; note a Philippines national listing (DAO 2017-11) rates a related population as Vulnerable, but this is a national, not IUCN global, status).",
+              "interestingFacts": [
+                "One of the most geographically widespread Diospyros species, ranging from India to Hawaii.",
+                "Belongs to the ebony genus, though its wood is not commercially significant like D. ebenum.",
+                "Highly variable across its range, with several taxonomic varieties described (e.g. var. buxifolia, var. geminata)."
+              ],
+              "imageSearchTerms": ["Diospyros ferrea leaves fruit", "Diospyros ferrea Taiwan"],
+              "image": "images/diospyros-ferrea.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Diospyros ferrea (Willd.) Bakh., https://www.gbif.org/species/3032960",
+                "Useful Tropical Plants (tropical.theferns.info) - Diospyros ferrea",
+                "eFlora of India - Diospyros ferrea",
+                "Wikimedia Commons - File:象牙柞 Diospyros ferrea 20201024211015 01.jpg (Taiwan)"
+              ]
+            },
+            {
+              "scientificName": "Diospyros ebenum J.Koenig ex Retz.",
+              "family": "Ebenaceae",
+              "genus": "Diospyros",
+              "commonNames": ["Ceylon ebony", "East Indian ebony", "True ebony"],
+              "plantType": "Tree",
+              "description": "Diospyros ebenum is a slow-growing evergreen tree of southern India and Sri Lanka, historically the primary commercial source of the finest jet-black ebony timber. Its heartwood is dense, glossy black and famed for use in fine furniture, musical instruments and carved objects, which has led to overexploitation across much of its natural range.",
+              "leafDescription": "Leaves dark green and glossy, elliptic-lanceolate to ovate, 6-10(-15) x (2-)3-5 cm, with a rounded, obtuse or barely short-pointed apex.",
+              "flowerDescription": "Flowers mostly unisexual or bisexual on the same tree; male flowers in 3-16-flowered cymes, 4-merous, with 16 stamens; female and bisexual flowers solitary, with 3-4-merous calyx lobes and 8 uni-ovulate locules.",
+              "fruitDescription": "Fruit a depressed-globose to subglobose berry, up to 1.5 cm across, glabrous.",
+              "barkDescription": "Bark scaly and deeply fissured, black to greyish-black, flaking in rectangular pieces from the ridges. Heartwood extremely dense and jet black (specific gravity about 1.12); sapwood light yellowish-grey, often streaked with black.",
+              "nativeDistribution": "Native to southern India, Sri Lanka, and the Andaman and Nicobar Islands.",
+              "nativeCountries": ["India", "Sri Lanka"],
+              "distributionStatus": "Native",
+              "habitat": "Seasonally dry tropical forest.",
+              "elevation": "Not available.",
+              "ecologicalImportance": "As a slow-growing forest tree, it contributes to the structure of dry tropical forest; its gummy, astringent fruit is eaten by wildlife and has been used as a famine food and fish poison by people.",
+              "uses": "The classic source of finest commercial black ebony wood, used for sports goods, musical and mathematical instruments, ornamental carving, piano keys, chess pieces, rulers and turnery. Bark and leaves used as a blistering plaster; astringent fruit used medicinally and eaten in famine, and also used as a fish poison.",
+              "conservationStatus": "Data Deficient (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Is the historical source of the finest, jet-black commercial ebony wood, prized for centuries in fine furniture and instrument making.",
+                "Its heartwood has a specific gravity of about 1.12 - dense enough to sink in water.",
+                "Listed as Data Deficient by IUCN despite its historical commercial importance, reflecting a lack of recent population assessment amid heavy historical exploitation."
+              ],
+              "imageSearchTerms": ["Diospyros ebenum ebony tree", "Diospyros ebenum wood trunk"],
+              "image": "images/diospyros-ebenum.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Diospyros ebenum J.Koenig ex Retz., https://www.gbif.org/species/3032979",
+                "Useful Tropical Plants (tropical.theferns.info) - Diospyros ebenum",
+                "World Agroforestry (apps.worldagroforestry.org) - Diospyros ebenum species factsheet",
+                "IUCN Red List data via GBIF distributions API",
+                "Wikimedia Commons - File:Diospyros ebenum - കരിമരം 01.jpg (Kerala, India)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Euclea",
+          "image": "images/genus-euclea.jpg",
+          "species": [
+            {
+              "scientificName": "Euclea natalensis A.DC.",
+              "family": "Ebenaceae",
+              "genus": "Euclea",
+              "commonNames": ["Natal guarri"],
+              "plantType": "Shrub or small to medium tree",
+              "description": "Euclea natalensis, the Natal guarri, is a shrub or small tree of the ebony family native to eastern and southern Africa, from Ethiopia and Somalia south to South Africa's Western Cape. It has hard, glossy, leathery leaves often covered in reddish hairs beneath, scented cream to pale yellow flowers, and edible black berries eaten by birds, monkeys and people; it is also a well-known traditional medicinal plant across tropical Africa.",
+              "leafDescription": "Leaves hard and leathery, dark green and shiny above, paler below, often with the lower surface covered in thick, velvety red hairs (upper surface occasionally hairy too); variable in size and shape, most often oval to oblong with pointed, bluntly pointed or rounded tips.",
+              "flowerDescription": "Flowers small, greenish-cream to pale yellow and scented, borne in axillary, sessile inflorescences 15-35 mm long with 10-30 flowers; all parts except the corolla are covered in hairs.",
+              "fruitDescription": "Fruit a globose berry, red ripening to black, strigose (bearing stiff hairs) becoming nearly glabrous; edible, eaten by birds, monkeys and people.",
+              "barkDescription": "Bark dark grey, thin and finely cracked.",
+              "nativeDistribution": "Occurs from Ethiopia and Somalia south through East Africa (Kenya, Tanzania, DR Congo, Malawi, Zambia, Zimbabwe, Mozambique, Angola) to Botswana, Eswatini and South Africa (KwaZulu-Natal, Northern Provinces, Cape Provinces).",
+              "nativeCountries": ["Ethiopia", "Somalia", "Kenya", "Tanzania", "DR Congo", "Malawi", "Zambia", "Zimbabwe", "Mozambique", "Angola", "Botswana", "Eswatini", "South Africa"],
+              "distributionStatus": "Native",
+              "habitat": "Woodland, bushveld, coastal bush and forest margins.",
+              "elevation": "Not available.",
+              "ecologicalImportance": "Its edible berries are an important food source for birds and monkeys, aiding seed dispersal across its wide African range.",
+              "uses": "Twigs traditionally used as chewing-stick toothbrushes; root and bark infusions/concoctions used across tropical Africa to treat intestinal worms, stomach disorders, chest complaints, urinary tract infections, headache, toothache, leprosy, abnormal skin growths, and as a purgative.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "One of the most important traditional medicinal plants in tropical Africa, used to treat a very wide range of ailments.",
+                "Its twigs are used as natural toothbrushes ('chewing sticks').",
+                "Under warm, well-watered conditions it can grow into a medium tree 12-18 m tall, much larger than its usual shrubby form."
+              ],
+              "imageSearchTerms": ["Euclea natalensis leaves", "Natal guarri tree"],
+              "image": "images/euclea-natalensis.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Euclea natalensis A.DC., https://www.gbif.org/species/6056978",
+                "PlantZAfrica (SANBI) - Euclea natalensis, pza.sanbi.org",
+                "IUCN Red List data via GBIF distributions API",
+                "Wikimedia Commons - File:Euclea natalensis subsp natalensis, blare, eMakhosini.jpg"
+              ]
+            },
+            {
+              "scientificName": "Euclea racemosa L.",
+              "family": "Ebenaceae",
+              "genus": "Euclea",
+              "commonNames": ["Sea guarrie", "Dune guarrie"],
+              "plantType": "Shrub or small tree",
+              "description": "Euclea racemosa, the sea guarrie, is an evergreen shrub or small tree in the ebony family, widespread along coasts and in scrub from Egypt and the Arabian Peninsula south through East Africa to South Africa's Cape, and on Comoros. It bears sweetly scented, drooping cream-white flowers in axillary spikes and small black berries, and its fine, heavy, reddish-purple timber has long been used for tool handles and turnery.",
+              "leafDescription": "Leaves spirally arranged to sub-opposite, variable in shape, oblanceolate to obovate, up to 11 x 4 cm but usually smaller, thickly leathery and hairless, dark glossy green above with pinkish lateral veins visible beneath, paler green below; apex rounded, base tapering, margin entire and rolled under; petiole short (1-4 mm), wrinkled.",
+              "flowerDescription": "Flowers small, creamy-white and drooping, sweetly scented, borne in 8-20-flowered axillary spikes up to 4 cm long, hairless, with early-falling lanceolate bracts; blooms December to March (Southern Hemisphere summer).",
+              "fruitDescription": "Fruit round, thinly fleshy, 5-7 mm in diameter, ripening black; appears February to May.",
+              "barkDescription": "Bark grey and smooth; branchlets hairless, angular, often reddish.",
+              "nativeDistribution": "Ranges along the coasts and adjacent scrub from Egypt through the Arabian Peninsula (Oman), Djibouti, Eritrea, Ethiopia, Somalia, Sudan, Kenya, Tanzania, Rwanda, Uganda, DR Congo and Malawi to Mozambique, Eswatini and South Africa (Cape Provinces, KwaZulu-Natal), and the Comoros.",
+              "nativeCountries": ["Egypt", "Oman", "Djibouti", "Eritrea", "Ethiopia", "Somalia", "Sudan", "Kenya", "Tanzania", "Rwanda", "Uganda", "DR Congo", "Malawi", "Mozambique", "Eswatini", "South Africa", "Comoros"],
+              "distributionStatus": "Native",
+              "habitat": "Coastal dune scrub, bushveld and forest margins, often near the sea.",
+              "elevation": "Not available (predominantly coastal/lowland).",
+              "ecologicalImportance": "Its black berries provide food for birds and other wildlife along coastal habitats where it grows; contributes to the stabilisation of coastal scrub and dune vegetation.",
+              "uses": "Fine-grained, heavy, red-to-purple timber used by wheelwrights and turners, for wooden screws and farming implements, and as roofing material; branches used as toothbrushes; wood burns well and is used as fuel; fruit harvested for food throughout its range.",
+              "conservationStatus": "Least Concern (IUCN Red List, via GBIF-aggregated IUCN data)",
+              "interestingFacts": [
+                "Commonly called the 'sea guarrie' or 'dune guarrie' for its typical coastal habitat in southern Africa.",
+                "Its sweetly scented flowers bloom in the southern hemisphere summer (December-March).",
+                "The dense, reddish-purple wood was traditionally prized by wheelwrights for making wooden screws and tool parts."
+              ],
+              "imageSearchTerms": ["Euclea racemosa sea guarrie", "Euclea racemosa flowers berries"],
+              "image": "images/euclea-racemosa.jpg",
+              "references": [
+                "GBIF Backbone Taxonomy - Euclea racemosa L., https://www.gbif.org/species/7414233",
+                "SANBI Biodiversity Advisor - Euclea racemosa",
+                "IUCN Red List data via GBIF distributions API",
+                "Wikimedia Commons - File:Euclea racemosa - Sea Guarrie tree - Cape Town 1.JPG"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    "Parastemon glaucum (as listed in the original task) is not a recognised name in any checked database (POWO, GBIF, IUCN). The genus Parastemon contains only three accepted species: P. urophyllus, P. grandifructus, and P. spicatum/versteeghii-type names. The intended species is almost certainly Parastemon grandifructus Prance, an accepted species endemic to Borneo (Sarawak, Sabah, Brunei), IUCN Vulnerable. This substitution was used in place of 'Parastemon glaucum'.",
+    "Dysoxylum grande Hiern was flagged in the brief as possibly suspicious. It was checked directly against POWO and GBIF and confirmed to be a genuine, currently accepted species name (native from Bhutan/NE India through S. China, Thailand and W. Malesia) - no correction was needed, name used as given.",
+    "All other 14 species names (Horsfieldia flocculosa, H. kingii, Knema cinerea, K. sumatrana, Parastemon urophyllus, Hirtella triandra, H. racemosa, Aglaia elliptica, A. korthalsii, Dysoxylum acutangulum, Diospyros ferrea, D. ebenum, Euclea natalensis, E. racemosa) were verified as currently accepted with no corrections required."
+  ]
+}
