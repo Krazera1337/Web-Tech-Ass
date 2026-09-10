@@ -89,7 +89,7 @@ a:hover, a:focus { text-decoration: underline; }
   background: var(--forest-dark);
 }
 
-.main-nav ul {
+.main-nav > .container > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -97,20 +97,107 @@ a:hover, a:focus { text-decoration: underline; }
   flex-wrap: wrap;
 }
 
-.main-nav a {
+.main-nav > .container > ul > li > a {
   display: block;
   padding: 0.85rem 1.1rem;
   color: var(--ivory);
   font-size: 0.95rem;
 }
 
-.main-nav a:hover,
-.main-nav a:focus,
-.main-nav a[aria-current="page"] {
+.main-nav > .container > ul > li > a:hover,
+.main-nav > .container > ul > li > a:focus,
+.main-nav > .container > ul > li > a[aria-current="page"] {
   background: var(--forest);
   color: var(--white);
   text-decoration: none;
   border-bottom: 3px solid var(--sage);
+}
+
+/* ---------- Explore dropdown (family > genus > species tree) ---------- */
+
+.has-dropdown { position: relative; }
+
+.has-dropdown > a::after {
+  content: " \25BE";
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  gap: 1.5rem;
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+  background: var(--white);
+  border-top: 3px solid var(--sage);
+  box-shadow: var(--shadow);
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.has-dropdown:hover .dropdown-menu,
+.has-dropdown:focus-within .dropdown-menu {
+  display: grid;
+}
+
+.dd-family {
+  display: block;
+  font-weight: 700;
+  color: var(--forest-dark);
+  font-size: 0.95rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--sage);
+}
+
+.dropdown-col > ul {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.dropdown-col > ul > li { margin-bottom: 0.6rem; }
+
+.dd-genus {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--forest);
+  font-size: 0.88rem;
+}
+
+.dropdown-col ul ul {
+  list-style: none;
+  margin: 0.3rem 0 0 0.5rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--sage);
+}
+
+.dropdown-col ul ul li { margin-bottom: 0.2rem; }
+
+.dropdown-menu a {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  color: var(--forest);
+  text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+  .dropdown-menu {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    position: static;
+    width: auto;
+    max-width: none;
+    box-shadow: none;
+  }
 }
 
 /* ---------- Hero ---------- */
