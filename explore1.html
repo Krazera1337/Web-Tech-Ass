@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plant Families — Forest Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=14">
 </head>
 <body>
 
@@ -23,104 +23,89 @@
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <a href="explore.html" aria-current="page">Explore</a>
-        <div class="dropdown-menu" aria-label="Family tree: browse by family, genus and species">
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#myristicaceae">Myristicaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#horsfieldia"><em>Horsfieldia</em></a>
-                <ul>
-                  <li><a href="explore3.html#horsfieldia-flocculosa"><em>H. flocculosa</em></a></li>
-                  <li><a href="explore3.html#horsfieldia-kingii"><em>H. kingii</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#knema"><em>Knema</em></a>
-                <ul>
-                  <li><a href="explore3.html#knema-cinerea"><em>K. cinerea</em></a></li>
-                  <li><a href="explore3.html#knema-sumatrana"><em>K. sumatrana</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#chrysobalanaceae">Chrysobalanaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#parastemon"><em>Parastemon</em></a>
-                <ul>
-                  <li><a href="explore3.html#parastemon-urophyllus"><em>P. urophyllus</em></a></li>
-                  <li><a href="explore3.html#parastemon-grandifructus"><em>P. grandifructus</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#hirtella"><em>Hirtella</em></a>
-                <ul>
-                  <li><a href="explore3.html#hirtella-triandra"><em>H. triandra</em></a></li>
-                  <li><a href="explore3.html#hirtella-racemosa"><em>H. racemosa</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#meliaceae">Meliaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#aglaia"><em>Aglaia</em></a>
-                <ul>
-                  <li><a href="explore3.html#aglaia-elliptica"><em>A. elliptica</em></a></li>
-                  <li><a href="explore3.html#aglaia-korthalsii"><em>A. korthalsii</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#dysoxylum"><em>Dysoxylum</em></a>
-                <ul>
-                  <li><a href="explore3.html#dysoxylum-acutangulum"><em>D. acutangulum</em></a></li>
-                  <li><a href="explore3.html#dysoxylum-grande"><em>D. grande</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#ebenaceae">Ebenaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#diospyros"><em>Diospyros</em></a>
-                <ul>
-                  <li><a href="explore3.html#diospyros-ferrea"><em>D. ferrea</em></a></li>
-                  <li><a href="explore3.html#diospyros-ebenum"><em>D. ebenum</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#euclea"><em>Euclea</em></a>
-                <ul>
-                  <li><a href="explore3.html#euclea-natalensis"><em>E. natalensis</em></a></li>
-                  <li><a href="explore3.html#euclea-racemosa"><em>E. racemosa</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
+          <li><a href="explore1.html">Families</a></li>
+          <li><a href="explore2.html">Genera</a></li>
+          <li><a href="explore3.html">Species</a></li>
+        </ul>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="page-wrap with-aside">
-  <main>
+<section class="page-hero">
+  <div class="container">
+    <p class="page-hero-eyebrow">Explore &rsaquo; Families</p>
     <h1>Plant Families</h1>
-    <p><a href="explore.html">&larr; Back to Explore</a></p>
-    <p>A plant family is the taxonomic rank that groups together genera
-    sharing a common evolutionary ancestor and a broadly similar flower and
-    fruit structure. Forest Story features four families — two rooted mainly
-    in tropical Asia, and two whose genera split between Asia, Africa and
-    the Americas. Each family entry below follows the same structure: first
-    its typical growth habit and distribution, then its most diagnostic
-    leaf, flower and fruit traits, and finally the two genera profiled on
-    this site. Read the Genera and Species pages for finer detail on the
-    plants within each family.</p>
+    <p class="page-hero-lede">Discover the botanical relationships behind tropical rainforest plants.</p>
+    <a class="btn" href="#family-cards">Explore Families <span class="arrow" aria-hidden="true">&darr;</span></a>
+  </div>
+</section>
 
-    <section id="myristicaceae" aria-labelledby="myristicaceae-heading">
+<main>
+  <div class="page-wrap">
+    <p class="back-link"><a href="explore.html">&larr; Back to Explore</a></p>
+
+    <div class="intro-section">
+      <h2>Understanding Plant Families</h2>
+      <p class="lede">Plant families group plants that share evolutionary and
+      physical characteristics. Explore four important families and discover
+      the traits that help distinguish them.</p>
+      <p class="supporting-text">A plant family is the taxonomic rank that
+      groups together genera sharing a common evolutionary ancestor and a
+      broadly similar flower and fruit structure. Forest Story features four
+      families — two rooted mainly in tropical Asia, and two whose genera
+      split between Asia, Africa and the Americas. Each family entry below
+      follows the same structure: first its typical growth habit and
+      distribution, then its most diagnostic leaf, flower and fruit traits,
+      and finally the two genera profiled on this site. Read the Genera and
+      Species pages for finer detail on the plants within each family.</p>
+    </div>
+
+    <div class="family-picker" id="family-cards">
+      <input type="radio" name="family-tab" id="tab-myristicaceae" class="tab-radio">
+      <input type="radio" name="family-tab" id="tab-chrysobalanaceae" class="tab-radio">
+      <input type="radio" name="family-tab" id="tab-meliaceae" class="tab-radio">
+      <input type="radio" name="family-tab" id="tab-ebenaceae" class="tab-radio">
+
+      <p class="tab-hint">Choose a family to explore its full profile:</p>
+
+      <div class="family-cards">
+        <label for="tab-myristicaceae" class="family-card">
+          <span class="family-card-media"><img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae"></span>
+          <span class="family-card-body">
+            <span class="family-card-name">Myristicaceae</span>
+            <span class="family-card-desc">Simple leaves; fruit splits open to reveal a seed wrapped in a bright aril.</span>
+            <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </span>
+        </label>
+        <label for="tab-chrysobalanaceae" class="family-card">
+          <span class="family-card-media"><img src="images/family-chrysobalanaceae.jpg" alt="A flowering tree of the cocoplum family, Chrysobalanaceae"></span>
+          <span class="family-card-body">
+            <span class="family-card-name">Chrysobalanaceae</span>
+            <span class="family-card-desc">Simple leaves with small stipules; single-seeded fleshy drupe.</span>
+            <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </span>
+        </label>
+        <label for="tab-meliaceae" class="family-card">
+          <span class="family-card-media"><img src="images/family-meliaceae.jpg" alt="Flowers of a mahogany family tree, Meliaceae"></span>
+          <span class="family-card-body">
+            <span class="family-card-name">Meliaceae</span>
+            <span class="family-card-desc">Usually pinnately compound leaves; fragrant flowers; capsule or berry fruit.</span>
+            <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </span>
+        </label>
+        <label for="tab-ebenaceae" class="family-card">
+          <span class="family-card-media"><img src="images/family-ebenaceae.jpg" alt="Foliage of an ebony family tree, Ebenaceae"></span>
+          <span class="family-card-body">
+            <span class="family-card-name">Ebenaceae</span>
+            <span class="family-card-desc">Simple leaves; separate male/female flowers; berry with persistent calyx; dark heartwood.</span>
+            <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </span>
+        </label>
+      </div>
+
+    <section id="myristicaceae" class="tab-panel" aria-labelledby="myristicaceae-heading">
       <h2 id="myristicaceae-heading">Myristicaceae — the Nutmeg Family</h2>
       <figure>
         <img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae, showing its foliage and fruit" width="500">
@@ -143,7 +128,7 @@
       </ul>
     </section>
 
-    <section id="chrysobalanaceae" aria-labelledby="chrysobalanaceae-heading">
+    <section id="chrysobalanaceae" class="tab-panel" aria-labelledby="chrysobalanaceae-heading">
       <h2 id="chrysobalanaceae-heading">Chrysobalanaceae — the Cocoplum Family</h2>
       <figure>
         <img src="images/family-chrysobalanaceae.jpg" alt="A tree of the cocoplum family, Chrysobalanaceae, in flower" width="500">
@@ -166,7 +151,7 @@
       </ul>
     </section>
 
-    <section id="meliaceae" aria-labelledby="meliaceae-heading">
+    <section id="meliaceae" class="tab-panel" aria-labelledby="meliaceae-heading">
       <h2 id="meliaceae-heading">Meliaceae — the Mahogany Family</h2>
       <figure>
         <img src="images/family-meliaceae.jpg" alt="Flowers of Melia azedarach, a member of the mahogany family Meliaceae" width="500">
@@ -189,7 +174,7 @@
       </ul>
     </section>
 
-    <section id="ebenaceae" aria-labelledby="ebenaceae-heading">
+    <section id="ebenaceae" class="tab-panel" aria-labelledby="ebenaceae-heading">
       <h2 id="ebenaceae-heading">Ebenaceae — the Ebony Family</h2>
       <figure>
         <img src="images/family-ebenaceae.jpg" alt="Foliage of a tree in the ebony family, Ebenaceae" width="500">
@@ -210,43 +195,86 @@
         <li><a href="explore2.html#euclea"><em>Euclea</em></a> — shrubs and small trees native to eastern and southern Africa.</li>
       </ul>
     </section>
+    </div>
+  </div>
 
+  <div class="page-wrap with-aside">
+   <div>
     <section aria-labelledby="compare-heading">
       <h2 id="compare-heading">Family comparison at a glance</h2>
-      <p>Follow this order when comparing an unfamiliar specimen against the
-      four families above:</p>
-      <ol>
-        <li>Check whether the leaves are simple or pinnately compound.</li>
-        <li>Note the fruit type — capsule with an aril, drupe, or berry with a persistent calyx.</li>
-        <li>Compare against the quick reference below to shortlist a likely family.</li>
-      </ol>
-      <dl>
-        <dt>Myristicaceae</dt>
-        <dd>Simple leaves; fruit splits open to reveal a seed wrapped in a bright aril.</dd>
-        <dt>Chrysobalanaceae</dt>
-        <dd>Simple leaves with small stipules; single-seeded fleshy drupe.</dd>
-        <dt>Meliaceae</dt>
-        <dd>Usually pinnately compound leaves; fragrant flowers; capsule or berry fruit.</dd>
-        <dt>Ebenaceae</dt>
-        <dd>Simple leaves; separate male/female flowers; berry with persistent calyx; dark heartwood.</dd>
-      </dl>
+      <p>Check the leaf shape first, then the fruit type, and shortlist a
+      likely family from the quick reference below.</p>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <caption class="sr-only">Leaf, fruit and key identifying feature for each of the four families</caption>
+          <thead>
+            <tr>
+              <th scope="col">Family</th>
+              <th scope="col">
+                <span class="th-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
+                </span>Leaves
+              </th>
+              <th scope="col">
+                <span class="th-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c3 4 6 7 6 11a6 6 0 1 1-12 0c0-4 3-7 6-11Z"/></svg>
+                </span>Fruit
+              </th>
+              <th scope="col">
+                <span class="th-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.9L5.7 21l1.7-7-5.4-4.7 7.1-.6L12 2Z"/></svg>
+                </span>Key feature
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Myristicaceae</th>
+              <td>Simple</td>
+              <td>Splits open to reveal a seed wrapped in a bright aril</td>
+              <td>Capsule with bright aril</td>
+            </tr>
+            <tr>
+              <th scope="row">Chrysobalanaceae</th>
+              <td>Simple, with small stipules</td>
+              <td>Single-seeded fleshy drupe</td>
+              <td>Fleshy drupe</td>
+            </tr>
+            <tr>
+              <th scope="row">Meliaceae</th>
+              <td>Usually pinnately compound</td>
+              <td>Capsule or berry</td>
+              <td>Fragrant flowers</td>
+            </tr>
+            <tr>
+              <th scope="row">Ebenaceae</th>
+              <td>Simple</td>
+              <td>Berry with persistent calyx</td>
+              <td>Dark heartwood</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
-  </main>
+   </div>
 
-  <aside aria-labelledby="aside-heading">
+  <aside aria-labelledby="aside-heading" class="insight-panel">
+    <svg class="insight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
     <h2 id="aside-heading">Why families matter</h2>
     <p>Taxonomic families are more than filing categories — plants in the
     same family often share useful chemical compounds, pollinator
     relationships, and vulnerabilities to pests or disease. Foresters and
     conservationists frequently make management decisions at the family
     level when species-specific data is unavailable.</p>
-    <p>Continue exploring:</p>
-    <ul>
-      <li><a href="explore2.html">Browse Genera &rarr;</a></li>
-      <li><a href="explore3.html">Browse Species &rarr;</a></li>
-    </ul>
+    <p class="continue-label">Continue exploring</p>
+    <div class="continue-links">
+      <a class="continue-link" href="explore2.html">Browse Genera <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="explore3.html">Browse Species <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+    <svg class="insight-decor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true" focusable="false"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
   </aside>
-</div>
+  </div>
+</main>
 
 <footer class="site-footer">
   <div class="container">

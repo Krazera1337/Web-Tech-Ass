@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plant Species — Forest Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=14">
 <style>
   .species-article { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 1.5rem; }
   .species-article:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
@@ -33,91 +33,18 @@
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <a href="explore.html" aria-current="page">Explore</a>
-        <div class="dropdown-menu" aria-label="Family tree: browse by family, genus and species">
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#myristicaceae">Myristicaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#horsfieldia"><em>Horsfieldia</em></a>
-                <ul>
-                  <li><a href="explore3.html#horsfieldia-flocculosa"><em>H. flocculosa</em></a></li>
-                  <li><a href="explore3.html#horsfieldia-kingii"><em>H. kingii</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#knema"><em>Knema</em></a>
-                <ul>
-                  <li><a href="explore3.html#knema-cinerea"><em>K. cinerea</em></a></li>
-                  <li><a href="explore3.html#knema-sumatrana"><em>K. sumatrana</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#chrysobalanaceae">Chrysobalanaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#parastemon"><em>Parastemon</em></a>
-                <ul>
-                  <li><a href="explore3.html#parastemon-urophyllus"><em>P. urophyllus</em></a></li>
-                  <li><a href="explore3.html#parastemon-grandifructus"><em>P. grandifructus</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#hirtella"><em>Hirtella</em></a>
-                <ul>
-                  <li><a href="explore3.html#hirtella-triandra"><em>H. triandra</em></a></li>
-                  <li><a href="explore3.html#hirtella-racemosa"><em>H. racemosa</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#meliaceae">Meliaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#aglaia"><em>Aglaia</em></a>
-                <ul>
-                  <li><a href="explore3.html#aglaia-elliptica"><em>A. elliptica</em></a></li>
-                  <li><a href="explore3.html#aglaia-korthalsii"><em>A. korthalsii</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#dysoxylum"><em>Dysoxylum</em></a>
-                <ul>
-                  <li><a href="explore3.html#dysoxylum-acutangulum"><em>D. acutangulum</em></a></li>
-                  <li><a href="explore3.html#dysoxylum-grande"><em>D. grande</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown-col">
-            <a class="dd-family" href="explore1.html#ebenaceae">Ebenaceae</a>
-            <ul>
-              <li>
-                <a class="dd-genus" href="explore2.html#diospyros"><em>Diospyros</em></a>
-                <ul>
-                  <li><a href="explore3.html#diospyros-ferrea"><em>D. ferrea</em></a></li>
-                  <li><a href="explore3.html#diospyros-ebenum"><em>D. ebenum</em></a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="dd-genus" href="explore2.html#euclea"><em>Euclea</em></a>
-                <ul>
-                  <li><a href="explore3.html#euclea-natalensis"><em>E. natalensis</em></a></li>
-                  <li><a href="explore3.html#euclea-racemosa"><em>E. racemosa</em></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
+          <li><a href="explore1.html">Families</a></li>
+          <li><a href="explore2.html">Genera</a></li>
+          <li><a href="explore3.html">Species</a></li>
+        </ul>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="page-wrap with-aside">
-  <main>
+<main>
+  <div class="page-wrap">
     <h1>Plant Species</h1>
     <p><a href="explore.html">&larr; Back to Explore</a></p>
     <p>This page holds the detailed species record for every plant featured
@@ -129,11 +56,22 @@
     than guessed. Expand the references at the bottom of each entry to see
     exactly what was consulted.</p>
 
+    <div class="select-picker">
+      <label for="family-select" class="tab-hint">Jump to a family:</label>
+      <select id="family-select">
+        <option value="all" selected>All families</option>
+        <option value="myristicaceae">Myristicaceae</option>
+        <option value="chrysobalanaceae">Chrysobalanaceae</option>
+        <option value="meliaceae">Meliaceae</option>
+        <option value="ebenaceae">Ebenaceae</option>
+      </select>
+    </div>
+
     <!-- ============ MYRISTICACEAE ============ -->
-    <section id="myristicaceae-species" aria-labelledby="myristicaceae-species-heading">
+    <section id="myristicaceae-species" class="picker-group" data-family="myristicaceae" aria-labelledby="myristicaceae-species-heading">
       <h2 id="myristicaceae-species-heading">Family Myristicaceae</h2>
 
-      <article class="species-article" id="horsfieldia-flocculosa">
+      <article class="species-article picker-item" id="horsfieldia-flocculosa" data-picker="horsfieldia-flocculosa">
         <h3><em>Horsfieldia flocculosa</em></h3>
         <div class="species-body">
           <figure>
@@ -186,7 +124,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="horsfieldia-kingii">
+      <article class="species-article picker-item" id="horsfieldia-kingii" data-picker="horsfieldia-kingii">
         <h3><em>Horsfieldia kingii</em></h3>
         <div class="species-body">
           <figure>
@@ -237,7 +175,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="knema-cinerea">
+      <article class="species-article picker-item" id="knema-cinerea" data-picker="knema-cinerea">
         <h3><em>Knema cinerea</em></h3>
         <div class="species-body">
           <figure>
@@ -285,7 +223,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="knema-sumatrana">
+      <article class="species-article picker-item" id="knema-sumatrana" data-picker="knema-sumatrana">
         <h3><em>Knema sumatrana</em></h3>
         <div class="species-body">
           <figure>
@@ -332,10 +270,10 @@
     </section>
 
     <!-- ============ CHRYSOBALANACEAE ============ -->
-    <section id="chrysobalanaceae-species" aria-labelledby="chrysobalanaceae-species-heading">
+    <section id="chrysobalanaceae-species" class="picker-group" data-family="chrysobalanaceae" aria-labelledby="chrysobalanaceae-species-heading">
       <h2 id="chrysobalanaceae-species-heading">Family Chrysobalanaceae</h2>
 
-      <article class="species-article" id="parastemon-urophyllus">
+      <article class="species-article picker-item" id="parastemon-urophyllus" data-picker="parastemon-urophyllus">
         <h3><em>Parastemon urophyllus</em></h3>
         <div class="species-body">
           <figure>
@@ -385,7 +323,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="parastemon-grandifructus">
+      <article class="species-article picker-item" id="parastemon-grandifructus" data-picker="parastemon-grandifructus">
         <h3><em>Parastemon grandifructus</em></h3>
         <div class="species-body">
           <figure>
@@ -431,7 +369,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="hirtella-triandra">
+      <article class="species-article picker-item" id="hirtella-triandra" data-picker="hirtella-triandra">
         <h3><em>Hirtella triandra</em></h3>
         <div class="species-body">
           <figure>
@@ -477,7 +415,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="hirtella-racemosa">
+      <article class="species-article picker-item" id="hirtella-racemosa" data-picker="hirtella-racemosa">
         <h3><em>Hirtella racemosa</em></h3>
         <div class="species-body">
           <figure>
@@ -527,10 +465,10 @@
     </section>
 
     <!-- ============ MELIACEAE ============ -->
-    <section id="meliaceae-species" aria-labelledby="meliaceae-species-heading">
+    <section id="meliaceae-species" class="picker-group" data-family="meliaceae" aria-labelledby="meliaceae-species-heading">
       <h2 id="meliaceae-species-heading">Family Meliaceae</h2>
 
-      <article class="species-article" id="aglaia-elliptica">
+      <article class="species-article picker-item" id="aglaia-elliptica" data-picker="aglaia-elliptica">
         <h3><em>Aglaia elliptica</em></h3>
         <div class="species-body">
           <figure>
@@ -580,7 +518,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="aglaia-korthalsii">
+      <article class="species-article picker-item" id="aglaia-korthalsii" data-picker="aglaia-korthalsii">
         <h3><em>Aglaia korthalsii</em></h3>
         <div class="species-body">
           <figure>
@@ -630,7 +568,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="dysoxylum-acutangulum">
+      <article class="species-article picker-item" id="dysoxylum-acutangulum" data-picker="dysoxylum-acutangulum">
         <h3><em>Dysoxylum acutangulum</em></h3>
         <div class="species-body">
           <figure>
@@ -675,7 +613,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="dysoxylum-grande">
+      <article class="species-article picker-item" id="dysoxylum-grande" data-picker="dysoxylum-grande">
         <h3><em>Dysoxylum grande</em></h3>
         <div class="species-body">
           <figure>
@@ -723,10 +661,10 @@
     </section>
 
     <!-- ============ EBENACEAE ============ -->
-    <section id="ebenaceae-species" aria-labelledby="ebenaceae-species-heading">
+    <section id="ebenaceae-species" class="picker-group" data-family="ebenaceae" aria-labelledby="ebenaceae-species-heading">
       <h2 id="ebenaceae-species-heading">Family Ebenaceae</h2>
 
-      <article class="species-article" id="diospyros-ferrea">
+      <article class="species-article picker-item" id="diospyros-ferrea" data-picker="diospyros-ferrea">
         <h3><em>Diospyros ferrea</em></h3>
         <div class="species-body">
           <figure>
@@ -776,7 +714,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="diospyros-ebenum">
+      <article class="species-article picker-item" id="diospyros-ebenum" data-picker="diospyros-ebenum">
         <h3><em>Diospyros ebenum</em></h3>
         <div class="species-body">
           <figure>
@@ -827,7 +765,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="euclea-natalensis">
+      <article class="species-article picker-item" id="euclea-natalensis" data-picker="euclea-natalensis">
         <h3><em>Euclea natalensis</em></h3>
         <div class="species-body">
           <figure>
@@ -877,7 +815,7 @@
         </div>
       </article>
 
-      <article class="species-article" id="euclea-racemosa">
+      <article class="species-article picker-item" id="euclea-racemosa" data-picker="euclea-racemosa">
         <h3><em>Euclea racemosa</em></h3>
         <div class="species-body">
           <figure>
@@ -926,8 +864,9 @@
         </div>
       </article>
     </section>
-  </main>
+  </div>
 
+  <div class="page-wrap">
   <aside aria-labelledby="aside-heading">
     <h2 id="aside-heading">A note on data gaps</h2>
     <p>Seven of the sixteen species above use a genus-level photograph
@@ -943,7 +882,8 @@
       <li><a href="explore2.html">Browse Genera &rarr;</a></li>
     </ul>
   </aside>
-</div>
+  </div>
+</main>
 
 <footer class="site-footer">
   <div class="container">
@@ -951,5 +891,19 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var select = document.getElementById("family-select");
+  if (!select) return;
+  function apply() {
+    var value = select.value;
+    document.querySelectorAll(".picker-group").forEach(function (group) {
+      group.hidden = value !== "all" && group.dataset.family !== value;
+    });
+  }
+  select.addEventListener("change", apply);
+  apply();
+})();
+</script>
 </body>
 </html>
