@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Nicholas Sia">
+<meta name="description" content="Plant identification page for Plant Story">
+<title>Plant Identification — Plant Story</title>
+<link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
+<link rel="stylesheet" href="css/style.css?v=14">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
+    </a>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Primary">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li class="has-dropdown">
+        <a href="explore.html">Explore</a>
+        <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
+          <li><a href="explore1.html">Families</a></li>
+          <li><a href="explore2.html">Genera</a></li>
+          <li><a href="explore3.html">Species</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contribute.html">Contribution</a></li>
+      <li><a href="identify.html" aria-current="page">Identification</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-wrap">
+
+    <section>
+      <h2>Upload Your Plant</h2>
+
+      <p>Upload a clear photo of the plant you want to identify.</p>
+
+      <form method="post" enctype="multipart/form-data">
+
+        <fieldset>
+          <legend>Plant Identification</legend>
+
+          <p><label for="plantphoto">Plant Photo:</label> <input type="file" id="plantphoto" name="plantphoto" accept="image/*" required></p>
+          <p><input type="submit" value="Identify"> <input type="reset" value="Reset"></p>
+
+        </fieldset>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+
+      <ol>
+        <li>Upload a clear photograph of the plant.</li>
+        <li>Press the "Identify" button to submit the plant for identification.</li>
+        <li>View the suggested plant information.</li>
+      </ol>
+    </section>
+
+
+    <aside>
+      <h2>Photo Tip</h2>
+      <p>For better identification, use a clear photo showing the leaves, flowers or fruit of the plant.</p>
+    </aside>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+  </div>
+</footer>
+
+</body>
+</html>
