@@ -5,20 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Explore the Collection — Forest Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=14">
+<link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 
-<header class="site-header">
+<nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="index.html" class="brand">
       <img src="images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
     </a>
-  </div>
-</header>
-
-<nav class="main-nav" aria-label="Primary">
-  <div class="container">
+    <div class="nav-right">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
@@ -30,8 +26,15 @@
         </ul>
       </li>
       <li><a href="contribute.html">Contribution</a></li>
-      <li><a href="identify.html" aria-current="page">Identification</a></li>
+      <li><a href="identify.html">Identification</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Enquiry</a></li>
     </ul>
+      <div class="nav-auth">
+        <a href="#" class="btn-navstyle">Registration</a>
+        <a href="#" class="btn-navstyle">Login</a>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -88,6 +91,18 @@
           <p>Sixteen species profiles with photographs, descriptions,
           distribution and uses.</p>
           <a href="explore3.html">View Species &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Identification</h3>
+          <p>Not sure what you're looking at? Upload a photo and get help
+          identifying it.</p>
+          <a href="identify.html">Identify a Plant &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Contribution</h3>
+          <p>Seen a plant we haven't documented yet? Share your own
+          observations with the collection.</p>
+          <a href="contribute.html">Contribute Your Findings &rarr;</a>
         </div>
       </div>
     </section>

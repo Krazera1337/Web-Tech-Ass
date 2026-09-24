@@ -5,20 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plant Genera — Forest Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=14">
+<link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 
-<header class="site-header">
+<nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="index.html" class="brand">
       <img src="images/LogoPlantStory.png" alt="Forest Story — Rainforest Plant Explorer" class="logo-mark">
     </a>
-  </div>
-</header>
-
-<nav class="main-nav" aria-label="Primary">
-  <div class="container">
+    <div class="nav-right">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
@@ -30,8 +26,15 @@
         </ul>
       </li>
       <li><a href="contribute.html">Contribution</a></li>
-      <li><a href="identify.html" aria-current="page">Identification</a></li>
+      <li><a href="identify.html">Identification</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Enquiry</a></li>
     </ul>
+      <div class="nav-auth">
+        <a href="#" class="btn-navstyle">Registration</a>
+        <a href="#" class="btn-navstyle">Login</a>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -50,42 +53,43 @@
 
     <div class="intro-section">
       <h2>Explore plant genera</h2>
-      <p class="lede">A genus sits one rank below family, grouping species
-      that share a very recent common ancestor. This page profiles the eight
-      genera featured on Forest Story, each linking through to its species.</p>
-      <p class="supporting-text">A genus sits one rank below family in plant
-      classification: it groups species that share a very recent common
-      ancestor and a distinctive combination of flower, fruit and vegetative
-      features not found in neighbouring genera. This page profiles the
-      eight genera featured on Forest Story — two nested inside each of the
-      four families covered in the <a href="explore1.html">Families</a>
-      section. Each genus entry gives an overview of its distribution and
-      defining traits, alongside links to the two species profiled from that
-      genus.</p>
+      <div class="intro-grid">
+        <p class="lede">A genus sits one rank below family, grouping species
+        that share a very recent common ancestor and a distinctive set of
+        flower, fruit and leaf traits.</p>
+        <p class="supporting-text">This page profiles the eight genera
+        featured on Forest Story — two nested inside each of the four
+        families covered in the <a href="explore1.html">Families</a>
+        section. Each entry covers the genus's distribution and defining
+        traits, with links through to its two profiled species.</p>
+      </div>
     </div>
 
     <div class="select-picker" id="genus-nav">
       <p class="select-picker-eyebrow">Explore genera</p>
-      <label for="genus-select" class="tab-hint">Jump to a genus:</label>
-      <select id="genus-select">
-        <option value="all" selected>All genera</option>
-        <optgroup label="Myristicaceae">
-          <option value="horsfieldia">Horsfieldia</option>
-          <option value="knema">Knema</option>
-        </optgroup>
-        <optgroup label="Chrysobalanaceae">
-          <option value="parastemon">Parastemon</option>
-          <option value="hirtella">Hirtella</option>
-        </optgroup>
-        <optgroup label="Meliaceae">
-          <option value="aglaia">Aglaia</option>
-          <option value="dysoxylum">Dysoxylum</option>
-        </optgroup>
-        <optgroup label="Ebenaceae">
-          <option value="diospyros">Diospyros</option>
-          <option value="euclea">Euclea</option>
-        </optgroup>
-      </select>
+      <p class="tab-hint">Jump to a genus:</p>
+      <div class="genus-jump-buttons">
+        <div class="genus-jump-group">
+          <span class="genus-jump-family">Myristicaceae</span>
+          <a href="#horsfieldia" class="genus-jump-btn">Horsfieldia</a>
+          <a href="#knema" class="genus-jump-btn">Knema</a>
+        </div>
+        <div class="genus-jump-group">
+          <span class="genus-jump-family">Chrysobalanaceae</span>
+          <a href="#parastemon" class="genus-jump-btn">Parastemon</a>
+          <a href="#hirtella" class="genus-jump-btn">Hirtella</a>
+        </div>
+        <div class="genus-jump-group">
+          <span class="genus-jump-family">Meliaceae</span>
+          <a href="#aglaia" class="genus-jump-btn">Aglaia</a>
+          <a href="#dysoxylum" class="genus-jump-btn">Dysoxylum</a>
+        </div>
+        <div class="genus-jump-group">
+          <span class="genus-jump-family">Ebenaceae</span>
+          <a href="#diospyros" class="genus-jump-btn">Diospyros</a>
+          <a href="#euclea" class="genus-jump-btn">Euclea</a>
+        </div>
+      </div>
     </div>
 
     <section aria-labelledby="hierarchy-heading">
@@ -123,7 +127,7 @@
     <section id="myristicaceae-genera" class="picker-group genus-picker-group" aria-labelledby="myristicaceae-genera-heading">
       <h2 id="myristicaceae-genera-heading">Genera of Myristicaceae</h2>
 
-      <article class="picker-item genus-card" data-picker="horsfieldia">
+      <article class="picker-item genus-card" id="horsfieldia" data-picker="horsfieldia">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-horsfieldia.jpg" alt="Foliage and fruit of a Horsfieldia tree">
@@ -131,8 +135,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Myristicaceae</span>
-          <h3 id="horsfieldia"><em>Horsfieldia</em></h3>
+          <a class="tag" href="explore1.html#myristicaceae">Myristicaceae</a>
+          <h3><em>Horsfieldia</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Horsfieldia</em> is a genus of roughly 100 dioecious trees
           ranging from the eastern Himalayan foothills across mainland
@@ -154,7 +158,7 @@
         </div>
       </article>
 
-      <article class="picker-item genus-card" data-picker="knema">
+      <article class="picker-item genus-card" id="knema" data-picker="knema">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-knema.jpg" alt="Foliage of a Knema tree in Thailand">
@@ -162,8 +166,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Myristicaceae</span>
-          <h3 id="knema"><em>Knema</em></h3>
+          <a class="tag" href="explore1.html#myristicaceae">Myristicaceae</a>
+          <h3><em>Knema</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Knema</em> comprises around 90 species of small to medium
           trees found from India to New Guinea, with particular diversity in
@@ -187,7 +191,7 @@
     <section id="chrysobalanaceae-genera" class="picker-group genus-picker-group" aria-labelledby="chrysobalanaceae-genera-heading">
       <h2 id="chrysobalanaceae-genera-heading">Genera of Chrysobalanaceae</h2>
 
-      <article class="picker-item genus-card" data-picker="parastemon">
+      <article class="picker-item genus-card" id="parastemon" data-picker="parastemon">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-parastemon.jpg" alt="A Parastemon urophyllus tree in Bako National Park, Sarawak">
@@ -195,8 +199,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Chrysobalanaceae</span>
-          <h3 id="parastemon"><em>Parastemon</em></h3>
+          <a class="tag" href="explore1.html#chrysobalanaceae">Chrysobalanaceae</a>
+          <h3><em>Parastemon</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Parastemon</em> is a small genus of only a handful of
           species, restricted to Southeast Asia, where its members are major
@@ -217,7 +221,7 @@
         </div>
       </article>
 
-      <article class="picker-item genus-card" data-picker="hirtella">
+      <article class="picker-item genus-card" id="hirtella" data-picker="hirtella">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-hirtella.jpg" alt="Hirtella racemosa in flower">
@@ -225,8 +229,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Chrysobalanaceae</span>
-          <h3 id="hirtella"><em>Hirtella</em></h3>
+          <a class="tag" href="explore1.html#chrysobalanaceae">Chrysobalanaceae</a>
+          <h3><em>Hirtella</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Hirtella</em> is a Neotropical genus of around 100 shrubs
           and small trees found from Mexico to Brazil and Bolivia, mostly in
@@ -249,7 +253,7 @@
     <section id="meliaceae-genera" class="picker-group genus-picker-group" aria-labelledby="meliaceae-genera-heading">
       <h2 id="meliaceae-genera-heading">Genera of Meliaceae</h2>
 
-      <article class="picker-item genus-card" data-picker="aglaia">
+      <article class="picker-item genus-card" id="aglaia" data-picker="aglaia">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-aglaia.jpg" alt="Foliage of an Aglaia tree at Kebun Raya Bogor">
@@ -257,8 +261,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Meliaceae</span>
-          <h3 id="aglaia"><em>Aglaia</em></h3>
+          <a class="tag" href="explore1.html#meliaceae">Meliaceae</a>
+          <h3><em>Aglaia</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Aglaia</em> is one of the largest genera in the mahogany
           family, with roughly 120 species of trees and shrubs across
@@ -278,7 +282,7 @@
         </div>
       </article>
 
-      <article class="picker-item genus-card" data-picker="dysoxylum">
+      <article class="picker-item genus-card" id="dysoxylum" data-picker="dysoxylum">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-dysoxylum.jpg" alt="A Dysoxylum tree at Kebun Raya Bogor botanical garden">
@@ -286,8 +290,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Meliaceae</span>
-          <h3 id="dysoxylum"><em>Dysoxylum</em></h3>
+          <a class="tag" href="explore1.html#meliaceae">Meliaceae</a>
+          <h3><em>Dysoxylum</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Dysoxylum</em> contains around 80 species of large forest
           trees ranging from South Asia through Malesia to Australia and the
@@ -311,7 +315,7 @@
     <section id="ebenaceae-genera" class="picker-group genus-picker-group" aria-labelledby="ebenaceae-genera-heading">
       <h2 id="ebenaceae-genera-heading">Genera of Ebenaceae</h2>
 
-      <article class="picker-item genus-card" data-picker="diospyros">
+      <article class="picker-item genus-card" id="diospyros" data-picker="diospyros">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-diospyros.jpg" alt="A Diospyros ebenum ebony tree in Kerala, India">
@@ -319,8 +323,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Ebenaceae</span>
-          <h3 id="diospyros"><em>Diospyros</em></h3>
+          <a class="tag" href="explore1.html#ebenaceae">Ebenaceae</a>
+          <h3><em>Diospyros</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Diospyros</em> is a huge genus of some 700 species — the
           ebony genus — distributed across the tropics and subtropics of
@@ -342,7 +346,7 @@
         </div>
       </article>
 
-      <article class="picker-item genus-card" data-picker="euclea">
+      <article class="picker-item genus-card" id="euclea" data-picker="euclea">
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-euclea.jpg" alt="Euclea racemosa, the sea guarrie, growing near Cape Town">
@@ -350,8 +354,8 @@
           </figure>
         </div>
         <div class="genus-card-body">
-          <span class="tag">Ebenaceae</span>
-          <h3 id="euclea"><em>Euclea</em></h3>
+          <a class="tag" href="explore1.html#ebenaceae">Ebenaceae</a>
+          <h3><em>Euclea</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
           <p><em>Euclea</em> is the African counterpart to
           <em>Diospyros</em>, comprising around 20 species of shrubs and
@@ -416,27 +420,5 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  var select = document.getElementById("genus-select");
-  if (!select) return;
-  function apply() {
-    var value = select.value;
-    document.querySelectorAll(".picker-group").forEach(function (group) {
-      var items = group.querySelectorAll(".picker-item");
-      if (value === "all") {
-        group.hidden = false;
-        items.forEach(function (item) { item.hidden = false; });
-        return;
-      }
-      var match = group.querySelector('.picker-item[data-picker="' + value + '"]');
-      group.hidden = !match;
-      items.forEach(function (item) { item.hidden = item !== match; });
-    });
-  }
-  select.addEventListener("change", apply);
-  apply();
-})();
-</script>
 </body>
 </html>

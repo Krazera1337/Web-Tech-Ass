@@ -5,20 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plant Families — Forest Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=14">
+<link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 
-<header class="site-header">
+<nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="index.html" class="brand">
       <img src="images/LogoPlantStory.png" alt="Forest Story — Rainforest Plant Explorer" class="logo-mark">
     </a>
-  </div>
-</header>
-
-<nav class="main-nav" aria-label="Primary">
-  <div class="container">
+    <div class="nav-right">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
@@ -30,8 +26,15 @@
         </ul>
       </li>
       <li><a href="contribute.html">Contribution</a></li>
-      <li><a href="identify.html" aria-current="page">Identification</a></li>
+      <li><a href="identify.html">Identification</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Enquiry</a></li>
     </ul>
+      <div class="nav-auth">
+        <a href="#" class="btn-navstyle">Registration</a>
+        <a href="#" class="btn-navstyle">Login</a>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -50,18 +53,17 @@
 
     <div class="intro-section">
       <h2>Understanding Plant Families</h2>
-      <p class="lede">Plant families group plants that share evolutionary and
-      physical characteristics. Explore four important families and discover
-      the traits that help distinguish them.</p>
-      <p class="supporting-text">A plant family is the taxonomic rank that
-      groups together genera sharing a common evolutionary ancestor and a
-      broadly similar flower and fruit structure. Forest Story features four
-      families — two rooted mainly in tropical Asia, and two whose genera
-      split between Asia, Africa and the Americas. Each family entry below
-      follows the same structure: first its typical growth habit and
-      distribution, then its most diagnostic leaf, flower and fruit traits,
-      and finally the two genera profiled on this site. Read the Genera and
-      Species pages for finer detail on the plants within each family.</p>
+      <div class="intro-grid">
+        <p class="lede">A plant family is the taxonomic rank that groups
+        genera sharing a common evolutionary ancestor and a broadly similar
+        flower and fruit structure.</p>
+        <p class="supporting-text">Forest Story features four families —
+        two rooted mainly in tropical Asia, and two whose genera split
+        between Asia, Africa and the Americas. Each entry below covers a
+        family's growth habit and distribution, its diagnostic leaf, flower
+        and fruit traits, then its two genera. Read the Genera and Species
+        pages for finer detail.</p>
+      </div>
     </div>
 
     <div class="family-picker" id="family-cards">
