@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicholas Sia — Plant Story</title>
+<meta name="author" content="Nicholas Sia">
+<meta name="description" content="Nicholas Sia, a Plant Story team member.">
+<link rel="icon" type="image/jpeg" href="../images/leaf-icon.jpg">
+<link rel="stylesheet" href="../css/style.css?v=29">
+</head>
+<body class="profile-page">
+<nav class="main-nav" aria-label="Primary">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <img src="../images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
+    </a>
+    <div class="nav-right">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="../explore.html">Explore</a>
+        <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
+          <li><a href="../explore1.html">Families</a></li>
+          <li><a href="../explore2.html">Genera</a></li>
+          <li><a href="../explore3.html">Species</a></li>
+        </ul>
+      </li>
+      <li><a href="../contribute.html">Contribution</a></li>
+      <li><a href="../identify.html">Identification</a></li>
+      <li><a href="../profile/nicholas_profile.html" aria-current="page">Profile</a></li>
+      <li><a href="#">Enquiry</a></li>
+    </ul>
+      <div class="nav-auth">
+        <a href="#" class="btn-navstyle">Registration</a>
+        <a href="#" class="btn-navstyle">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Main profile area -->
+<main class="profile-container">
+  
+  <!-- Left: Flip card -->
+  <div class="flip-card-wrapper">
+    <div class="flip-card" tabindex="0" aria-label="Focus to read the introduction">
+      <div class="flip-card-front">
+        <img src="../images/nicholas-profile-picture.jpg" alt="Nicholas Sia Siang Wei" class="profile-avatar-large">
+        <h1 class="profile-name">Nicholas Sia Siang Wei</h1>
+        <div class="profile-student-id">Student ID: 106758936</div>
+        <div class="profile-course">Bachelor of Computer Science</div>
+        <div class="flip-hint">
+          <span></span> flip & read intro
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <h2 class="back-title">🌱 About Me</h2>
+        <div class="back-intro-text">
+          <p>Hello! I'm Nicholas, a first-year Computer Science student at Swinburne University of Technology Sarawak. I am just an ordinary person.</p>
+          <p>In my free time, I enjoy gaming, drawing and exploring different kinds of technology. I hope to improve my programming skills and possibly work in the game industry in the future.</p>
+          <p class="profile-motto">"Keep learning, keep creating."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Info table -->
+  <div class="info-table-card">
+    <h3><span></span> Personal Details</h3>
+    <table class="info-table">
+      <tbody>
+        <tr>
+          <th>🏡 Hometown</th>
+          <td>Sibu, Sarawak</td>
+        </tr>
+        <tr>
+          <th>🎨 Hobbies</th>
+          <td>Gaming, Drawing, Jogging</td>
+        </tr>
+        <tr>
+          <th>🔬 Interests</th>
+          <td>Game Development, Drawing, Listen to songs</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="email-section">
+      <a href="mailto:106758936@students.swinburne.edu.my" class="email-btn">
+        <span class="email-icon">✉️</span> Email Me
+      </a>
+    </div>
+  </div>
+
+
+
+</main>
+<!-- ===== EXTRA ROW: Music Player + Map ===== -->
+<div class="extra-row">
+  
+  <!-- Left: Music Player — CSS-only, always spinning disc + native audio controls -->
+  <div class="music-card">
+    <h2 class="music-title"><span>🎵</span> Play Songs </h2>
+    
+    <div class="disc-wrapper">
+      <div class="disc"></div>
+      <div class="tonearm"></div>
+    </div>
+
+    <div class="song-info">
+      <strong>Now playing:</strong> songs/music2(nick)
+    </div>
+
+    <audio class="native-audio" controls loop preload="none">
+      <source src="../songs/music2(nick).mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Right: Google Map -->
+  <div class="map-card">
+    <h2 class="map-title"><span>🗺️</span> Hometown — Sibu, Sarawak</h2>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=Sibu%2C%20Sarawak&amp;output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Map of Sibu, Sarawak" allowfullscreen></iframe>
+    </div>
+    <div class="map-caption">
+      <span>📍</span> Sibu, my hometown in central Sarawak.
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+  </div>
+</footer>
+
+</body>
+</html>

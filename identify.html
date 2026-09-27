@@ -8,10 +8,10 @@
 <meta name="description" content="Plant identification page for Plant Story">
 <title>Plant Identification — Plant Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=20">
+<link rel="stylesheet" href="css/style.css?v=23">
 </head>
 
-<body>
+<body class="community-page identification-page">
 
 <nav class="main-nav" aria-label="Primary">
   <div class="container">
@@ -33,7 +33,7 @@
 
       <li><a href="contribute.html">Contribution</a></li>
       <li><a href="identify.html" aria-current="page">Identification</a></li>
-      <li><a href="#">Profile</a></li>
+      <li><a href="profile/nicholas_profile.html">Profile</a></li>
       <li><a href="#">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
@@ -44,42 +44,62 @@
   </div>
 </nav>
 
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero-eyebrow">A closer look at nature</p>
+    <h1>Plant Identification</h1>
+    <p class="page-hero-lede">Every leaf has a story. Start with a photo of your plant.</p>
+  </div>
+</header>
 <main>
-  <div class="page-wrap">
+  <div class="page-wrap identification-layout">
 
-    <section>
-      <h2>Upload Your Plant</h2>
-
-      <p>Upload a clear photo of the plant you want to identify.</p>
+    <section class="identify-panel" aria-labelledby="upload-title">
+      <p class="panel-eyebrow">01 / Your observation</p>
+      <h2 id="upload-title">Upload Your Plant</h2>
 
       <form method="post" enctype="multipart/form-data">
 
         <fieldset>
           <legend>Plant Identification</legend>
 
-          <p><label for="plantphoto">Plant Photo:</label> <input type="file" id="plantphoto" name="plantphoto" accept="image/*" required></p>
-          <p><input type="submit" value="Identify"> <input type="reset" value="Reset"></p>
+          <div class="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose your plant photo</label><p id="photo-hint">Use a clear image of the plant.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/*" aria-describedby="photo-hint" required></div>
+          <p class="form-actions"><input type="submit" value="Identify"> <input type="reset" value="Reset"></p>
 
         </fieldset>
 
       </form>
     </section>
 
-    <section>
-      <h2>How It Works</h2>
 
+    <section class="identify-panel identify-steps" aria-labelledby="steps-title">
+      <p class="panel-eyebrow">02 / The next step</p>
+      <h2 id="steps-title">How It Works</h2>
+      <aside aria-labelledby="photo-tips-title">
+        <h3 id="photo-tips-title">Photo Tips</h3>
+        <p>Use natural light and keep the leaves in focus.</p>
+        <figure class="leaf-guide">
+          <img src="images/leaf-venation-guide.svg" alt="Diagram comparing three leaf vein patterns">
+          <figcaption>Compare the leaf veins.</figcaption>
+        </figure>
+      </aside>
       <ol>
-        <li>Upload a clear photograph of the plant.</li>
-        <li>Press the "Identify" button to submit the plant for identification.</li>
-        <li>View the suggested plant information.</li>
+        <li><strong>Choose a photo</strong><span>Show one plant, including its leaves or flowers.</span></li>
+        <li><strong>Submit your image</strong><span>Choose your file, then press Identify.</span></li>
+        <li><strong>Explore plants</strong><span>Browse the <a href="explore3.html">plant catalogue</a>.</span></li>
       </ol>
     </section>
-
-
-    <aside>
-      <h2>Photo Tip</h2>
-      <p>For better identification, use a clear photo showing the leaves, flowers or fruit of the plant.</p>
-    </aside>
+    <section class="identify-panel">
+      <p class="panel-eyebrow">03 / Know your plant</p>
+      <h2>Plant Information</h2>
+      <dl class="identify-glossary">
+        <div><dt>Scientific name</dt><dd>The botanical name of a species.</dd></div>
+        <div><dt>Common name</dt><dd>A familiar or local plant name.</dd></div>
+        <div><dt>Care tips</dt><dd>Suitable light, water and growing conditions.</dd></div>
+        <div><dt>Location</dt><dd>Where the plant grows.</dd></div>
+      </dl>
+      <a class="identify-catalogue-link" href="explore3.html">Explore the plant catalogue <span aria-hidden="true">&rarr;</span></a>
+    </section>
 
   </div>
 </main>

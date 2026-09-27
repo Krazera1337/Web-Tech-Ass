@@ -1437,84 +1437,1160 @@ button[type="reset"]:hover { background: var(--sage); }
   margin: 0.1rem 0.2rem 0.1rem 0;
 }
 
-/* ---------- contribute page and identify page ---------- */
+/* Profile styles supplied by teammate; selectors scoped to profile pages. */
+/* ---------- Profile page specific styles (Forest Story theme) ---------- */
+  .profile-page .profile-container {
+      max-width: 1200px;
+      margin: 2.5rem auto 3rem;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      min-height: 500px;
+    }
 
+  /* ---------- Left large card (CSS-only flip on hover) ---------- */
+  .profile-page .flip-card-wrapper {
+      flex: 1.1;
+      min-width: 320px;
+      perspective: 1800px;
+    }
 
-.contributor-title {
-    text-align: center;
-    margin-bottom: 25px;
-}
+  .profile-page .flip-card {
+      position: relative;
+      width: 100%;
+      min-height: 520px;
+      transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-style: preserve-3d;
+      border-radius: 2.5rem;
+      box-shadow: 0 25px 40px -12px rgba(18, 61, 50, 0.35),
+                  0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+      cursor: pointer;
+      background: transparent;
+    }
 
-.contributor-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
+  /* Flip on hover or keyboard focus-within */
+  .profile-page .flip-card-wrapper:hover .flip-card,
+  .profile-page .flip-card-wrapper:focus-within .flip-card {
+      transform: rotateY(180deg);
+    }
 
-.contributor-card {
+  .profile-page .flip-card-front,
+  .profile-page .flip-card-back {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      border-radius: 2.5rem;
+      background: var(--white, #ffffff);
+      box-shadow: 0 12px 30px rgba(18, 61, 50, 0.15);
+      padding: 2rem 2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--sage-dark) var(--ivory);
+    }
+
+  .profile-page .flip-card-front::-webkit-scrollbar,
+  .profile-page .flip-card-back::-webkit-scrollbar {
+      width: 6px;
+    }
+  .profile-page .flip-card-front::-webkit-scrollbar-thumb,
+  .profile-page .flip-card-back::-webkit-scrollbar-thumb {
+      background-color: var(--sage-dark);
+      border-radius: 8px;
+    }
+
+  /* Card front */
+  .profile-page .flip-card-front {
+      transform: rotateY(0deg);
+    }
+
+  /* Card back */
+  .profile-page .flip-card-back {
+      transform: rotateY(180deg);
+      background: linear-gradient(145deg, #ffffff, #f8faf7);
+      justify-content: flex-start;
+      padding-top: 2.2rem;
+    }
+
+  /* Avatar */
+  .profile-page .profile-avatar-large {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--sage);
+      box-shadow: 0 10px 20px rgba(18, 61, 50, 0.2);
+      margin-bottom: 1.2rem;
+      background: var(--ivory);
+      flex-shrink: 0;
+    }
+
+  .profile-page .profile-name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.5px;
+      text-align: center;
+    }
+
+  .profile-page .profile-student-id {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--forest);
+      background: var(--ivory);
+      padding: 0.35rem 1.5rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+      border: 1px solid var(--sage);
+    }
+
+  .profile-page .profile-course {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--forest-dark);
+      background: var(--sage);
+      padding: 0.6rem 1.8rem;
+      border-radius: 60px;
+      margin: 0.5rem 0 0.75rem;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(18, 61, 50, 0.1);
+    }
+
+  .profile-page .flip-hint {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 0.8rem;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+  .profile-page .flip-hint span {
+      font-size: 1.1rem;
+    }
+
+  /* Card back (introduction) */
+  .profile-page .back-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      border-bottom: 3px solid var(--sage);
+      padding-bottom: 0.5rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+  .profile-page .back-intro-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+      text-align: left;
+      width: 100%;
+      max-width: 95%;
+      margin: 0 auto;
+      background: var(--ivory);
+      padding: 1.4rem 1.5rem;
+      border-radius: 1.8rem;
+      box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.02);
+    }
+
+  .profile-page .back-intro-text p {
+      margin: 0 0 1rem;
+    }
+
+  .profile-page .back-intro-text p:last-child {
+      margin-bottom: 0;
+    }
+
+  /* ---------- Right info table card (rounded style) ---------- */
+  .profile-page .info-table-card {
+      flex: 1;
+      min-width: 320px;
+      background: var(--white);
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 35px -10px rgba(18, 61, 50, 0.25),
+                  0 0 0 1px rgba(169, 196, 162, 0.4);
+      padding: 3rem 1.8rem 3rem;
+      box-sizing: border-box;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(2px);
+      transition: transform 0.2s ease;
+    }
+
+  .profile-page .info-table-card h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      margin: 0 0 1.2rem 0;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-left: 8px solid var(--sage);
+      padding-left: 1rem;
+    }
+
+  .profile-page .info-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+  .profile-page .info-table tr {
+      background: transparent;
+      border-radius: 1.5rem;
+    }
+
+  .profile-page .info-table th {
+      width: 35%;
+      padding: 0.9rem 1rem 0.9rem 1.5rem;
+      background: var(--ivory);
+      color: var(--forest-dark);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 2rem 0 0 2rem;
+      border: 1px solid var(--border);
+      border-right: none;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+
+  .profile-page .info-table td {
+      padding: 0.9rem 1.5rem 0.9rem 1rem;
+      background: var(--white);
+      color: var(--text);
+      font-weight: 500;
+      border-radius: 0 2rem 2rem 0;
+      border: 1px solid var(--border);
+      border-left: none;
+      vertical-align: middle;
+    }
+
+  .profile-page .info-table tr:hover th {
+      background: var(--sage);
+      color: var(--forest-dark);
+      border-color: var(--sage-dark);
+    }
+
+  .profile-page .info-table tr:hover td {
+      background: #f4faf2;
+      border-color: var(--sage);
+    }
+
+  /* Email button area */
+  .profile-page .email-section {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .profile-page .email-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: var(--forest-dark);
+      color: var(--ivory);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5rem;
+      border: none;
+      box-shadow: 0 15px 25px -8px rgba(18, 61, 50, 0.5);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      width: 50%;
+      max-width: 300px;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--sage);
+    }
+
+  .profile-page .email-btn:hover {
+      background: var(--forest);
+      transform: translateY(-3px);
+      box-shadow: 0 22px 30px -8px rgba(18, 61, 50, 0.6);
+      color: white;
+      text-decoration: none;
+    }
+
+  .profile-page .email-btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 8px 15px -5px rgba(18, 61, 50, 0.4);
+    }
+
+  .profile-page .email-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+    
+  @media (max-width: 900px) {
+      .profile-page .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-page .flip-card-wrapper {
+        width: 100%;
+      }
+      .profile-page .info-table-card {
+        width: 100%;
+      }
+      .profile-page .back-box {
+        margin-left: 1.5rem !important;
+        padding: 0.9rem 2rem !important;
+      }
+    }
+
+  @media (max-width: 550px) {
+      .profile-page .flip-card {
+        min-height: 580px;
+      }
+      .profile-page .flip-card-front,
+      .profile-page .flip-card-back {
+        padding: 1.5rem 1.2rem;
+      }
+      .profile-page .profile-avatar-large {
+        width: 110px;
+        height: 110px;
+      }
+      .profile-page .profile-name {
+        font-size: 1.6rem;
+      }
+      .profile-page .info-table th {
+        padding: 0.7rem 0.8rem 0.7rem 1rem;
+        font-size: 0.9rem;
+        white-space: normal;
+      }
+      .profile-page .info-table td {
+        padding: 0.7rem 1rem 0.7rem 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+
+      .profile-page .profile-container,
+  .profile-page .extra-row {
+    max-width: 1200px;
+    margin: 2.5rem auto 0;
+    padding: 0 1.5rem;
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
-
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 22px;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-.contributor-avatar {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.contributor-content {
-    flex: 1;
-    min-width: 0;
-}
-
-.contributor-content h3 {
-    margin: 0 0 12px;
-    font-size: 1.2rem;
-}
-
-.plant-contribution {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-}
-
-.plant-details {
-    flex: 1;
-}
-
-.plant-details p {
-    margin: 7px 0;
-    line-height: 1.5;
-}
-
-.plant-contribution-image {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 6px;
-    flex-shrink: 0;
-}
-
-.contributors-section {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: min(1600px, calc(100vw - 40px));
-    max-width: none;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
     box-sizing: border-box;
+  }
+
+  .profile-page .extra-row {
+    margin-top: 2rem;
+  }
+
+  /* ---------- Left large flip card ---------- */
+  .profile-page .flip-card-wrapper {
+      flex: 1.1;
+      min-width: 320px;
+      perspective: 1800px;
+      display: flex;
+    }
+
+  .profile-page .flip-card {
+      position: relative;
+      width: 100%;
+      min-height: 420px;
+      transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-style: preserve-3d;
+      border-radius: 2.5rem;
+      box-shadow: 0 25px 40px -12px rgba(18, 61, 50, 0.35),
+                  0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+      cursor: pointer;
+      background: transparent;
+    }
+
+  .profile-page .flip-card-wrapper:hover .flip-card,
+  .profile-page .flip-card-wrapper:focus-within .flip-card {
+      transform: rotateY(180deg);
+    }
+
+  .profile-page .flip-card-front,
+  .profile-page .flip-card-back {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      border-radius: 2.5rem;
+      background: var(--white, #ffffff);
+      box-shadow: 0 12px 30px rgba(18, 61, 50, 0.15);
+      padding: 2rem 2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--sage-dark) var(--ivory);
+    }
+
+  .profile-page .flip-card-front::-webkit-scrollbar,
+  .profile-page .flip-card-back::-webkit-scrollbar { width: 6px; }
+  .profile-page .flip-card-front::-webkit-scrollbar-thumb,
+  .profile-page .flip-card-back::-webkit-scrollbar-thumb {
+      background-color: var(--sage-dark);
+      border-radius: 8px;
+    }
+
+  .profile-page .flip-card-front { transform: rotateY(0deg); }
+
+  .profile-page .flip-card-back {
+      transform: rotateY(180deg);
+      background: linear-gradient(145deg, #ffffff, #f8faf7);
+      justify-content: flex-start;
+      padding-top: 2.2rem;
+    }
+
+  .profile-page .profile-avatar-large {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--sage);
+      box-shadow: 0 10px 20px rgba(18, 61, 50, 0.2);
+      margin-bottom: 1.2rem;
+      background: var(--ivory);
+      flex-shrink: 0;
+    }
+
+  .profile-page .profile-name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.5px;
+      text-align: center;
+    }
+
+  .profile-page .profile-student-id {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--forest);
+      background: var(--ivory);
+      padding: 0.35rem 1.5rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+      border: 1px solid var(--sage);
+    }
+
+  .profile-page .profile-course {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--forest-dark);
+      background: var(--sage);
+      padding: 0.6rem 1.8rem;
+      border-radius: 60px;
+      margin: 0.5rem 0 0.75rem;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(18, 61, 50, 0.1);
+    }
+
+  .profile-page .flip-hint {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 0.8rem;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+  .profile-page .flip-hint span { font-size: 1.1rem; }
+
+  .profile-page .back-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      border-bottom: 3px solid var(--sage);
+      padding-bottom: 0.5rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+  .profile-page .back-intro-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+      text-align: left;
+      width: 100%;
+      max-width: 95%;
+      margin: 0 auto;
+      background: var(--ivory);
+      padding: 1.4rem 1.5rem;
+      border-radius: 1.8rem;
+      box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.02);
+    }
+
+  .profile-page .back-intro-text p { margin: 0 0 1rem; }
+  .profile-page .back-intro-text p:last-child { margin-bottom: 0; }
+
+  /* ---------- Right info table card ---------- */
+  .profile-page .info-table-card {
+      flex: 1;
+      min-width: 320px;
+      background: var(--white);
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 35px -10px rgba(18, 61, 50, 0.25),
+                  0 0 0 1px rgba(169, 196, 162, 0.4);
+      padding: 3rem 1.8rem 3rem;
+      box-sizing: border-box;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+  .profile-page .info-table-card h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      margin: 0 0 1.2rem 0;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-left: 8px solid var(--sage);
+      padding-left: 1rem;
+    }
+
+  .profile-page .info-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+  .profile-page .info-table tr {
+      background: transparent;
+      border-radius: 1.5rem;
+    }
+
+  .profile-page .info-table th {
+      width: 35%;
+      padding: 0.9rem 1rem 0.9rem 1.5rem;
+      background: var(--ivory);
+      color: var(--forest-dark);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 2rem 0 0 2rem;
+      border: 1px solid var(--border);
+      border-right: none;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+
+  .profile-page .info-table td {
+      padding: 0.9rem 1.5rem 0.9rem 1rem;
+      background: var(--white);
+      color: var(--text);
+      font-weight: 500;
+      border-radius: 0 2rem 2rem 0;
+      border: 1px solid var(--border);
+      border-left: none;
+      vertical-align: middle;
+    }
+
+  .profile-page .info-table tr:hover th {
+      background: var(--sage);
+      color: var(--forest-dark);
+      border-color: var(--sage-dark);
+    }
+
+  .profile-page .info-table tr:hover td {
+      background: #f4faf2;
+      border-color: var(--sage);
+    }
+
+  .profile-page .email-section {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .profile-page .email-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: var(--forest-dark);
+      color: var(--ivory);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5rem;
+      border: none;
+      box-shadow: 0 15px 25px -8px rgba(18, 61, 50, 0.5);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      width: 50%;
+      max-width: 300px;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--sage);
+    }
+
+  .profile-page .email-btn:hover {
+      background: var(--forest);
+      transform: translateY(-3px);
+      box-shadow: 0 22px 30px -8px rgba(18, 61, 50, 0.6);
+      color: white;
+      text-decoration: none;
+    }
+
+  .profile-page .email-btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 8px 15px -5px rgba(18, 61, 50, 0.4);
+    }
+
+  .profile-page .email-icon { font-size: 1.6rem; line-height: 1; }
+
+  /* ===== MUSIC PLAYER & MAP CARDS ===== */
+  .profile-page .music-card,
+  .profile-page .map-card {
+    flex: 1;
+    min-width: 320px;
+    background: var(--white);
+    border-radius: 2.5rem;
+    box-shadow: 0 25px 40px -12px rgba(18, 61, 50, 0.35),
+                0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    padding: 2.2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+  }
+
+  .profile-page .music-card { flex: 1; align-items: center; }
+
+  .profile-page .music-card:hover,
+  .profile-page .map-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 45px -12px rgba(18, 61, 50, 0.45);
+  }
+
+  .profile-page .music-title,
+  .profile-page .map-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--forest-dark);
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-left: 8px solid var(--sage);
+    padding-left: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* rotating disc — always spinning (CSS only) */
+  .profile-page .disc-wrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 1.8rem auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .profile-page .disc {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #2c2c2c, #111111 70%);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5), 0 0 0 4px #1e2a1e, 0 0 0 8px #0b1a0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spinDisc 8s linear infinite;   /* always spinning */
+    position: relative;
+  }
+
+  .profile-page .disc::after {
+    content: "";
+    position: absolute;
+    width: 38%;
+    height: 38%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, #5d7a5d, #2f4f2f);
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.7), 0 0 0 3px #8faa8f;
+    z-index: 2;
+  }
+
+  .profile-page .disc::before {
+    content: "🌿";
+    position: absolute;
+    font-size: 2.2rem;
+    z-index: 5;
+    color: #d9e6d9;
+    text-shadow: 0 2px 6px black;
+    pointer-events: none;
+  }
+
+  @keyframes spinDisc {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .profile-page .tonearm {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 90px;
+    height: 18px;
+    background: linear-gradient(90deg, #b0b0b0, #6b6b6b);
+    border-radius: 20px;
+    transform-origin: 90% 50%;
+    transform: rotate(30deg);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .profile-page .tonearm::after {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 4px;
+    width: 16px;
+    height: 10px;
+    background: #c0c0c0;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.6);
+  }
+
+  .profile-page .song-info {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    background: var(--ivory);
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-page .song-info strong { color: var(--forest-dark); font-style: normal; }
+
+  /* Native audio element (no JS needed) */
+  .profile-page .native-audio {
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 0.5rem;
+  }
+
+  .profile-page .map-frame {
+    flex: 1;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    min-height: 320px;
+    border: 3px solid var(--sage);
+    background: #e8f0e8;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-page .map-frame iframe {
+    width: 100%;
+    flex: 1;
+    min-height: 320px;
+    display: block;
+    border: 0;
+  }
+
+  .profile-page .map-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--ivory);
+    padding: 0.6rem 1.4rem;
+    border-radius: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-page .map-caption span { font-size: 1.3rem; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .profile-page .profile-container,
+    .profile-page .extra-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-page .flip-card-wrapper,
+    .profile-page .info-table-card,
+    .profile-page .music-card,
+    .profile-page .map-card {
+      width: 100%;
+    }
+    .profile-page .disc-wrapper { width: 180px; height: 180px; }
+    .profile-page .back-box {
+      margin-left: 1.5rem !important;
+      padding: 0.9rem 2rem !important;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .profile-page .flip-card { min-height: 580px; }
+    .profile-page .flip-card-front,
+    .profile-page .flip-card-back { padding: 1.5rem 1.2rem; }
+    .profile-page .profile-avatar-large { width: 110px; height: 110px; }
+    .profile-page .profile-name { font-size: 1.6rem; }
+    .profile-page .info-table th {
+      padding: 0.7rem 0.8rem 0.7rem 1rem;
+      font-size: 0.9rem;
+      white-space: normal;
+    }
+    .profile-page .info-table td {
+      padding: 0.7rem 1rem 0.7rem 0.8rem;
+      font-size: 0.9rem;
+    }
+    .profile-page .extra-row { gap: 1.5rem; padding: 0 1rem; }
+    .profile-page .music-card,
+    .profile-page .map-card { padding: 1.5rem 1.2rem; border-radius: 2rem; }
+    .profile-page .disc-wrapper { width: 150px; height: 150px; }
+    .profile-page .music-title,
+    .profile-page .map-title { font-size: 1.3rem; }
+  }
+/* Prevent homepage card dimensions from constraining the profile design. */
+.profile-page .flip-card {
+  height: auto;
+  min-height: 520px;
+}
+@media (max-width: 550px) {
+  .profile-page .flip-card { min-height: 580px; }
+}
+/* ---------- contribute page and identify page ---------- */
+/* These rules apply only to the contribution and identification pages. */
+/* Contribution form: botanical introduction and a separate, readable form card. */
+.contribution-form-page {
+  background: #f6f4ed;
+}
+.contribution-form-page .contribution-stage {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(90deg, rgba(245,244,235,.9), rgba(245,244,235,.68)), url('../images/contribution-form-back.jpg') center / cover;
+}
+.contribution-form-page .contribution-form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.contribution-form-page .contribution-intro { padding: 2rem 0; }
+.contribution-form-page .form-eyebrow {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--forest);
+}
+.contribution-form-page .contribution-intro h1 {
+  font: 700 clamp(2.4rem, 4.5vw, 4rem)/1.12 "Segoe UI", Verdana, sans-serif;
+  letter-spacing: -.04em;
+  border: 0;
+  margin: 1.5rem 0;
+  color: var(--forest-dark);
+}
+.contribution-form-page .contribution-intro h1 span { color: var(--forest); }
+.contribution-form-page .contribution-intro > p:not(.form-eyebrow) { max-width: 340px; font-size: 1.15rem; }
+.contribution-form-page .form-back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .65rem 0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.contribution-form-page main .contribution-form-card {
+  min-width: 0;
+  padding: clamp(1.4rem, 3vw, 2.5rem);
+  margin: 0;
+  background: rgba(255, 255, 255, .55);
+  border-radius: 24px;
+  border: 1px solid #e3e8df;
+  box-shadow: 0 18px 48px rgba(18,61,50,.16);
+}
+.contribution-form-page .form-card-heading { text-align: center; }
+.contribution-form-page .form-leaf {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: .8rem;
+  border-radius: 50%;
+  background: var(--forest);
+  color: white;
+  font-size: 2rem;
+}
+.contribution-form-page .form-card-heading h2 { margin: 0; font-size: 1.5rem; }
+.contribution-form-page .form-card-heading p { margin: .35rem 0 1.25rem; color: var(--text-light); font-size: .9rem; }
+.contribution-form-page fieldset { padding: 1rem; margin-top: 0; border-color: #e0e7dc; background: #fff; }
+.contribution-form-page legend { margin: 0 auto; text-align: center; background: #fff; border-radius: 4px; }
+.contribution-form-page form label { font-size: .88rem; }
+.contribution-form-page form input:not([type='submit']):not([type='reset']),
+.contribution-form-page textarea { min-width: 0; background: #fcfdfb; border-color: #dce3d7; }
+.contribution-form-page .nav-right { min-width: 0; max-width: 100%; }
+.contribution-form-page .main-nav .nav-right > ul { min-width: 0; max-width: 100%; }
+.contribution-form-page .form-actions { margin-bottom: 0; }
+.contribution-form-page input[type='submit'] { flex: 1; }
+.contribution-form-page .site-footer { margin-top: 0; }
+@media (max-width: 780px) {
+  .contribution-form-page .contribution-form-layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; max-width: 560px; }
+  .contribution-form-page .contribution-stage { padding: 1.5rem 1rem 2.5rem; }
+  .contribution-form-page .contribution-intro { padding: 0; }
+  .contribution-form-page .form-back-link { margin-top: .5rem; }
+}
+.community-page .page-hero {
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 4.5rem 1rem;
+  background: linear-gradient(110deg, rgba(18,61,50,.88), rgba(18,61,50,.52)), url('../images/family-meliaceae.jpg') center 45% / cover;
+}
+.identification-page .page-hero {
+  background-image: linear-gradient(110deg, rgba(18,61,50,.8), rgba(18,61,50,.55)), url('../images/background-identify.jpg');
+  background-position: center, center 35%;
+}
+.community-page .page-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+.community-page .page-hero-lede { margin-bottom: 0; }
+.community-page .page-hero-eyebrow { color: #d3e6c9; }
+.community-page main { padding-top: 2.5rem; }
+.community-page main section {
+  border: 1px solid #dce4d9;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(18,61,50,.06);
+}
+.community-page main section h2 { margin-top: 0; }
+.community-page .contributors-section {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.community-page .contributor-title { text-align: center; font-size: 1.8rem; margin-bottom: .5rem; }
+.community-page .section-intro { text-align: center; color: var(--text-light); margin: 0 0 2rem; }
+.contribution-page .contributor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.contribution-page .contributor-card {
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #dce4d9;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 6px 20px rgba(18,61,50,.06);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+.contribution-page .contributor-card:hover { text-decoration: none; }
+.contribution-page .contributor-card:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+/* Subtle hover enlargement without changing the card layout. */
+@media (hover: hover) and (pointer: fine) {
+  .contribution-page .contributor-card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 12px 28px rgba(18,61,50,.14);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contribution-page .contributor-card { transition: none; }
+  .contribution-page .contributor-card:hover { transform: none; }
+}
+.contribution-page .contributor-top {
+  flex-shrink: 0;
+  width: 100px;
+  text-align: center;
+  padding: 8px 16px 0 0;
+  border-right: 1px solid #e1e8dc;
+}
+.contribution-page .contributor-avatar {
+  width: 84px;
+  height: 84px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 1px #cbdac7;
+  margin: 0 auto;
+}
+.contribution-page .contributor-top h3 { margin: 14px 0 0; font-size: .95rem; line-height: 1.5; overflow-wrap: anywhere; }
+.contribution-page .contributor-content { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.contribution-page .contributor-content p { font-size: .92rem; }
+.contribution-page .plant-contribution-image { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; }
+.contribution-page .plant-display-name { margin: 18px 0 4px; font-size: 1.45rem; line-height: 1.3; }
+.contribution-page .plant-scientific-name { margin: 0 0 18px; color: var(--text-light); }
+.contribution-page .plant-authority { display: block; font-size: .78rem; margin-top: 3px; }
+.contribution-page .plant-meta-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 125px), 1fr));
+  gap: 14px;
+  padding: 16px;
+  background: #f1f5ed;
+  border-radius: 10px;
+}
+.contribution-page .plant-meta-row p { margin: 0; }
+.contribution-page .plant-meta-row strong { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-light); }
+.community-page .contributors-cta { margin: 2rem 0 0; padding-top: 1.5rem; border-top: 1px solid #dce4d9; }
+.community-page .btn, .community-page input[type='submit'] {
+  background: var(--forest);
+  color: white;
+  border: 1px solid var(--forest);
+  border-radius: 9px;
+  padding: .8rem 1.4rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.community-page .btn:hover, .community-page input[type='submit']:hover { background: var(--forest-dark); }
+.community-page input[type='reset'] { padding: .8rem 1.4rem; background: white; color: var(--forest); border: 1px solid #b8cbb0; border-radius: 9px; font: inherit; cursor: pointer; }
+.community-page input[type='reset']:hover { background: #eaf0e4; }
+.community-page a:focus-visible, .community-page input:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.community-page fieldset { min-width: 0; margin: 1.5rem 0 0; border: 1px solid #cbdac7; padding: 1.5rem; }
+.community-page form label { display: block; font-weight: 600; margin-bottom: .5rem; }
+.community-page form input:not([type='submit']):not([type='reset']), .community-page textarea { width: 100%; max-width: 100%; background: #fafbf7; }
+.community-page textarea { resize: vertical; }
+.community-page input[type='file'] { padding: 1rem; border: 1px dashed #8ba780; }
+.community-page input::file-selector-button { background: #e3ecd9; color: var(--forest-dark); border: 0; border-radius: 6px; padding: .65rem .85rem; margin-right: .75rem; cursor: pointer; }
+.community-page .form-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.community-page .contribution-form-wrap { max-width: 800px; }
+/* Identification: a 30% right-floating aside, as required by the assignment. */
+.identification-page .identification-layout {
+  display: flow-root;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.identification-page .page-hero h1 {
+  font: normal 700 clamp(2rem, 5vw, 3.5rem)/1.15 "Segoe UI", Verdana, Arial, sans-serif;
+}
+.identification-page .identification-layout aside {
+  float: right;
+  width: 30%;
+  margin: 0 0 2rem 3%;
+  padding: 1.75rem;
+  border: 1px solid #c6d6bc;
+  border-top: 4px solid var(--forest);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #edf2e6, #e0e9d6);
+}
+.identification-page .identification-layout .identify-panel {
+  width: 100%;
+  margin: 0 0 1.5rem;
+  padding: 2rem;
+  min-width: 0;
+}
+.identification-page .identify-steps { display: flow-root; }
+.identification-page .identify-steps > ol { width: 64%; }
+.identification-page .identify-steps aside { margin-bottom: 0; padding: 1.25rem; }
+.identification-page .identify-steps aside h3 { margin-top: 0; }
+.identification-page .identify-panel h2 { font-size: 1.65rem; line-height: 1.3; margin-bottom: .75rem; }
+.identification-page .identification-layout aside h2 { font-size: 1.55rem; line-height: 1.35; }
+.identification-page .identification-layout aside p,
+.identification-page .identification-layout aside li { font-size: .9rem; }
+.identification-page .leaf-guide { margin: 1.5rem 0; }
+.identification-page .leaf-guide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  border: 1px solid #cad8c1;
+  border-radius: 10px;
+  background: var(--ivory);
+}
+.identification-page .leaf-guide figcaption { font-size: .8rem; line-height: 1.5; }
+.identification-page .identify-glossary { margin: 1.5rem 0; }
+.identification-page .identify-glossary > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1rem;
+  padding: .85rem 0;
+  border-bottom: 1px solid #e1e8dc;
+}
+.identification-page .identify-glossary dt,
+.identification-page .identify-glossary dd { margin: 0; font-size: .9rem; }
+.identification-page .identify-catalogue-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem 1rem;
+  border-radius: 8px;
+  background: #edf2e6;
+  font-weight: 600;
+}
+.identification-page .site-footer { clear: both; width: 100%; text-align: center; font-style: italic; }
+@media (max-width: 780px) {
+  .identification-page .identify-steps > ol { width: auto; }
+  .identification-page .identification-layout { display: flex; flex-direction: column; gap: 0; }
+  .identification-page .identification-layout aside { float: none; width: 100%; margin: 0 0 1.5rem; order: 1; }
+  .identification-page .identification-layout .identify-panel { width: 100%; padding: 1.25rem; }
+}
+@media (max-width: 480px) {
+  .identification-page .identify-glossary > div { grid-template-columns: minmax(0, 1fr); gap: .3rem; }
+}
+.identification-page .panel-eyebrow { margin: 0 0 .5rem; color: var(--forest); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+.identification-page .plant-upload { padding: 1.5rem; text-align: center; background: #f1f5ed; border: 1px dashed #8ba780; border-radius: 12px; }
+.identification-page .upload-symbol { display: inline-grid; place-items: center; width: 52px; height: 52px; margin-bottom: 1rem; border-radius: 50%; background: #dce8d3; color: var(--forest); font-size: 1.8rem; }
+.identification-page .upload-symbol img { width: 32px; height: 32px; object-fit: contain; }
+.identification-page #photo-hint { font-size: .88rem; color: var(--text-light); margin: .5rem 0 1rem; }
+.identification-page .plant-upload input[type='file'] { background: white; border: 1px solid #dce4d9; padding: .65rem; font-size: .85rem; }
+.identification-page .identification-layout ol { padding-left: 1.5rem; }
+.identification-page .identification-layout li { padding: .9rem 0 .9rem .5rem; border-bottom: 1px solid #e1e8dc; }
+.identification-page .identification-layout li:last-child { border-bottom: 0; }
+.identification-page .identification-layout li::marker { color: var(--forest); font-weight: 700; }
+.identification-page .identification-layout li strong { display: block; }
+.identification-page .identification-layout li span { display: block; margin-top: .25rem; color: var(--text-light); font-size: .9rem; }
+@media (max-width: 1100px) {
+  .contribution-page .contributor-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
+@media (max-width: 600px) {
+  .community-page .page-hero { padding: 3rem 1rem; }
+  .contribution-page .contributor-card { flex-direction: column; padding: 1rem; }
+  .contribution-page .contributor-top { display: flex; align-items: center; gap: 16px; width: 100%; padding: 0; text-align: left; border-right: 0; }
+  .contribution-page .contributor-avatar { margin: 0; flex-shrink: 0; }
+  .contribution-page .contributor-top h3 { margin: 0; }
+  .contribution-page .contributor-content { width: 100%; }
+  .contribution-page .contributors-section > section { padding: 1rem; }
+  .community-page .identification-layout section { padding: 1.25rem; }
+  .community-page fieldset, .identification-page .plant-upload { padding: 1rem; }
+}
 
 a.tag {
   text-decoration: none;
