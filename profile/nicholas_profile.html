@@ -28,7 +28,7 @@
       </li>
       <li><a href="../contribute.html">Contribution</a></li>
       <li><a href="../identify.html">Identification</a></li>
-      <li><a href="../profile/nicholas_profile.html" aria-current="page">Profile</a></li>
+      <li><a href="profile.html">Profile</a></li>
       <li><a href="#">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
@@ -96,28 +96,9 @@
 
 
 </main>
-<!-- ===== EXTRA ROW: Music Player + Map ===== -->
+<!-- ===== EXTRA ROW: Map ===== -->
 <div class="extra-row">
-  
-  <!-- Left: Music Player — CSS-only, always spinning disc + native audio controls -->
-  <div class="music-card">
-    <h2 class="music-title"><span>🎵</span> Play Songs </h2>
-    
-    <div class="disc-wrapper">
-      <div class="disc"></div>
-      <div class="tonearm"></div>
-    </div>
 
-    <div class="song-info">
-      <strong>Now playing:</strong> songs/music2(nick)
-    </div>
-
-    <audio class="native-audio" controls loop preload="none">
-      <source src="../songs/music2(nick).mp3" type="audio/mpeg">
-    </audio>
-  </div>
-
-  <!-- Right: Google Map -->
   <div class="map-card">
     <h2 class="map-title"><span>🗺️</span> Hometown — Sibu, Sarawak</h2>
     <div class="map-frame">
@@ -140,6 +121,43 @@
     <p>&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
   </div>
 </footer>
+
+<!-- Background music: starts on first click/keypress (browser autoplay policy), toggle to mute -->
+<button id="bgm-toggle" class="bgm-toggle" type="button" aria-pressed="false" aria-label="Play background music">
+  <span class="bgm-icon" aria-hidden="true">🔈</span>
+</button>
+<audio id="bgm-audio" loop preload="none">
+  <source src="../songs/music2(nick).mp3" type="audio/mpeg">
+</audio>
+<script>
+(function () {
+  var audio = document.getElementById('bgm-audio');
+  var btn = document.getElementById('bgm-toggle');
+  var icon = btn.querySelector('.bgm-icon');
+
+  function updateIcon() {
+    var playing = !audio.paused;
+    icon.textContent = playing ? '🔊' : '🔈';
+    btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+    btn.setAttribute('aria-label', playing ? 'Mute background music' : 'Play background music');
+  }
+  audio.addEventListener('play', updateIcon);
+  audio.addEventListener('pause', updateIcon);
+
+  function firstInteraction() {
+    audio.play().catch(function () {});
+    document.removeEventListener('click', firstInteraction);
+    document.removeEventListener('keydown', firstInteraction);
+  }
+  document.addEventListener('click', firstInteraction);
+  document.addEventListener('keydown', firstInteraction);
+
+  btn.addEventListener('click', function () {
+    if (audio.paused) { audio.play().catch(function () {}); }
+    else { audio.pause(); }
+  });
+})();
+</script>
 
 </body>
 </html>

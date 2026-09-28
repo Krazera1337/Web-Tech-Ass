@@ -2065,8 +2065,7 @@ button[type="reset"]:hover { background: var(--sage); }
 
   .profile-page .email-icon { font-size: 1.6rem; line-height: 1; }
 
-  /* ===== MUSIC PLAYER & MAP CARDS ===== */
-  .profile-page .music-card,
+  /* ===== MAP CARD ===== */
   .profile-page .map-card {
     flex: 1;
     min-width: 320px;
@@ -2082,15 +2081,11 @@ button[type="reset"]:hover { background: var(--sage); }
     box-sizing: border-box;
   }
 
-  .profile-page .music-card { flex: 1; align-items: center; }
-
-  .profile-page .music-card:hover,
   .profile-page .map-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 30px 45px -12px rgba(18, 61, 50, 0.45);
   }
 
-  .profile-page .music-title,
   .profile-page .map-title {
     font-size: 1.6rem;
     font-weight: 700;
@@ -2104,108 +2099,6 @@ button[type="reset"]:hover { background: var(--sage); }
     padding-left: 1.2rem;
     width: 100%;
     box-sizing: border-box;
-  }
-
-  /* rotating disc — always spinning (CSS only) */
-  .profile-page .disc-wrapper {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    margin: 1.8rem auto 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .profile-page .disc {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, #2c2c2c, #111111 70%);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5), 0 0 0 4px #1e2a1e, 0 0 0 8px #0b1a0b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: spinDisc 8s linear infinite;   /* always spinning */
-    position: relative;
-  }
-
-  .profile-page .disc::after {
-    content: "";
-    position: absolute;
-    width: 38%;
-    height: 38%;
-    border-radius: 50%;
-    background: radial-gradient(circle at 40% 40%, #5d7a5d, #2f4f2f);
-    box-shadow: inset 0 0 12px rgba(0,0,0,0.7), 0 0 0 3px #8faa8f;
-    z-index: 2;
-  }
-
-  .profile-page .disc::before {
-    content: "🌿";
-    position: absolute;
-    font-size: 2.2rem;
-    z-index: 5;
-    color: #d9e6d9;
-    text-shadow: 0 2px 6px black;
-    pointer-events: none;
-  }
-
-  @keyframes spinDisc {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  .profile-page .tonearm {
-    position: absolute;
-    top: -12px;
-    right: -12px;
-    width: 90px;
-    height: 18px;
-    background: linear-gradient(90deg, #b0b0b0, #6b6b6b);
-    border-radius: 20px;
-    transform-origin: 90% 50%;
-    transform: rotate(30deg);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-    z-index: 10;
-    pointer-events: none;
-  }
-
-  .profile-page .tonearm::after {
-    content: "";
-    position: absolute;
-    left: -8px;
-    top: 4px;
-    width: 16px;
-    height: 10px;
-    background: #c0c0c0;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 3px rgba(255,255,255,0.6);
-  }
-
-  .profile-page .song-info {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: 1rem;
-    color: var(--text-light);
-    font-style: italic;
-    font-size: 0.95rem;
-    letter-spacing: 0.3px;
-    background: var(--ivory);
-    padding: 0.6rem 1.5rem;
-    border-radius: 40px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .profile-page .song-info strong { color: var(--forest-dark); font-style: normal; }
-
-  /* Native audio element (no JS needed) */
-  .profile-page .native-audio {
-    width: 100%;
-    border-radius: 40px;
-    margin-top: 0.5rem;
   }
 
   .profile-page .map-frame {
@@ -2253,11 +2146,9 @@ button[type="reset"]:hover { background: var(--sage); }
     }
     .profile-page .flip-card-wrapper,
     .profile-page .info-table-card,
-    .profile-page .music-card,
     .profile-page .map-card {
       width: 100%;
     }
-    .profile-page .disc-wrapper { width: 180px; height: 180px; }
     .profile-page .back-box {
       margin-left: 1.5rem !important;
       padding: 0.9rem 2rem !important;
@@ -2280,10 +2171,7 @@ button[type="reset"]:hover { background: var(--sage); }
       font-size: 0.9rem;
     }
     .profile-page .extra-row { gap: 1.5rem; padding: 0 1rem; }
-    .profile-page .music-card,
     .profile-page .map-card { padding: 1.5rem 1.2rem; border-radius: 2rem; }
-    .profile-page .disc-wrapper { width: 150px; height: 150px; }
-    .profile-page .music-title,
     .profile-page .map-title { font-size: 1.3rem; }
   }
 /* Prevent homepage card dimensions from constraining the profile design. */
@@ -2294,6 +2182,80 @@ button[type="reset"]:hover { background: var(--sage); }
 @media (max-width: 550px) {
   .profile-page .flip-card { min-height: 580px; }
 }
+/* ---------- Background music toggle (profile pages) ---------- */
+.bgm-toggle {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: var(--forest);
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  transition: transform 200ms ease, background 200ms ease;
+}
+.bgm-toggle:hover,
+.bgm-toggle:focus-visible {
+  background: var(--forest-dark);
+  transform: scale(1.08);
+}
+
+/* ---------- Profile picker (profile/profile.html) ---------- */
+.profile-picker-page main { padding: 3rem 0 4rem; }
+.team-grid {
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid #dce4d9;
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 6px 20px rgba(18,61,50,.06);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+.team-card:hover,
+.team-card:focus-visible {
+  text-decoration: none;
+  transform: scale(1.02);
+  box-shadow: 0 12px 28px rgba(18,61,50,.14);
+  outline: none;
+}
+.team-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--sage);
+  background: var(--ivory);
+}
+.team-name { margin: 0; font-size: 1.2rem; color: var(--forest-dark); }
+.team-course { margin: 0; font-size: 0.9rem; color: var(--text-light); }
+.team-cta { margin-top: 0.4rem; font-weight: 600; color: var(--forest); }
+@media (prefers-reduced-motion: reduce) {
+  .team-card:hover { transform: none; }
+}
+
 /* ---------- contribute page and identify page ---------- */
 /* These rules apply only to the contribution and identification pages. */
 /* Contribution form: botanical introduction and a separate, readable form card. */
