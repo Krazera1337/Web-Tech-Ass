@@ -8,7 +8,7 @@
 <meta name="description" content="Plant identification page for Plant Story">
 <title>Plant Identification — Plant Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=23">
+<link rel="stylesheet" href="css/style.css?v=31">
 </head>
 
 <body class="community-page identification-page">
@@ -58,30 +58,58 @@
       <p class="panel-eyebrow">01 / Your observation</p>
       <h2 id="upload-title">Upload Your Plant</h2>
 
-      <form method="post" enctype="multipart/form-data">
+      <form method="post" action="/identify" enctype="multipart/form-data">
 
         <fieldset>
           <legend>Plant Identification</legend>
 
-          <div class="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose your plant photo</label><p id="photo-hint">Use a clear image of the plant.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/*" aria-describedby="photo-hint" required></div>
+          <div class="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose a plant photo</label><p id="photo-hint">JPG or PNG · a clear image works best.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/jpeg,image/png" aria-describedby="photo-hint" required></div>
           <p class="form-actions"><input type="submit" value="Identify"> <input type="reset" value="Reset"></p>
 
         </fieldset>
 
       </form>
+      {% if error %}
+      <p class="identify-message identify-error" role="alert">{{ error }}</p>
+      {% endif %}
+      {% if results %}
+      <div class="identify-result-modal" role="dialog" aria-labelledby="result-modal-title">
+        <div class="identify-result-window">
+          <p class="result-modal-kicker">IDENTIFICATION COMPLETE</p>
+          <h3 id="result-modal-title">Plant match</h3>
+          <div class="result-modal-content">
+            <img src="{{ image_preview }}" alt="Uploaded plant photo" class="result-modal-image">
+            <div class="result-modal-list">
+              {% for result in results %}
+              <p><strong>{{ result.name }}</strong><span>{{ "%.1f"|format(result.score * 100) }}% confidence</span></p>
+              {% endfor %}
+            </div>
+          </div>
+          <p class="identify-attribution">Powered by <a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a>.</p>
+          <a class="result-modal-close" href="/identify">Close</a>
+        </div>
+      </div>
+      {% endif %}
     </section>
 
 
     <section class="identify-panel identify-steps" aria-labelledby="steps-title">
       <p class="panel-eyebrow">02 / The next step</p>
       <h2 id="steps-title">How It Works</h2>
-      <aside aria-labelledby="photo-tips-title">
-        <h3 id="photo-tips-title">Photo Tips</h3>
-        <p>Use natural light and keep the leaves in focus.</p>
-        <figure class="leaf-guide">
-          <img src="images/leaf-venation-guide.svg" alt="Diagram comparing three leaf vein patterns">
-          <figcaption>Compare the leaf veins.</figcaption>
-        </figure>
+      <aside class="photo-tip-flip" aria-labelledby="photo-tips-title" tabindex="0">
+        <div class="photo-tip-card">
+          <div class="photo-tip-face photo-tip-front">
+            <h3 id="photo-tips-title">Photo Tips</h3>
+            <p>Hover for quick tips.</p>
+          </div>
+          <div class="photo-tip-face photo-tip-back">
+            <p>Use natural light and keep the leaves in focus.</p>
+            <figure class="leaf-guide">
+              <img src="images/leaf-venation-guide.svg" alt="Diagram comparing three leaf vein patterns">
+              <figcaption>Compare the leaf veins.</figcaption>
+            </figure>
+          </div>
+        </div>
       </aside>
       <ol>
         <li><strong>Choose a photo</strong><span>Show one plant, including its leaves or flowers.</span></li>
