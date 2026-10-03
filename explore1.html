@@ -16,7 +16,6 @@
     </a>
     <div class="nav-right">
     <ul>
-      <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <a href="explore.html" aria-current="page">Explore</a>
         <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
@@ -31,8 +30,8 @@
       <li><a href="#">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
-        <a href="#" class="btn-navstyle">Registration</a>
-        <a href="#" class="btn-navstyle">Login</a>
+        <a href="login register/register.html" class="btn-navstyle">Registration</a>
+        <a href="login register/login.html" class="btn-navstyle">Login</a>
       </div>
     </div>
   </div>
@@ -43,13 +42,65 @@
     <p class="page-hero-eyebrow">Explore &rsaquo; Families</p>
     <h1>Plant Families</h1>
     <p class="page-hero-lede">Discover the botanical relationships behind tropical rainforest plants.</p>
-    <a class="btn" href="#family-cards">Explore Families <span class="arrow" aria-hidden="true">&darr;</span></a>
+    <div class="page-hero-actions">
+      <a class="btn" href="#family-cards">Explore Families <span class="arrow" aria-hidden="true">&darr;</span></a>
+      <a class="btn btn-outline" href="identify.html">Identify a Plant</a>
+    </div>
   </div>
 </section>
 
 <main>
   <div class="page-wrap">
     <p class="back-link"><a href="explore.html">&larr; Back to Explore</a></p>
+
+    <details class="catalogue-jump">
+      <summary>Jump to a family, genus or species<span class="jump-arrow" aria-hidden="true">&darr;</span></summary>
+      <div class="catalogue-jump-grid">
+        <div>
+          <h4>Families</h4>
+          <ul>
+            <li><a href="explore1.html#myristicaceae">Myristicaceae</a></li>
+            <li><a href="explore1.html#chrysobalanaceae">Chrysobalanaceae</a></li>
+            <li><a href="explore1.html#meliaceae">Meliaceae</a></li>
+            <li><a href="explore1.html#ebenaceae">Ebenaceae</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Genera</h4>
+          <ul>
+            <li><a href="explore2.html#horsfieldia">Horsfieldia</a></li>
+            <li><a href="explore2.html#knema">Knema</a></li>
+            <li><a href="explore2.html#parastemon">Parastemon</a></li>
+            <li><a href="explore2.html#hirtella">Hirtella</a></li>
+            <li><a href="explore2.html#aglaia">Aglaia</a></li>
+            <li><a href="explore2.html#dysoxylum">Dysoxylum</a></li>
+            <li><a href="explore2.html#diospyros">Diospyros</a></li>
+            <li><a href="explore2.html#euclea">Euclea</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Species</h4>
+          <ul>
+            <li><a href="explore3.html#horsfieldia-flocculosa">Horsfieldia flocculosa</a></li>
+            <li><a href="explore3.html#horsfieldia-kingii">Horsfieldia kingii</a></li>
+            <li><a href="explore3.html#knema-cinerea">Knema cinerea</a></li>
+            <li><a href="explore3.html#knema-sumatrana">Knema sumatrana</a></li>
+            <li><a href="explore3.html#parastemon-urophyllus">Parastemon urophyllus</a></li>
+            <li><a href="explore3.html#parastemon-grandifructus">Parastemon grandifructus</a></li>
+            <li><a href="explore3.html#hirtella-triandra">Hirtella triandra</a></li>
+            <li><a href="explore3.html#hirtella-racemosa">Hirtella racemosa</a></li>
+            <li><a href="explore3.html#aglaia-elliptica">Aglaia elliptica</a></li>
+            <li><a href="explore3.html#aglaia-korthalsii">Aglaia korthalsii</a></li>
+            <li><a href="explore3.html#dysoxylum-acutangulum">Dysoxylum acutangulum</a></li>
+            <li><a href="explore3.html#dysoxylum-grande">Dysoxylum grande</a></li>
+            <li><a href="explore3.html#diospyros-ferrea">Diospyros ferrea</a></li>
+            <li><a href="explore3.html#diospyros-ebenum">Diospyros ebenum</a></li>
+            <li><a href="explore3.html#euclea-natalensis">Euclea natalensis</a></li>
+            <li><a href="explore3.html#euclea-racemosa">Euclea racemosa</a></li>
+          </ul>
+        </div>
+      </div>
+    </details>
 
     <div class="intro-section">
       <h2>Understanding Plant Families</h2>
@@ -67,46 +118,41 @@
     </div>
 
     <div class="family-picker" id="family-cards">
-      <input type="radio" name="family-tab" id="tab-myristicaceae" class="tab-radio">
-      <input type="radio" name="family-tab" id="tab-chrysobalanaceae" class="tab-radio">
-      <input type="radio" name="family-tab" id="tab-meliaceae" class="tab-radio">
-      <input type="radio" name="family-tab" id="tab-ebenaceae" class="tab-radio">
-
       <p class="tab-hint">Choose a family to explore its full profile:</p>
 
       <div class="family-cards">
-        <label for="tab-myristicaceae" class="family-card">
+        <a href="#myristicaceae" class="family-card">
           <span class="family-card-media"><img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Myristicaceae</span>
             <span class="family-card-desc">Simple leaves; fruit splits open to reveal a seed wrapped in a bright aril.</span>
             <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </label>
-        <label for="tab-chrysobalanaceae" class="family-card">
+        </a>
+        <a href="#chrysobalanaceae" class="family-card">
           <span class="family-card-media"><img src="images/family-chrysobalanaceae.jpg" alt="A flowering tree of the cocoplum family, Chrysobalanaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Chrysobalanaceae</span>
             <span class="family-card-desc">Simple leaves with small stipules; single-seeded fleshy drupe.</span>
             <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </label>
-        <label for="tab-meliaceae" class="family-card">
+        </a>
+        <a href="#meliaceae" class="family-card">
           <span class="family-card-media"><img src="images/family-meliaceae.jpg" alt="Flowers of a mahogany family tree, Meliaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Meliaceae</span>
             <span class="family-card-desc">Usually pinnately compound leaves; fragrant flowers; capsule or berry fruit.</span>
             <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </label>
-        <label for="tab-ebenaceae" class="family-card">
+        </a>
+        <a href="#ebenaceae" class="family-card">
           <span class="family-card-media"><img src="images/family-ebenaceae.jpg" alt="Foliage of an ebony family tree, Ebenaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Ebenaceae</span>
             <span class="family-card-desc">Simple leaves; separate male/female flowers; berry with persistent calyx; dark heartwood.</span>
             <span class="family-card-cta">Explore <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </label>
+        </a>
       </div>
 
     <section id="myristicaceae" class="tab-panel" aria-labelledby="myristicaceae-heading">
@@ -129,6 +175,13 @@
       <ul>
         <li><a href="explore2.html#horsfieldia"><em>Horsfieldia</em></a> — trees ranging from the eastern Himalaya to Sumatra and the Malay Peninsula.</li>
         <li><a href="explore2.html#knema"><em>Knema</em></a> — trees of central and eastern Malesia with densely hairy fruit.</li>
+      </ul>
+      <h3>Species in this family</h3>
+      <ul>
+        <li><a href="explore3.html#horsfieldia-flocculosa"><em>Horsfieldia flocculosa</em></a></li>
+        <li><a href="explore3.html#horsfieldia-kingii"><em>Horsfieldia kingii</em></a></li>
+        <li><a href="explore3.html#knema-cinerea"><em>Knema cinerea</em></a></li>
+        <li><a href="explore3.html#knema-sumatrana"><em>Knema sumatrana</em></a></li>
       </ul>
     </section>
 
@@ -153,6 +206,13 @@
         <li><a href="explore2.html#parastemon"><em>Parastemon</em></a> — large canopy trees of Southeast Asian peat-swamp and heath forest.</li>
         <li><a href="explore2.html#hirtella"><em>Hirtella</em></a> — shrubs and small understorey trees of Central and South America.</li>
       </ul>
+      <h3>Species in this family</h3>
+      <ul>
+        <li><a href="explore3.html#parastemon-urophyllus"><em>Parastemon urophyllus</em></a></li>
+        <li><a href="explore3.html#parastemon-grandifructus"><em>Parastemon grandifructus</em></a></li>
+        <li><a href="explore3.html#hirtella-triandra"><em>Hirtella triandra</em></a></li>
+        <li><a href="explore3.html#hirtella-racemosa"><em>Hirtella racemosa</em></a></li>
+      </ul>
     </section>
 
     <section id="meliaceae" class="tab-panel" aria-labelledby="meliaceae-heading">
@@ -176,6 +236,13 @@
         <li><a href="explore2.html#aglaia"><em>Aglaia</em></a> — trees and shrubs known for fragrant flowers and edible arillate fruit.</li>
         <li><a href="explore2.html#dysoxylum"><em>Dysoxylum</em></a> — large timber trees ranging from mainland Asia to northern Australia.</li>
       </ul>
+      <h3>Species in this family</h3>
+      <ul>
+        <li><a href="explore3.html#aglaia-elliptica"><em>Aglaia elliptica</em></a></li>
+        <li><a href="explore3.html#aglaia-korthalsii"><em>Aglaia korthalsii</em></a></li>
+        <li><a href="explore3.html#dysoxylum-acutangulum"><em>Dysoxylum acutangulum</em></a></li>
+        <li><a href="explore3.html#dysoxylum-grande"><em>Dysoxylum grande</em></a></li>
+      </ul>
     </section>
 
     <section id="ebenaceae" class="tab-panel" aria-labelledby="ebenaceae-heading">
@@ -197,6 +264,13 @@
       <ul>
         <li><a href="explore2.html#diospyros"><em>Diospyros</em></a> — the ebony genus, ranging from India across Malesia to the Pacific.</li>
         <li><a href="explore2.html#euclea"><em>Euclea</em></a> — shrubs and small trees native to eastern and southern Africa.</li>
+      </ul>
+      <h3>Species in this family</h3>
+      <ul>
+        <li><a href="explore3.html#diospyros-ferrea"><em>Diospyros ferrea</em></a></li>
+        <li><a href="explore3.html#diospyros-ebenum"><em>Diospyros ebenum</em></a></li>
+        <li><a href="explore3.html#euclea-natalensis"><em>Euclea natalensis</em></a></li>
+        <li><a href="explore3.html#euclea-racemosa"><em>Euclea racemosa</em></a></li>
       </ul>
     </section>
     </div>
@@ -281,9 +355,33 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Forest Story. A student project for COS10026 Web Technology.</p>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">Plant Story</p>
+      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contribute.html">Contribution</a></li>
+        <li><a href="identify.html">Identification</a></li>
+        <li><a href="profile/profile.html">Profile</a></li>
+        <li><a href="#">Enhancement Page</a></li>
+      </ul>
+    </nav>
+    <div class="footer-credits">
+      <h4>Data &amp; Credits</h4>
+      <ul>
+        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
+        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
+        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
+        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
+      </ul>
+    </div>
   </div>
+  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
 </footer>
 
 </body>

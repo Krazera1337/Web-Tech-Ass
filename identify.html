@@ -20,7 +20,6 @@
     </a>
     <div class="nav-right">
     <ul>
-      <li><a href="index.html">Home</a></li>
 
       <li class="has-dropdown">
         <a href="explore.html">Explore</a>
@@ -37,8 +36,8 @@
       <li><a href="#">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
-        <a href="#" class="btn-navstyle">Registration</a>
-        <a href="#" class="btn-navstyle">Login</a>
+        <a href="login register/register.html" class="btn-navstyle">Registration</a>
+        <a href="login register/login.html" class="btn-navstyle">Login</a>
       </div>
     </div>
   </div>
@@ -81,7 +80,22 @@
             <img src="{{ image_preview }}" alt="Uploaded plant photo" class="result-modal-image">
             <div class="result-modal-list">
               {% for result in results %}
-              <p><strong>{{ result.name }}</strong><span>{{ "%.1f"|format(result.score * 100) }}% confidence</span></p>
+              <div class="result-match">
+                <p class="result-match-name">
+                  <strong><em>{{ result.name }}</em></strong>
+                  {% if result.common_name %}<span class="result-common-name">{{ result.common_name }}</span>{% endif %}
+                  <span class="result-confidence">{{ "%.1f"|format(result.score * 100) }}% confidence</span>
+                </p>
+                {% if result.in_catalog %}
+                <dl class="result-match-details">
+                  <div><dt>Origin</dt><dd>{{ result.origin }}</dd></div>
+                  <div><dt>Environment</dt><dd>{{ result.environment }}</dd></div>
+                  <div><dt>Care</dt><dd>{{ result.care }}</dd></div>
+                </dl>
+                {% else %}
+                <p class="result-match-note">Care, environment and origin details are available for the 16 species in our <a href="explore3.html">Species catalogue</a>; this match isn't one of them.</p>
+                {% endif %}
+              </div>
               {% endfor %}
             </div>
           </div>
@@ -133,9 +147,33 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">Plant Story</p>
+      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contribute.html">Contribution</a></li>
+        <li><a href="identify.html">Identification</a></li>
+        <li><a href="profile/profile.html">Profile</a></li>
+        <li><a href="#">Enhancement Page</a></li>
+      </ul>
+    </nav>
+    <div class="footer-credits">
+      <h4>Data &amp; Credits</h4>
+      <ul>
+        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
+        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
+        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
+        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
+      </ul>
+    </div>
   </div>
+  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
 </footer>
 
 </body>

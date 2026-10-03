@@ -112,17 +112,19 @@ a:hover, a:focus { text-decoration: underline; }
 .nav-auth {
   display: flex;
   align-items: center;
+  gap: 0.6rem;
 }
 
 .btn-navstyle {
   display: inline-block;
-  padding: 0.85rem 1.1rem;
+  padding: 0.65rem 1.3rem;
   background: var(--forest);
   color: var(--white);
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  border-bottom: 3px solid var(--sage);
+  border-radius: 999px;
+  border: 2px solid var(--sage);
   text-decoration: none;
   transition: background 220ms ease;
 }
@@ -267,6 +269,13 @@ a:hover, a:focus { text-decoration: underline; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.page-hero-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
 }
 
 .page-hero .btn .arrow { transition: transform 220ms ease; }
@@ -425,25 +434,22 @@ a:hover, a:focus { text-decoration: underline; }
   transform: translateX(5px);
 }
 
-#tab-myristicaceae:checked ~ .family-cards label[for="tab-myristicaceae"],
-#tab-chrysobalanaceae:checked ~ .family-cards label[for="tab-chrysobalanaceae"],
-#tab-meliaceae:checked ~ .family-cards label[for="tab-meliaceae"],
-#tab-ebenaceae:checked ~ .family-cards label[for="tab-ebenaceae"] {
+.family-picker:has(#myristicaceae:target) .family-card[href="#myristicaceae"],
+.family-picker:has(#chrysobalanaceae:target) .family-card[href="#chrysobalanaceae"],
+.family-picker:has(#meliaceae:target) .family-card[href="#meliaceae"],
+.family-picker:has(#ebenaceae:target) .family-card[href="#ebenaceae"] {
   border-color: var(--forest);
   box-shadow: var(--shadow-lg);
 }
 
-#tab-myristicaceae:checked ~ .family-cards label[for="tab-myristicaceae"] .family-card-name,
-#tab-chrysobalanaceae:checked ~ .family-cards label[for="tab-chrysobalanaceae"] .family-card-name,
-#tab-meliaceae:checked ~ .family-cards label[for="tab-meliaceae"] .family-card-name,
-#tab-ebenaceae:checked ~ .family-cards label[for="tab-ebenaceae"] .family-card-name {
+.family-picker:has(#myristicaceae:target) .family-card[href="#myristicaceae"] .family-card-name,
+.family-picker:has(#chrysobalanaceae:target) .family-card[href="#chrysobalanaceae"] .family-card-name,
+.family-picker:has(#meliaceae:target) .family-card[href="#meliaceae"] .family-card-name,
+.family-picker:has(#ebenaceae:target) .family-card[href="#ebenaceae"] .family-card-name {
   color: var(--forest);
 }
 
-#tab-myristicaceae:focus-visible ~ .family-cards label[for="tab-myristicaceae"],
-#tab-chrysobalanaceae:focus-visible ~ .family-cards label[for="tab-chrysobalanaceae"],
-#tab-meliaceae:focus-visible ~ .family-cards label[for="tab-meliaceae"],
-#tab-ebenaceae:focus-visible ~ .family-cards label[for="tab-ebenaceae"] {
+.family-card:focus-visible {
   outline: 3px solid var(--forest);
   outline-offset: 3px;
 }
@@ -620,6 +626,7 @@ a:hover, a:focus { text-decoration: underline; }
 
 .genus-card-media figure img {
   width: 100%;
+  max-width: none;
   height: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -977,6 +984,7 @@ figure img {
   border: 3px solid var(--sage);
   margin: 0 auto;
   width: 100%;
+  max-width: 560px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -1061,6 +1069,14 @@ figcaption {
   background: linear-gradient(to top, rgba(32,63,55,0.92), rgba(32,63,55,0));
   font-weight: 700;
   font-size: 1.05rem;
+}
+
+.family-photo-label small.family-photo-origin {
+  margin-top: 0.3rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-style: italic;
+  color: var(--ivory);
 }
 
 .family-photo-label small {
@@ -1176,26 +1192,79 @@ figcaption {
   margin-bottom: 0.75rem;
 }
 
-.tab-radio {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+.tab-panel { display: none; scroll-margin-top: 1.5rem; }
 
-.tab-panel { display: none; }
-
-#tab-myristicaceae:checked ~ #myristicaceae,
-#tab-chrysobalanaceae:checked ~ #chrysobalanaceae,
-#tab-meliaceae:checked ~ #meliaceae,
-#tab-ebenaceae:checked ~ #ebenaceae,
 #myristicaceae:target,
 #chrysobalanaceae:target,
 #meliaceae:target,
 #ebenaceae:target {
   display: block;
 }
+
+/* ---------- Catalogue jump menu (explore1/2/3.html) ---------- */
+
+.catalogue-jump {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0.9rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.catalogue-jump summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--forest-dark);
+}
+
+.catalogue-jump summary::-webkit-details-marker { display: none; }
+.catalogue-jump summary::before {
+  content: "\1F50D";
+  font-size: 0.95em;
+}
+.catalogue-jump summary .jump-arrow {
+  margin-left: auto;
+  display: inline-block;
+  transition: transform 150ms ease;
+  color: var(--text-light);
+}
+.catalogue-jump[open] summary .jump-arrow { transform: rotate(180deg); }
+
+.catalogue-jump-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+  .catalogue-jump-grid { grid-template-columns: 1fr; }
+}
+
+.catalogue-jump-grid h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--forest);
+}
+
+.catalogue-jump-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.catalogue-jump-grid a { font-size: 0.92rem; }
 
 /* ---------- Select picker (explore2.html, explore3.html) ---------- */
 
@@ -1415,13 +1484,54 @@ button[type="reset"]:hover { background: var(--sage); }
 .site-footer {
   background: var(--forest-dark);
   color: var(--sage);
-  text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   margin-top: 3rem;
   font-size: 0.9rem;
 }
 
 .site-footer a { color: var(--ivory); }
+.site-footer a:hover, .site-footer a:focus-visible { color: var(--white); }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(245, 241, 231, 0.15);
+}
+
+@media (max-width: 700px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.footer-logo {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ivory);
+}
+
+.footer-brand p:last-child { margin: 0; line-height: 1.55; }
+
+.footer-links h4, .footer-credits h4 {
+  margin: 0 0 0.65rem;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ivory);
+}
+
+.footer-links ul, .footer-credits ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.footer-bottom { margin: 0; text-align: center; }
 
 /* ---------- Utility ---------- */
 
@@ -1471,8 +1581,8 @@ button[type="reset"]:hover { background: var(--sage); }
     }
 
   /* Flip on hover or keyboard focus-within */
-  .profile-page .flip-card-wrapper:hover .flip-card,
-  .profile-page .flip-card-wrapper:focus-within .flip-card {
+  .profile-page .flip-card-wrapper:hover:not(:has(.bush-split:hover)) .flip-card,
+  .profile-page .flip-card-wrapper:focus-within:not(:has(.bush-split:focus-within)) .flip-card {
       transform: rotateY(180deg);
     }
 
@@ -1817,8 +1927,8 @@ button[type="reset"]:hover { background: var(--sage); }
       background: transparent;
     }
 
-  .profile-page .flip-card-wrapper:hover .flip-card,
-  .profile-page .flip-card-wrapper:focus-within .flip-card {
+  .profile-page .flip-card-wrapper:hover:not(:has(.bush-split:hover)) .flip-card,
+  .profile-page .flip-card-wrapper:focus-within:not(:has(.bush-split:focus-within)) .flip-card {
       transform: rotateY(180deg);
     }
 
@@ -1946,6 +2056,7 @@ button[type="reset"]:hover { background: var(--sage); }
 
   /* ---------- Right info table card ---------- */
   .profile-page .info-table-card {
+      position: relative;
       flex: 1;
       min-width: 320px;
       background: var(--white);
@@ -2101,6 +2212,26 @@ button[type="reset"]:hover { background: var(--sage); }
     box-sizing: border-box;
   }
 
+  .profile-page .map-select-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .profile-page .map-select {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--forest-dark);
+    background: var(--ivory);
+    border: 1px solid var(--sage);
+    border-radius: 40px;
+    padding: 0.6rem 1.4rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    max-width: 100%;
+  }
+
   .profile-page .map-frame {
     flex: 1;
     border-radius: 1.8rem;
@@ -2136,6 +2267,101 @@ button[type="reset"]:hover { background: var(--sage); }
   }
 
   .profile-page .map-caption span { font-size: 1.3rem; }
+
+  /* ===== POKEMON CORNER DECORATIONS ===== */
+  .profile-page .pokemon-corner {
+    position: absolute !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    object-fit: contain !important;
+    z-index: 2;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+  }
+
+  .profile-page .pokemon-corner-tl {
+    top: 10px;
+    left: 10px;
+    width: 100px;
+  }
+
+  .profile-page .pokemon-corner-tr {
+    top: 10px;
+    right: 10px;
+    width: 170px;
+  }
+
+  /* ===== BUSH / VENUSAUR REVEAL ===== */
+  .profile-page .flip-card-front {
+    overflow: visible;
+  }
+
+  .profile-page .bush-split {
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 92px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .profile-page .bush-half {
+    position: absolute !important;
+    top: 0 !important;
+    width: 100px !important;
+    height: auto !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    object-fit: contain !important;
+    z-index: 2;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    transition: transform 0.45s cubic-bezier(.34,1.56,.64,1);
+  }
+
+  .profile-page .bush-half-left { left: 20px; }
+  .profile-page .bush-half-right { right: 20px; }
+
+  .profile-page .venusaur-peek {
+    position: absolute !important;
+    left: 50%;
+    bottom: 10px;
+    width: 100px !important;
+    height: auto !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    object-fit: contain !important;
+    transform: translateX(-50%) translateY(10%) scale(0.7);
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .profile-page .bush-split:hover .bush-half-left,
+  .profile-page .bush-split:focus .bush-half-left,
+  .profile-page .bush-split:focus-visible .bush-half-left {
+    transform: translateX(-42px) rotate(-8deg);
+  }
+
+  .profile-page .bush-split:hover .bush-half-right,
+  .profile-page .bush-split:focus .bush-half-right,
+  .profile-page .bush-split:focus-visible .bush-half-right {
+    transform: translateX(42px) rotate(8deg);
+  }
+
+  .profile-page .bush-split:hover .venusaur-peek,
+  .profile-page .bush-split:focus .venusaur-peek,
+  .profile-page .bush-split:focus-visible .venusaur-peek {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-30px) scale(1);
+  }
 
   /* ---------- Responsive ---------- */
   @media (max-width: 900px) {
@@ -2607,7 +2833,8 @@ button[type="reset"]:hover { background: var(--sage); }
   background: #edf2e6;
   font-weight: 600;
 }
-.identification-page .site-footer { clear: both; width: 100%; text-align: center; font-style: italic; }
+.identification-page .site-footer { clear: both; width: 100%; }
+.identification-page .footer-bottom { font-style: italic; }
 @media (max-width: 780px) {
   .identification-page .identify-steps > ol { width: auto; }
   .identification-page .identification-layout { display: flex; flex-direction: column; gap: 0; }
@@ -2656,13 +2883,22 @@ button[type="reset"]:hover { background: var(--sage); }
   background: #f8faf5;
 }
 .identification-page .identify-result-modal { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 1rem; background: rgba(8,22,20,.52); backdrop-filter: blur(5px); }
-.identification-page .identify-result-window { width: min(680px, 100%); padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid #b9cbbb; border-top: 4px solid var(--forest); border-radius: 16px; background: #fbfcf8; box-shadow: 0 24px 70px rgba(8,22,20,.3); animation: result-window-in 420ms cubic-bezier(.2,1.3,.35,1) both; }
+.identification-page .identify-result-window { width: min(760px, 100%); max-height: 85vh; overflow-y: auto; padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid #b9cbbb; border-top: 4px solid var(--forest); border-radius: 16px; background: #fbfcf8; box-shadow: 0 24px 70px rgba(8,22,20,.3); animation: result-window-in 420ms cubic-bezier(.2,1.3,.35,1) both; }
 .identification-page .result-modal-kicker { margin: 0 0 .35rem; color: #59765d; font-size: .72rem; font-weight: 800; letter-spacing: .15em; }
 .identification-page .identify-result-window h3 { margin: 0 0 1rem; color: var(--forest-dark); font-size: 1.65rem; }
-.identification-page .result-modal-content { display: grid; grid-template-columns: minmax(150px,36%) 1fr; gap: 1.25rem; align-items: center; }
+.identification-page .result-modal-content { display: grid; grid-template-columns: minmax(150px,32%) 1fr; gap: 1.25rem; align-items: start; }
 .identification-page .result-modal-image { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; border: 1px solid #cbdac7; }
-.identification-page .result-modal-list p { display: flex; justify-content: space-between; gap: 1rem; margin: .65rem 0; padding-bottom: .65rem; border-bottom: 1px solid #dce6d8; }
-.identification-page .result-modal-list span { color: var(--forest); white-space: nowrap; }
+
+.identification-page .result-match { margin: 0 0 .9rem; padding-bottom: .9rem; border-bottom: 1px solid #dce6d8; }
+.identification-page .result-match:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.identification-page .result-match-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .6rem; margin: 0 0 .4rem; }
+.identification-page .result-common-name { color: var(--text-light); font-size: .9rem; }
+.identification-page .result-confidence { margin-left: auto; color: var(--forest); white-space: nowrap; font-size: .88rem; }
+.identification-page .result-match-details { margin: 0; display: grid; gap: .5rem; }
+.identification-page .result-match-details div { display: grid; gap: .1rem; }
+.identification-page .result-match-details dt { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--forest); }
+.identification-page .result-match-details dd { margin: 0; font-size: .92rem; color: var(--text); }
+.identification-page .result-match-note { margin: 0; font-size: .88rem; color: var(--text-light); font-style: italic; }
 .identification-page .result-modal-close { display: inline-block; margin-top: 1rem; padding: .65rem 1.1rem; border: 1px solid #b8cbb0; border-radius: 8px; background: #fff; color: var(--forest); font-weight: 700; text-decoration: none; transition: transform 220ms cubic-bezier(.2,1.4,.45,1), background 180ms ease; }
 .identification-page .result-modal-close:hover, .identification-page .result-modal-close:focus-visible { background: #eaf2e5; text-decoration: none; transform: scale(1.05); }
 .identification-page .result-modal-close:active { transform: scale(.95); }
@@ -2868,11 +3104,25 @@ button[type="reset"]:hover { background: var(--sage); }
 
 a.tag {
   text-decoration: none;
-  transition: background 200ms ease;
+  cursor: pointer;
+  transition: background 200ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+a.tag::after {
+  content: "\2192";
+  margin-left: 0.3em;
+  font-size: 0.9em;
 }
 
 a.tag:hover,
 a.tag:focus-visible {
   background: var(--forest-dark);
   text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+a.tag:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }

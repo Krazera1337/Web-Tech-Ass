@@ -99,14 +99,54 @@
     transition: border-color 200ms ease, background 200ms ease, color 200ms ease;
   }
   .family-reset:hover { border-color: var(--forest); }
-  .family-reset.is-active { background: var(--forest); border-color: var(--forest); color: var(--white); }
 
   .family-picker .family-cards { grid-template-columns: repeat(4, 1fr); margin-bottom: 2.25rem; }
   @media (max-width: 900px) { .family-picker .family-cards { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .family-picker .family-cards { grid-template-columns: 1fr; } }
-  .family-cards button.family-card { width: 100%; padding: 0; font: inherit; text-align: left; cursor: pointer; }
-  .family-card.is-active { border-color: var(--forest); box-shadow: var(--shadow-lg); }
-  .family-card.is-active .family-card-name { color: var(--forest); }
+  .family-cards a.family-card { width: 100%; padding: 0; font: inherit; text-align: left; cursor: pointer; text-decoration: none; }
+
+  /* Active-filter highlight: card and reset button light up when their
+     target section is the current URL fragment (:target). Uses a relative
+     :has() selector since the group sections are later siblings, not
+     descendants, of the picker/cards. */
+  .family-picker:has(~ #myristicaceae-species:target) a.family-card[href="#myristicaceae-species"],
+  .family-picker:has(~ #chrysobalanaceae-species:target) a.family-card[href="#chrysobalanaceae-species"],
+  .family-picker:has(~ #meliaceae-species:target) a.family-card[href="#meliaceae-species"],
+  .family-picker:has(~ #ebenaceae-species:target) a.family-card[href="#ebenaceae-species"] {
+    border-color: var(--forest);
+    box-shadow: var(--shadow-lg);
+  }
+  .family-picker:has(~ #myristicaceae-species:target) a.family-card[href="#myristicaceae-species"] .family-card-name,
+  .family-picker:has(~ #chrysobalanaceae-species:target) a.family-card[href="#chrysobalanaceae-species"] .family-card-name,
+  .family-picker:has(~ #meliaceae-species:target) a.family-card[href="#meliaceae-species"] .family-card-name,
+  .family-picker:has(~ #ebenaceae-species:target) a.family-card[href="#ebenaceae-species"] .family-card-name {
+    color: var(--forest);
+  }
+  .family-picker:not(:has(~ #myristicaceae-species:target, ~ #chrysobalanaceae-species:target, ~ #meliaceae-species:target, ~ #ebenaceae-species:target)) .family-reset {
+    background: var(--forest); border-color: var(--forest); color: var(--white);
+  }
+
+  /* Pure CSS family filter: when a family section is the URL's target,
+     hide the three non-matching species groups so only it shows. Scoped
+     through :has() on the shared .page-wrap ancestor rather than ~, since
+     ~ only reaches later siblings and these four sections aren't in a
+     fixed order relative to each other. */
+  .page-wrap:has(#myristicaceae-species:target) #chrysobalanaceae-species,
+  .page-wrap:has(#myristicaceae-species:target) #meliaceae-species,
+  .page-wrap:has(#myristicaceae-species:target) #ebenaceae-species,
+  .page-wrap:has(#chrysobalanaceae-species:target) #myristicaceae-species,
+  .page-wrap:has(#chrysobalanaceae-species:target) #meliaceae-species,
+  .page-wrap:has(#chrysobalanaceae-species:target) #ebenaceae-species,
+  .page-wrap:has(#meliaceae-species:target) #myristicaceae-species,
+  .page-wrap:has(#meliaceae-species:target) #chrysobalanaceae-species,
+  .page-wrap:has(#meliaceae-species:target) #ebenaceae-species,
+  .page-wrap:has(#ebenaceae-species:target) #myristicaceae-species,
+  .page-wrap:has(#ebenaceae-species:target) #chrysobalanaceae-species,
+  .page-wrap:has(#ebenaceae-species:target) #meliaceae-species {
+    display: none;
+  }
+
+  .picker-group { scroll-margin-top: 1.5rem; }
 </style>
 </head>
 <body>
@@ -118,7 +158,6 @@
     </a>
     <div class="nav-right">
     <ul>
-      <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <a href="explore.html" aria-current="page">Explore</a>
         <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
@@ -133,8 +172,8 @@
       <li><a href="#">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
-        <a href="#" class="btn-navstyle">Registration</a>
-        <a href="#" class="btn-navstyle">Login</a>
+        <a href="login register/register.html" class="btn-navstyle">Registration</a>
+        <a href="login register/login.html" class="btn-navstyle">Login</a>
       </div>
     </div>
   </div>
@@ -145,13 +184,65 @@
     <p class="page-hero-eyebrow">Explore &rsaquo; Species</p>
     <h1>Plant Species</h1>
     <p class="page-hero-lede">Sixteen species, fully profiled and referenced — two from every genus featured on Forest Story.</p>
-    <a class="btn" href="#species-list">Explore Species <span class="arrow" aria-hidden="true">&darr;</span></a>
+    <div class="page-hero-actions">
+      <a class="btn" href="#species-list">Explore Species <span class="arrow" aria-hidden="true">&darr;</span></a>
+      <a class="btn btn-outline" href="identify.html">Identify a Plant</a>
+    </div>
   </div>
 </section>
 
 <main>
   <div class="page-wrap">
     <p class="breadcrumb"><a href="explore.html">&larr; Explore</a> <span class="sep">/</span> <span class="current">Plant Species</span></p>
+
+    <details class="catalogue-jump">
+      <summary>Jump to a family, genus or species<span class="jump-arrow" aria-hidden="true">&darr;</span></summary>
+      <div class="catalogue-jump-grid">
+        <div>
+          <h4>Families</h4>
+          <ul>
+            <li><a href="explore1.html#myristicaceae">Myristicaceae</a></li>
+            <li><a href="explore1.html#chrysobalanaceae">Chrysobalanaceae</a></li>
+            <li><a href="explore1.html#meliaceae">Meliaceae</a></li>
+            <li><a href="explore1.html#ebenaceae">Ebenaceae</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Genera</h4>
+          <ul>
+            <li><a href="explore2.html#horsfieldia">Horsfieldia</a></li>
+            <li><a href="explore2.html#knema">Knema</a></li>
+            <li><a href="explore2.html#parastemon">Parastemon</a></li>
+            <li><a href="explore2.html#hirtella">Hirtella</a></li>
+            <li><a href="explore2.html#aglaia">Aglaia</a></li>
+            <li><a href="explore2.html#dysoxylum">Dysoxylum</a></li>
+            <li><a href="explore2.html#diospyros">Diospyros</a></li>
+            <li><a href="explore2.html#euclea">Euclea</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Species</h4>
+          <ul>
+            <li><a href="explore3.html#horsfieldia-flocculosa">Horsfieldia flocculosa</a></li>
+            <li><a href="explore3.html#horsfieldia-kingii">Horsfieldia kingii</a></li>
+            <li><a href="explore3.html#knema-cinerea">Knema cinerea</a></li>
+            <li><a href="explore3.html#knema-sumatrana">Knema sumatrana</a></li>
+            <li><a href="explore3.html#parastemon-urophyllus">Parastemon urophyllus</a></li>
+            <li><a href="explore3.html#parastemon-grandifructus">Parastemon grandifructus</a></li>
+            <li><a href="explore3.html#hirtella-triandra">Hirtella triandra</a></li>
+            <li><a href="explore3.html#hirtella-racemosa">Hirtella racemosa</a></li>
+            <li><a href="explore3.html#aglaia-elliptica">Aglaia elliptica</a></li>
+            <li><a href="explore3.html#aglaia-korthalsii">Aglaia korthalsii</a></li>
+            <li><a href="explore3.html#dysoxylum-acutangulum">Dysoxylum acutangulum</a></li>
+            <li><a href="explore3.html#dysoxylum-grande">Dysoxylum grande</a></li>
+            <li><a href="explore3.html#diospyros-ferrea">Diospyros ferrea</a></li>
+            <li><a href="explore3.html#diospyros-ebenum">Diospyros ebenum</a></li>
+            <li><a href="explore3.html#euclea-natalensis">Euclea natalensis</a></li>
+            <li><a href="explore3.html#euclea-racemosa">Euclea racemosa</a></li>
+          </ul>
+        </div>
+      </div>
+    </details>
     <p>This page holds the detailed species record for every plant featured
     on Forest Story — sixteen species in total, two from each of the eight
     genera covered on the <a href="explore2.html">Genera</a> page. Every
@@ -164,41 +255,41 @@
     <div class="family-picker" id="species-list">
       <div class="family-picker-head">
         <p class="tab-hint">Choose a family to see its species:</p>
-        <button type="button" class="family-reset is-active" data-family="all">Show all 16 species</button>
+        <a href="#species-list" class="family-reset">Show all 16 species</a>
       </div>
       <div class="family-cards" role="group" aria-label="Filter species by family">
-        <button type="button" class="family-card" data-family="myristicaceae" aria-pressed="false">
+        <a href="#myristicaceae-species" class="family-card">
           <span class="family-card-media"><img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Myristicaceae</span>
             <span class="family-card-desc"><em>Horsfieldia</em> &amp; <em>Knema</em> — 4 species</span>
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </button>
-        <button type="button" class="family-card" data-family="chrysobalanaceae" aria-pressed="false">
+        </a>
+        <a href="#chrysobalanaceae-species" class="family-card">
           <span class="family-card-media"><img src="images/family-chrysobalanaceae.jpg" alt="A flowering tree of the cocoplum family, Chrysobalanaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Chrysobalanaceae</span>
             <span class="family-card-desc"><em>Parastemon</em> &amp; <em>Hirtella</em> — 4 species</span>
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </button>
-        <button type="button" class="family-card" data-family="meliaceae" aria-pressed="false">
+        </a>
+        <a href="#meliaceae-species" class="family-card">
           <span class="family-card-media"><img src="images/family-meliaceae.jpg" alt="Flowers of a mahogany family tree, Meliaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Meliaceae</span>
             <span class="family-card-desc"><em>Aglaia</em> &amp; <em>Dysoxylum</em> — 4 species</span>
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </button>
-        <button type="button" class="family-card" data-family="ebenaceae" aria-pressed="false">
+        </a>
+        <a href="#ebenaceae-species" class="family-card">
           <span class="family-card-media"><img src="images/family-ebenaceae.jpg" alt="Foliage of an ebony family tree, Ebenaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Ebenaceae</span>
             <span class="family-card-desc"><em>Diospyros</em> &amp; <em>Euclea</em> — 4 species</span>
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
-        </button>
+        </a>
       </div>
     </div>
 
@@ -1130,37 +1221,34 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Forest Story. A student project for COS10026 Web Technology.</p>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">Plant Story</p>
+      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contribute.html">Contribution</a></li>
+        <li><a href="identify.html">Identification</a></li>
+        <li><a href="profile/profile.html">Profile</a></li>
+        <li><a href="#">Enhancement Page</a></li>
+      </ul>
+    </nav>
+    <div class="footer-credits">
+      <h4>Data &amp; Credits</h4>
+      <ul>
+        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
+        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
+        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
+        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
+      </ul>
+    </div>
   </div>
+  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
 </footer>
 
-<script>
-(function () {
-  var groups = document.querySelectorAll(".picker-group");
-  var cards = document.querySelectorAll(".family-card[data-family]");
-  var resetBtn = document.querySelector(".family-reset");
-  if (!groups.length) return;
-
-  function apply(family) {
-    groups.forEach(function (group) {
-      group.hidden = family !== "all" && group.dataset.family !== family;
-    });
-    cards.forEach(function (card) {
-      var active = card.dataset.family === family;
-      card.classList.toggle("is-active", active);
-      card.setAttribute("aria-pressed", active);
-    });
-    if (resetBtn) resetBtn.classList.toggle("is-active", family === "all");
-  }
-
-  cards.forEach(function (card) {
-    card.addEventListener("click", function () { apply(card.dataset.family); });
-  });
-  if (resetBtn) resetBtn.addEventListener("click", function () { apply("all"); });
-
-  apply("all");
-})();
-</script>
 </body>
 </html>

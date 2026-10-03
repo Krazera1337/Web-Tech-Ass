@@ -17,7 +17,6 @@
     </a>
     <div class="nav-right">
     <ul>
-      <li><a href="../index.html">Home</a></li>
       <li class="has-dropdown">
         <a href="../explore.html">Explore</a>
         <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
@@ -32,8 +31,8 @@
       <li><a href="#">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
-        <a href="#" class="btn-navstyle">Registration</a>
-        <a href="#" class="btn-navstyle">Login</a>
+        <a href="../login register/register.html" class="btn-navstyle">Registration</a>
+        <a href="../login register/login.html" class="btn-navstyle">Login</a>
       </div>
     </div>
   </div>
@@ -47,11 +46,17 @@
   <div class="flip-card-wrapper">
     <div class="flip-card" tabindex="0" aria-label="Focus to read the introduction">
       <div class="flip-card-front">
+        <img src="../images/bulbasaur.png" alt="Bulbasaur" class="pokemon-corner pokemon-corner-tl">
+        <div class="bush-split" tabindex="0" aria-label="Hover to reveal a hidden Venusaur">
+          <img src="../images/venusaur.png" alt="Venusaur" class="venusaur-peek">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
+        </div>
         <img src="../images/leaf-icon.jpg" alt="Muhammad Hishamuddin Ngu" class="profile-avatar-large"
              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23A9C4A2%22 /%3E%3Ctext x=%2250%22 y=%2265%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23123D32%22 font-family=%22Arial%22%3E🌿%3C/text%3E%3C/svg%3E'">
         <h1 class="profile-name">Muhammad Hishamuddin Ngu</h1>
-        <div class="profile-student-id">Student ID: TBD</div>
-        <div class="profile-course">TBD</div>
+        <div class="profile-student-id">Student ID: 105825538 </div>
+        <div class="profile-course">Bachelor of Computer Science (Data Science)</div>
         <div class="flip-hint">
           <span></span> flip & read intro
         </div>
@@ -59,8 +64,10 @@
       <div class="flip-card-back">
         <h2 class="back-title">🌱 About Me</h2>
         <div class="back-intro-text">
-          <p>Hello! I'm Muhammad Hishamuddin Ngu, a Plant Story team member. Profile details coming soon!</p>
-          <p class="profile-motto">"The forest is not just trees — it's a story waiting to be told."</p>
+          <p>Hello! I'm Muhammad Hishamuddin Ngu, a Swinburne University student. I am passionate about technology and its applications in solving real-world problems.</p>
+          <p>I hit Radiant#499 in Valorant, Faceit Level 10 in CS:GO, and 4.0 in my foundation year.</p>
+          <p>I love to ruin my mental health with excessive gaming and studies.</p>
+          <p class="profile-motto">"Day by Day, Nothing - Noan"</p>
         </div>
       </div>
     </div>
@@ -68,20 +75,21 @@
 
   <!-- Right: Info table -->
   <div class="info-table-card">
+    <img src="../images/rayquaza.png" alt="Rayquaza" class="pokemon-corner pokemon-corner-tr">
     <h3><span></span> Personal Details</h3>
     <table class="info-table">
       <tbody>
         <tr>
           <th>🏡 Hometown</th>
-          <td>TBD</td>
+          <td>Sarikei, Sarawak &amp; Bukit Timah, Singapore</td>
         </tr>
         <tr>
           <th>🎨 Hobbies</th>
-          <td>TBD</td>
+          <td>Gaming, Reading, Workout, Tinkering & Collecting TCG</td>
         </tr>
         <tr>
           <th>🔬 Interests</th>
-          <td>TBD</td>
+          <td>TCG, Technology, Medicine & Gaming</td>
         </tr>
       </tbody>
     </table>
@@ -94,11 +102,70 @@
   </div>
 
 </main>
+<!-- ===== EXTRA ROW: Map ===== -->
+<div class="extra-row">
+
+  <div class="map-card">
+    <h2 class="map-title"><span>🗺️</span> Hometown</h2>
+    <label for="hometown-select" class="map-select-label">Choose a hometown to view:</label>
+    <select id="hometown-select" class="map-select">
+      <option value="sarikei" data-query="Sarikei%2C%20Sarawak" data-caption="Sarikei, my hometown in Sarawak.">Sarikei, Sarawak</option>
+      <option value="bukit-timah" data-query="Bukit%20Timah%2C%20Singapore" data-caption="Bukit Timah, my second hometown in Singapore.">Bukit Timah, Singapore</option>
+    </select>
+    <div class="map-frame">
+      <iframe id="hometown-map" src="https://www.google.com/maps?q=Sarikei%2C%20Sarawak&amp;output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Map of Sarikei, Sarawak" allowfullscreen></iframe>
+    </div>
+    <div class="map-caption">
+      <span>📍</span> <span id="hometown-caption">Sarikei, my hometown in Sarawak.</span>
+    </div>
+  </div>
+
+</div>
+<script>
+(function () {
+  var select = document.getElementById('hometown-select');
+  var map = document.getElementById('hometown-map');
+  var caption = document.getElementById('hometown-caption');
+
+  select.addEventListener('change', function () {
+    var option = select.options[select.selectedIndex];
+    map.src = 'https://www.google.com/maps?q=' + option.dataset.query + '&output=embed';
+    map.title = 'Map of ' + option.textContent;
+    caption.textContent = option.dataset.caption;
+  });
+})();
+</script>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">Plant Story</p>
+      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../explore.html">Explore</a></li>
+        <li><a href="../contribute.html">Contribution</a></li>
+        <li><a href="../identify.html">Identification</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+        <li><a href="#">Enhancement Page</a></li>
+      </ul>
+    </nav>
+    <div class="footer-credits">
+      <h4>Data &amp; Credits</h4>
+      <ul>
+        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
+        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
+        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
+        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
+      </ul>
+    </div>
   </div>
+  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
 </footer>
 
 <!-- Background music: starts on first click/keypress (browser autoplay policy), toggle to mute -->
@@ -113,6 +180,7 @@
   var audio = document.getElementById('bgm-audio');
   var btn = document.getElementById('bgm-toggle');
   var icon = btn.querySelector('.bgm-icon');
+  audio.volume = 0.5;
 
   function updateIcon() {
     var playing = !audio.paused;
