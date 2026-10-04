@@ -7,9 +7,9 @@
 <meta name="author" content="Jayden">
 <meta name="description" content="Jayden, a Plant Story team member.">
 <link rel="icon" type="image/jpeg" href="../images/leaf-icon.jpg">
-<link rel="stylesheet" href="../css/style.css?v=30">
+<link rel="stylesheet" href="../css/style.css?v=57">
 </head>
-<body class="profile-page">
+<body class="profile-page right-flip-profile pokemon-themed theme-water">
 <nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="../index.html" class="brand">
@@ -28,7 +28,7 @@
       <li><a href="../contribute.html">Contribution</a></li>
       <li><a href="../identify.html">Identification</a></li>
       <li><a href="profile.html">Profile</a></li>
-      <li><a href="#">Enquiry</a></li>
+      <li><a href="../enquiry.html">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
         <a href="../login register/register.html" class="btn-navstyle">Registration</a>
@@ -42,31 +42,28 @@
 <!-- Main profile area -->
 <main class="profile-container">
 
-  <!-- Left: Flip card -->
-  <div class="flip-card-wrapper">
-    <div class="flip-card" tabindex="0" aria-label="Focus to read the introduction">
-      <div class="flip-card-front">
+  <!-- Left: profile card -->
+  <div class="profile-static-wrapper">
+    <div class="profile-static-card pokemon-trio">
+        <img src="../images/jay-profile-1-removebg-preview.png" alt="Squirtle" class="pokemon-corner pokemon-corner-tl trio-first">
+        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Wartortle">
+          <img src="../images/jay-profile-2-removebg-preview.png" alt="Wartortle" class="venusaur-peek trio-second">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
+        </div>
+        <img src="../images/jay-profile-3-removebg-preview.png" alt="Squirtle wearing sunglasses" class="pokemon-corner trio-third">
         <img src="../images/leaf-icon.jpg" alt="Jayden" class="profile-avatar-large"
              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23A9C4A2%22 /%3E%3Ctext x=%2250%22 y=%2265%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23123D32%22 font-family=%22Arial%22%3E🌿%3C/text%3E%3C/svg%3E'">
         <h1 class="profile-name">Jayden Wong Wen Jie</h1>
         <div class="profile-student-id">Student ID: 106765460</div>
         <div class="profile-course">Bachelor of Computer Science</div>
-        <div class="flip-hint">
-          <span></span> flip & read intro
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <h2 class="back-title">🌱 About Me</h2>
-        <div class="back-intro-text">
-          <p>Hello! I'm Jayden, a Plant Story team member, also first year student in Swinburne. This was my first assignment, and I was worried about whether I was doing it correctly. However, I felt good about the assignment because I am genuinely interested in the course. </p>
-          <p class="profile-motto">"The forest is not just trees — it's a story waiting to be told."</p>
-        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Right: Info table -->
-  <div class="info-table-card">
+  <!-- Right: details flip to the introduction -->
+  <div class="details-flip-wrapper">
+    <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
+      <div class="info-table-card details-face details-front">
     <h3><span></span> Personal Details</h3>
     <table class="info-table">
       <tbody>
@@ -85,10 +82,15 @@
       </tbody>
     </table>
 
-    <div class="email-section">
-      <a href="mailto:106765460@students.swinburne.edu.my" class="email-btn">
-        <span class="email-icon">✉️</span> Email Me
-      </a>
+        <p class="flip-hint">flip &amp; read intro</p>
+      </div>
+      <div class="details-face details-back">
+        <h2 class="back-title">🌱 About Me</h2>
+        <div class="back-intro-text">
+          <p>Hello! I'm Jayden, a Plant Story team member, also first year student in Swinburne. This was my first assignment, and I was worried about whether I was doing it correctly. However, I felt good about the assignment because I am genuinely interested in the course. </p>
+          <p class="profile-motto">"The forest is not just trees — it's a story waiting to be told."</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -106,6 +108,12 @@
     </div>
   </div>
 
+</div>
+
+<div class="email-section profile-contact">
+  <a href="mailto:106765460@students.swinburne.edu.my" class="email-btn">
+    <span class="email-icon">✉️</span> Email Me
+  </a>
 </div>
 
 <footer class="site-footer">
@@ -176,5 +184,6 @@
 })();
 </script>
 
+<script src="pokemon-placement.js?v=4"></script>
 </body>
 </html>

@@ -7,9 +7,9 @@
 <meta name="author" content="Hui Ching Teo">
 <meta name="description" content="Hui Ching Teo, a Plant Story team member.">
 <link rel="icon" type="image/jpeg" href="../images/leaf-icon.jpg">
-<link rel="stylesheet" href="../css/style.css?v=30">
+<link rel="stylesheet" href="../css/style.css?v=57">
 </head>
-<body class="profile-page">
+<body class="profile-page right-flip-profile pokemon-themed theme-electric">
 <nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="../index.html" class="brand">
@@ -28,7 +28,7 @@
       <li><a href="../contribute.html">Contribution</a></li>
       <li><a href="../identify.html">Identification</a></li>
       <li><a href="profile.html">Profile</a></li>
-      <li><a href="#">Enquiry</a></li>
+      <li><a href="../enquiry.html">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
         <a href="../login register/register.html" class="btn-navstyle">Registration</a>
@@ -42,32 +42,28 @@
 <!-- Main profile area -->
 <main class="profile-container">
 
-  <!-- Left: Flip card -->
-  <div class="flip-card-wrapper">
-    <div class="flip-card" tabindex="0" role="button" aria-label="Hover or focus to flip card and view introduction">
-      <div class="flip-card-front">
+  <!-- Left: profile card -->
+  <div class="profile-static-wrapper">
+    <div class="profile-static-card pokemon-trio">
+        <img src="../images/teo-profile-1-removebg-preview.png" alt="Pikachu" class="pokemon-corner pokemon-corner-tl trio-first">
+        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Raichu">
+          <img src="../images/teo-profile-2-removebg-preview.png" alt="Raichu" class="venusaur-peek trio-second">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
+        </div>
+        <img src="../images/teo-profile-3-removebg-preview.png" alt="Pikachu" class="pokemon-corner trio-third">
         <img src="../images/leaf-icon.jpg" alt="Profile portrait placeholder" class="profile-avatar-large"
              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23A9C4A2%22 /%3E%3Ctext x=%2250%22 y=%2265%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23123D32%22 font-family=%22Arial%22%3E🌿%3C/text%3E%3C/svg%3E'">
         <h1 class="profile-name">Hui Ching TEO</h1>
         <div class="profile-student-id">Student ID: 104391847</div>
         <div class="profile-course">Bachelor of Engineering (Honours)(Software)</div>
-        <div class="flip-hint">
-          <span></span> flip & read intro
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <h2 class="back-title">🌱 About Me</h2>
-        <div class="back-intro-text">
-          <p>Hello! I'm Hui Ching, a second-year student passionate about web development and rainforest ecology. I built this platform as part of my coursework, combining my love for coding with a desire to showcase the beauty of tropical plants.</p>
-          <p>I believe technology can be a bridge between people and nature. In my free time, I like to take care of plants.</p>
-          <p style="margin-top:0.8rem; font-style:italic; color: var(--forest);">"The forest is not just trees — it's a story waiting to be told."</p>
-        </div>
-      </div>
     </div>
   </div>
 
-  <!-- Right: Info table -->
-  <div class="info-table-card">
+  <!-- Right: details flip to the introduction -->
+  <div class="details-flip-wrapper">
+    <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
+      <div class="info-table-card details-face details-front">
     <h3><span></span> Personal Details</h3>
     <table class="info-table">
       <tbody>
@@ -86,10 +82,16 @@
       </tbody>
     </table>
 
-    <div class="email-section">
-      <a href="mailto:alex.chen@foreststory.example" class="email-btn">
-        <span class="email-icon">✉️</span> Email Me
-      </a>
+        <p class="flip-hint">flip &amp; read intro</p>
+      </div>
+      <div class="details-face details-back">
+        <h2 class="back-title">🌱 About Me</h2>
+        <div class="back-intro-text">
+          <p>Hello! I'm Hui Ching, a second-year student passionate about web development and rainforest ecology. I built this platform as part of my coursework, combining my love for coding with a desire to showcase the beauty of tropical plants.</p>
+          <p>I believe technology can be a bridge between people and nature. In my free time, I like to take care of plants.</p>
+          <p style="margin-top:0.8rem; font-style:italic; color: var(--forest);">"The forest is not just trees — it's a story waiting to be told."</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -114,6 +116,12 @@
     </div>
   </div>
 
+</div>
+
+<div class="email-section profile-contact">
+  <a href="mailto:alex.chen@foreststory.example" class="email-btn">
+    <span class="email-icon">✉️</span> Email Me
+  </a>
 </div>
 
 <footer class="site-footer">
@@ -151,7 +159,7 @@
   <span class="bgm-icon" aria-hidden="true">🔈</span>
 </button>
 <audio id="bgm-audio" loop preload="none">
-  <source src="../songs/music1.mp3" type="audio/mpeg">
+  <source src="../songs/teomusic.mp3" type="audio/mpeg">
 </audio>
 <script>
 (function () {
@@ -184,5 +192,6 @@
 })();
 </script>
 
+<script src="pokemon-placement.js?v=4"></script>
 </body>
 </html>

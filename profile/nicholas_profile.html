@@ -7,9 +7,9 @@
 <meta name="author" content="Nicholas Sia">
 <meta name="description" content="Nicholas Sia, a Plant Story team member.">
 <link rel="icon" type="image/jpeg" href="../images/leaf-icon.jpg">
-<link rel="stylesheet" href="../css/style.css?v=29">
+<link rel="stylesheet" href="../css/style.css?v=57">
 </head>
-<body class="profile-page">
+<body class="profile-page right-flip-profile pokemon-themed theme-fire">
 <nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="../index.html" class="brand">
@@ -28,7 +28,7 @@
       <li><a href="../contribute.html">Contribution</a></li>
       <li><a href="../identify.html">Identification</a></li>
       <li><a href="profile.html">Profile</a></li>
-      <li><a href="#">Enquiry</a></li>
+      <li><a href="../enquiry.html">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
         <a href="../login register/register.html" class="btn-navstyle">Registration</a>
@@ -42,19 +42,47 @@
 <!-- Main profile area -->
 <main class="profile-container">
   
-  <!-- Left: Flip card -->
-  <div class="flip-card-wrapper">
-    <div class="flip-card" tabindex="0" aria-label="Focus to read the introduction">
-      <div class="flip-card-front">
-        <img src="../images/nicholas-profile-picture.jpg" alt="Nicholas Sia Siang Wei" class="profile-avatar-large">
-        <h1 class="profile-name">Nicholas Sia Siang Wei</h1>
-        <div class="profile-student-id">Student ID: 106758936</div>
-        <div class="profile-course">Bachelor of Computer Science</div>
-        <div class="flip-hint">
-          <span></span> flip & read intro
-        </div>
+  <!-- Left: profile card -->
+  <div class="profile-static-wrapper">
+    <div class="profile-static-card pokemon-trio">
+      <img src="../images/nicholas-profile-picture-1-removebg-preview.png" alt="Charmander" class="pokemon-corner pokemon-corner-tl trio-first">
+        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Charizard">
+        <img src="../images/nicholas-profile-picture-2-removebg-preview.png" alt="Charizard" class="venusaur-peek trio-second">
+        <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+        <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
       </div>
-      <div class="flip-card-back">
+      <img src="../images/nicholas-profile-3.gif" alt="Animated Charizard" class="pokemon-corner trio-third">
+      <img src="../images/nicholas-profile-picture.jpg" alt="Nicholas Sia Siang Wei" class="profile-avatar-large">
+      <h1 class="profile-name">Nicholas Sia Siang Wei</h1>
+      <div class="profile-student-id">Student ID: 106758936</div>
+      <div class="profile-course">Bachelor of Computer Science (Software Development)</div>
+    </div>
+  </div>
+
+  <!-- Right: details flip to the introduction -->
+  <div class="details-flip-wrapper">
+    <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
+      <div class="info-table-card details-face details-front">
+        <h3><span></span> Personal Details</h3>
+        <table class="info-table">
+          <tbody>
+            <tr>
+              <th>🏡 Hometown</th>
+              <td>Sibu, Sarawak</td>
+            </tr>
+            <tr>
+              <th>🎨 Hobbies</th>
+              <td>Gaming, Drawing, Jogging</td>
+            </tr>
+            <tr>
+              <th>🔬 Interests</th>
+              <td>Game Development, Drawing, Listen to songs</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="flip-hint">flip &amp; read intro</p>
+      </div>
+      <div class="details-face details-back">
         <h2 class="back-title">🌱 About Me</h2>
         <div class="back-intro-text">
           <p>Hello! I'm Nicholas, a first-year Computer Science student at Swinburne University of Technology Sarawak. I am just an ordinary person.</p>
@@ -62,33 +90,6 @@
           <p class="profile-motto">"Keep learning, keep creating."</p>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Right: Info table -->
-  <div class="info-table-card">
-    <h3><span></span> Personal Details</h3>
-    <table class="info-table">
-      <tbody>
-        <tr>
-          <th>🏡 Hometown</th>
-          <td>Sibu, Sarawak</td>
-        </tr>
-        <tr>
-          <th>🎨 Hobbies</th>
-          <td>Gaming, Drawing, Jogging</td>
-        </tr>
-        <tr>
-          <th>🔬 Interests</th>
-          <td>Game Development, Drawing, Listen to songs</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="email-section">
-      <a href="mailto:106758936@students.swinburne.edu.my" class="email-btn">
-        <span class="email-icon">✉️</span> Email Me
-      </a>
     </div>
   </div>
 
@@ -112,6 +113,11 @@
 
 </div>
 
+<div class="email-section profile-contact">
+  <a href="mailto:106758936@students.swinburne.edu.my" class="email-btn">
+    <span class="email-icon">✉️</span> Email Me
+  </a>
+</div>
 
 
 
@@ -150,7 +156,7 @@
   <span class="bgm-icon" aria-hidden="true">🔈</span>
 </button>
 <audio id="bgm-audio" loop preload="none">
-  <source src="../songs/music2(nick).mp3" type="audio/mpeg">
+  <source src="../songs/nickmusic.mp3" type="audio/mpeg">
 </audio>
 <script>
 (function () {
@@ -183,5 +189,6 @@
 })();
 </script>
 
+<script src="pokemon-placement.js?v=4"></script>
 </body>
 </html>
