@@ -45,7 +45,7 @@
   <!-- Left: profile card -->
   <div class="profile-static-wrapper">
     <div class="profile-static-card pokemon-trio">
-        <img src="../images/teo-profile-1-removebg-preview.png" alt="Pikachu" class="pokemon-corner pokemon-corner-tl trio-first">
+        <img src="../images/pikachu.png" alt="Pikachu" class="pokemon-corner pokemon-corner-tl trio-first">
         <img src="../images/teo-profile-picture.jpeg" alt="Hui Ching Teo" class="profile-avatar-large">
         <h1 class="profile-name">Hui Ching TEO</h1>
         <div class="profile-student-id">Student ID: 104391847</div>
@@ -55,7 +55,7 @@
 
   <!-- Right: details flip to the introduction -->
   <div class="details-flip-wrapper pokemon-decorated">
-        <img src="../images/teo-profile-3-removebg-preview.png" alt="Pikachu" class="pokemon-corner trio-third">
+        <img src="../images/pikachu meme.png" alt="Pikachu" class="pokemon-corner trio-third">
     <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
       <div class="info-table-card details-face details-front">
     <h3><span></span> Personal Details</h3>
@@ -96,7 +96,7 @@
 
   <div class="map-card pokemon-decorated">
         <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Raichu">
-          <img src="../images/teo-profile-2-removebg-preview.png" alt="Raichu" class="venusaur-peek trio-second">
+          <img src="../images/raichu.png" alt="Raichu" class="venusaur-peek trio-second">
           <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
           <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
         </div>
@@ -153,43 +153,11 @@
 <nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav>
 </footer>
 
-<!-- Background music: starts on first click/keypress (browser autoplay policy), toggle to mute -->
-<button id="bgm-toggle" class="bgm-toggle" type="button" aria-pressed="false" aria-label="Play background music">
-  <span class="bgm-icon" aria-hidden="true">🔈</span>
-</button>
-<audio id="bgm-audio" loop preload="none">
+<!-- Background music: native HTML5 audio player, no scripting required -->
+<audio id="bgm-toggle" class="bgm-player" controls loop preload="none" title="Background music">
   <source src="../songs/teomusic.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
-<script>
-(function () {
-  var audio = document.getElementById('bgm-audio');
-  var btn = document.getElementById('bgm-toggle');
-  var icon = btn.querySelector('.bgm-icon');
-  audio.volume = 0.5;
-
-  function updateIcon() {
-    var playing = !audio.paused;
-    icon.textContent = playing ? '🔊' : '🔈';
-    btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
-    btn.setAttribute('aria-label', playing ? 'Mute background music' : 'Play background music');
-  }
-  audio.addEventListener('play', updateIcon);
-  audio.addEventListener('pause', updateIcon);
-
-  function firstInteraction() {
-    audio.play().catch(function () {});
-    document.removeEventListener('click', firstInteraction);
-    document.removeEventListener('keydown', firstInteraction);
-  }
-  document.addEventListener('click', firstInteraction);
-  document.addEventListener('keydown', firstInteraction);
-
-  btn.addEventListener('click', function () {
-    if (audio.paused) { audio.play().catch(function () {}); }
-    else { audio.pause(); }
-  });
-})();
-</script>
 
 </body>
 </html>

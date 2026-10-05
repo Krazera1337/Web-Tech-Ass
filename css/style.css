@@ -1028,7 +1028,7 @@ figcaption {
 
 .flip-card:hover .flip-card-inner,
 .flip-card:focus-visible .flip-card-inner,
-.flip-card.is-flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-card:focus-within .flip-card-inner { transform: rotateY(180deg); }
 
 .flip-card:focus-visible { outline: none; }
 
@@ -1773,7 +1773,21 @@ button[type="reset"]:hover { background: var(--sage); }
   display: block;
 }
 
-.profile-page .map-select {
+/* CSS-only hometown switcher: radios stay off-screen, labels act as the tabs */
+.profile-page .map-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile-page .map-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.profile-page .map-tab {
   font-size: 1rem;
   font-weight: 600;
   color: var(--forest-dark);
@@ -1781,9 +1795,33 @@ button[type="reset"]:hover { background: var(--sage); }
   border: 1px solid var(--sage);
   border-radius: 40px;
   padding: 0.6rem 1.4rem;
-  margin-bottom: 1.2rem;
   cursor: pointer;
   max-width: 100%;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.profile-page .map-tab:hover { background: var(--sage); }
+
+.profile-page #hometown-select:checked ~ .map-tabs label[for="hometown-select"],
+.profile-page #map-bukit-timah:checked ~ .map-tabs label[for="map-bukit-timah"] {
+  background: var(--forest);
+  color: var(--white);
+  border-color: var(--forest);
+}
+
+.profile-page #hometown-select:focus-visible ~ .map-tabs label[for="hometown-select"],
+.profile-page #map-bukit-timah:focus-visible ~ .map-tabs label[for="map-bukit-timah"] {
+  outline: 3px solid var(--forest-dark);
+  outline-offset: 2px;
+}
+
+.profile-page .map-panel { display: none; }
+
+.profile-page #hometown-select:checked ~ .map-panel-sarikei,
+.profile-page #map-bukit-timah:checked ~ .map-panel-bukit-timah {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .profile-page .map-frame {
@@ -1822,6 +1860,193 @@ button[type="reset"]:hover { background: var(--sage); }
 
 .profile-page .map-caption span { font-size: 1.3rem; }
 
+/* ===== SKILL GARDEN — stems grow with CSS keyframes, no scripting ===== */
+.profile-page .skill-garden {
+  background: var(--white);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--sage);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-page .garden-bed {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 1rem;
+  position: relative;
+  border-radius: 1.8rem;
+  /* sky fading into the soil line at 82% */
+  background: linear-gradient(to bottom, #dff0f7 0%, #eef7ea 55%, #cfe3c6 82%, #6b4a2f 82%, #4e3522 100%);
+}
+
+/* each plant occupies its own column and stands on the soil */
+.profile-page .garden-plant {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 320px;
+  padding-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  outline: none;
+}
+
+.profile-page .plant-stem {
+  display: block;
+  position: relative;
+  width: 12px;
+  height: var(--level);
+  border-radius: 12px 12px 3px 3px;
+  background: linear-gradient(to top, var(--forest-dark), var(--forest) 55%, #7fc27a);
+  animation: garden-grow 1.7s cubic-bezier(0.22, 0.68, 0.36, 1) backwards;
+  animation-delay: var(--delay, 0s);
+  transition: filter 250ms ease;
+}
+
+@keyframes garden-grow {
+  from { height: 0; }
+  to   { height: var(--level); }
+}
+
+/* two leaves, shaped purely with border-radius */
+.profile-page .plant-stem::before,
+.profile-page .plant-stem::after {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 24px;
+  background: linear-gradient(135deg, #8fd08a, var(--forest));
+  box-shadow: inset 0 -2px 4px rgba(18, 61, 50, 0.25);
+  animation: leaf-unfurl 900ms ease backwards;
+  animation-delay: calc(var(--delay, 0s) + 900ms);
+}
+
+.profile-page .plant-stem::before {
+  left: 10px;
+  bottom: 32%;
+  border-radius: 0 100% 0 100%;
+  transform-origin: left center;
+  transform: rotate(-14deg);
+}
+
+.profile-page .plant-stem::after {
+  right: 10px;
+  bottom: 58%;
+  border-radius: 100% 0 100% 0;
+  transform-origin: right center;
+  transform: rotate(14deg);
+}
+
+@keyframes leaf-unfurl {
+  from { opacity: 0; transform: scale(0.2) rotate(0deg); }
+  to   { opacity: 1; }
+}
+
+/* the percentage sits in a bud at the tip of the stem */
+.profile-page .plant-level {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ivory);
+  border: 2px solid var(--forest);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--forest-dark);
+  white-space: nowrap;
+  animation: garden-fade 700ms ease backwards;
+  animation-delay: calc(var(--delay, 0s) + 1.3s);
+}
+
+@keyframes garden-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* name plate on the soil */
+.profile-page .plant-name {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+/* hover / keyboard detail */
+.profile-page .plant-tip {
+  position: absolute;
+  bottom: 72%;
+  left: 50%;
+  transform: translate(-50%, 6px);
+  width: 170px;
+  background: var(--forest-dark);
+  color: var(--white);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease, transform 250ms ease, visibility 250ms;
+  z-index: 5;
+}
+
+.profile-page .garden-plant:hover .plant-tip,
+.profile-page .garden-plant:focus-visible .plant-tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.profile-page .garden-plant:hover .plant-stem,
+.profile-page .garden-plant:focus-visible .plant-stem {
+  filter: brightness(1.15) saturate(1.2);
+}
+
+.profile-page .garden-plant:focus-visible {
+  outline: 3px solid var(--forest-dark);
+  outline-offset: 4px;
+  border-radius: 1rem;
+}
+
+/* per-skill height and staggered start */
+.profile-page .plant-python { --level: 90%; --delay: 0.05s; }
+.profile-page .plant-js     { --level: 85%; --delay: 0.20s; }
+.profile-page .plant-cpp    { --level: 80%; --delay: 0.35s; }
+.profile-page .plant-css    { --level: 75%; --delay: 0.50s; }
+.profile-page .plant-data   { --level: 70%; --delay: 0.65s; }
+.profile-page .plant-html   { --level: 60%; --delay: 0.80s; }
+
+@media (max-width: 760px) {
+  .profile-page .skill-garden { padding: 1.25rem; }
+  .profile-page .garden-bed { gap: 0.4rem; padding: 0 0.4rem; }
+  .profile-page .garden-plant { height: 260px; }
+  .profile-page .plant-name { font-size: 0.7rem; }
+  .profile-page .plant-level { font-size: 0.7rem; padding: 0.15rem 0.4rem; }
+  .profile-page .plant-stem::before,
+  .profile-page .plant-stem::after { width: 26px; height: 17px; }
+  .profile-page .plant-tip { width: 130px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-page .plant-stem,
+  .profile-page .plant-stem::before,
+  .profile-page .plant-stem::after,
+  .profile-page .plant-level { animation: none; }
+}
+
 /* ===== POKEMON CORNER DECORATIONS ===== */
 .profile-page .pokemon-corner {
   position: absolute !important;
@@ -1845,6 +2070,11 @@ button[type="reset"]:hover { background: var(--sage); }
   top: 10px;
   right: 10px;
   width: 170px;
+}
+
+/* Ivysaur sits opposite Bulbasaur on the profile card, matched to its size */
+.profile-page .profile-static-card .pokemon-corner-tr {
+  width: 100px;
 }
 
 /* ===== BUSH / VENUSAUR REVEAL ===== */
@@ -2143,28 +2373,16 @@ button[type="reset"]:hover { background: var(--sage); }
 .profile-page.theme-grass .pokemon-corner-tr { width: 96px; }
 
 /* ---------- Background music toggle (profile pages) ---------- */
-.bgm-toggle {
+.bgm-player {
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: none;
-  background: var(--forest);
-  color: var(--white);
-  font-size: 1.4rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  width: 260px;
+  max-width: calc(100vw - 2.5rem);
+  border-radius: 40px;
   box-shadow: var(--shadow-lg);
   z-index: 1000;
-  transition: transform 200ms ease, background 200ms ease;
 }
-.bgm-toggle:hover,
-.bgm-toggle:focus-visible { background: var(--forest-dark); transform: scale(1.08); }
 
 /* ---------- Profile picker (profile/profile.html) ---------- */
 .profile-picker-page main { padding: 3rem 0 4rem; }
