@@ -17,7 +17,7 @@
     <div class="nav-right">
     <ul>
       <li class="has-dropdown">
-        <a href="explore.html" aria-current="page">Explore</a>
+        <a href="explore.html" aria-current="page" aria-current="page">Explore</a>
         <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
           <li><a href="explore1.html">Families</a></li>
           <li><a href="explore2.html">Genera</a></li>
@@ -40,15 +40,15 @@
 <section class="page-hero blended-hero">
   <div class="container hero-copy">
     <h1>Plant Families</h1>
-    <p class="page-hero-lede">Discover the botanical relationships behind tropical rainforest plants.</p>
+    <p class="page-hero-lede">Compare the four plant families in this collection.</p>
   </div>
 </section>
 
 <main>
   <div class="page-wrap">
     <div class="page-hero-actions">
-      <a class="btn" href="#family-cards">Explore Families <span class="arrow" aria-hidden="true">&darr;</span></a>
-      <a class="btn btn-outline" href="identify.html">Identify a Plant</a>
+      <a class="btn" href="#family-cards" id="explore-families">Explore Families <span class="arrow" aria-hidden="true">&darr;</span></a>
+      <a class="btn btn-outline" href="identify.html" id="family-identify">Identify a Plant</a>
     </div>
     <p class="back-link"><a href="explore.html">&larr; Back to Explore</a></p>
 
@@ -345,8 +345,8 @@
     level when species-specific data is unavailable.</p>
     <p class="continue-label">Continue exploring</p>
     <div class="continue-links">
-      <a class="continue-link" href="explore2.html">Browse Genera <span class="arrow" aria-hidden="true">&rarr;</span></a>
-      <a class="continue-link" href="explore3.html">Browse Species <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="explore2.html" id="family-browse-genera">Browse Genera <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="explore3.html" id="family-browse-species">Browse Species <span class="arrow" aria-hidden="true">&rarr;</span></a>
     </div>
     <svg class="insight-decor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true" focusable="false"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
   </aside>
@@ -367,7 +367,6 @@
         <li><a href="contribute.html">Contribution</a></li>
         <li><a href="identify.html">Identification</a></li>
         <li><a href="profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -381,6 +380,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
 </footer>
 
 </body>

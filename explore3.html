@@ -159,7 +159,7 @@
     <div class="nav-right">
     <ul>
       <li class="has-dropdown">
-        <a href="explore.html" aria-current="page">Explore</a>
+        <a href="explore.html" aria-current="page" aria-current="page">Explore</a>
         <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
           <li><a href="explore1.html">Families</a></li>
           <li><a href="explore2.html">Genera</a></li>
@@ -182,14 +182,14 @@
 <section class="page-hero blended-hero">
   <div class="container hero-copy">
     <h1>Plant Species</h1>
-    <p class="page-hero-lede">Sixteen species, fully profiled and referenced — two from every genus featured on Forest Story.</p>
+    <p class="page-hero-lede">View profiles of 16 plant species in the collection.</p>
   </div>
 </section>
 
 <main>
   <div class="page-wrap">
     <div class="page-hero-actions">
-      <a class="btn" href="#species-list">Explore Species <span class="arrow" aria-hidden="true">&darr;</span></a>
+      <a class="btn" href="#species-list" id="explore-species">Explore Species <span class="arrow" aria-hidden="true">&darr;</span></a>
       <a class="btn btn-outline" href="identify.html">Identify a Plant</a>
     </div>
     <p class="breadcrumb"><a href="explore.html">&larr; Explore</a> <span class="sep">/</span> <span class="current">Plant Species</span></p>
@@ -254,10 +254,10 @@
     <div class="family-picker" id="species-list">
       <div class="family-picker-head">
         <p class="tab-hint">Choose a family to see its species:</p>
-        <a href="#species-list" class="family-reset">Show all 16 species</a>
+        <a href="#species-list" class="family-reset" id="show-all-species">Show all 16 species</a>
       </div>
       <div class="family-cards" role="group" aria-label="Filter species by family">
-        <a href="#myristicaceae-species" class="family-card">
+        <a href="#myristicaceae-species" class="family-card" id="filter-myristicaceae">
           <span class="family-card-media"><img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Myristicaceae</span>
@@ -265,7 +265,7 @@
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
-        <a href="#chrysobalanaceae-species" class="family-card">
+        <a href="#chrysobalanaceae-species" class="family-card" id="filter-chrysobalanaceae">
           <span class="family-card-media"><img src="images/family-chrysobalanaceae.jpg" alt="A flowering tree of the cocoplum family, Chrysobalanaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Chrysobalanaceae</span>
@@ -273,7 +273,7 @@
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
-        <a href="#meliaceae-species" class="family-card">
+        <a href="#meliaceae-species" class="family-card" id="filter-meliaceae">
           <span class="family-card-media"><img src="images/family-meliaceae.jpg" alt="Flowers of a mahogany family tree, Meliaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Meliaceae</span>
@@ -281,7 +281,7 @@
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
-        <a href="#ebenaceae-species" class="family-card">
+        <a href="#ebenaceae-species" class="family-card" id="filter-ebenaceae">
           <span class="family-card-media"><img src="images/family-ebenaceae.jpg" alt="Foliage of an ebony family tree, Ebenaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Ebenaceae</span>
@@ -1233,7 +1233,6 @@
         <li><a href="contribute.html">Contribution</a></li>
         <li><a href="identify.html">Identification</a></li>
         <li><a href="profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -1247,6 +1246,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
 </footer>
 
 </body>

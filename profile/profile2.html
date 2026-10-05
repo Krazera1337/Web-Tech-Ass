@@ -27,7 +27,7 @@
       </li>
       <li><a href="../contribute.html">Contribution</a></li>
       <li><a href="../identify.html">Identification</a></li>
-      <li><a href="profile.html">Profile</a></li>
+      <li><a href="profile.html" aria-current="page">Profile</a></li>
       <li><a href="../enquiry.html">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
@@ -46,22 +46,16 @@
   <div class="profile-static-wrapper">
     <div class="profile-static-card pokemon-trio">
         <img src="../images/jay-profile-1-removebg-preview.png" alt="Squirtle" class="pokemon-corner pokemon-corner-tl trio-first">
-        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Wartortle">
-          <img src="../images/jay-profile-2-removebg-preview.png" alt="Wartortle" class="venusaur-peek trio-second">
-          <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
-          <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
-        </div>
-        <img src="../images/jay-profile-3-removebg-preview.png" alt="Squirtle wearing sunglasses" class="pokemon-corner trio-third">
-        <img src="../images/leaf-icon.jpg" alt="Jayden" class="profile-avatar-large"
-             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23A9C4A2%22 /%3E%3Ctext x=%2250%22 y=%2265%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23123D32%22 font-family=%22Arial%22%3E🌿%3C/text%3E%3C/svg%3E'">
+        <img src="../images/jayden-profile-picture.png" alt="Jayden Wong Wen Jie" class="profile-avatar-large">
         <h1 class="profile-name">Jayden Wong Wen Jie</h1>
         <div class="profile-student-id">Student ID: 106765460</div>
-        <div class="profile-course">Bachelor of Computer Science</div>
+        <div class="profile-course">Bachelor of Computer Science （Data Science）</div>
       </div>
     </div>
 
   <!-- Right: details flip to the introduction -->
-  <div class="details-flip-wrapper">
+  <div class="details-flip-wrapper pokemon-decorated">
+        <img src="../images/jay-profile-3-removebg-preview.png" alt="Squirtle wearing sunglasses" class="pokemon-corner trio-third">
     <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
       <div class="info-table-card details-face details-front">
     <h3><span></span> Personal Details</h3>
@@ -97,7 +91,12 @@
 </main>
 <div class="extra-row">
 
-  <div class="map-card">
+  <div class="map-card pokemon-decorated">
+        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Wartortle">
+          <img src="../images/jay-profile-2-removebg-preview.png" alt="Wartortle" class="venusaur-peek trio-second">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
+        </div>
     <h2 class="map-title"><span>🗺️</span> Hometown — Miri, Sarawak</h2>
     <div class="map-frame">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018487.5909093255!2d112.76793407812498!3d4.322991399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321f48317b6f7f9d%3A0x40453cc01243976!2sMiri%20District%20Office!5e0!3m2!1sen!2smy!4v1790771405459!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"> title="Map of Miri, Sarawak
@@ -110,7 +109,7 @@
 
 </div>
 
-<div class="email-section profile-contact">
+<div class="email-section profile-contact" id="profile-email">
   <a href="mailto:106765460@students.swinburne.edu.my" class="email-btn">
     <span class="email-icon">✉️</span> Email Me
   </a>
@@ -130,7 +129,6 @@
         <li><a href="../contribute.html">Contribution</a></li>
         <li><a href="../identify.html">Identification</a></li>
         <li><a href="../profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -144,6 +142,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav>
 </footer>
 
 <!-- Background music: starts on first click/keypress (browser autoplay policy), toggle to mute -->
@@ -151,7 +150,7 @@
   <span class="bgm-icon" aria-hidden="true">🔈</span>
 </button>
 <audio id="bgm-audio" loop preload="none">
-  <source src="../songs/music1.mp3" type="audio/mpeg">
+  <source src="../songs/jaydenmusic.mpeg" type="audio/mpeg">
 </audio>
 <script>
 (function () {
@@ -184,6 +183,5 @@
 })();
 </script>
 
-<script src="pokemon-placement.js?v=4"></script>
 </body>
 </html>

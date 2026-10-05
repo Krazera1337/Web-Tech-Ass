@@ -17,7 +17,7 @@
     <div class="nav-right">
     <ul>
       <li class="has-dropdown">
-        <a href="explore.html" aria-current="page">Explore</a>
+        <a href="explore.html" aria-current="page" aria-current="page">Explore</a>
         <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
           <li><a href="explore1.html">Families</a></li>
           <li><a href="explore2.html">Genera</a></li>
@@ -40,14 +40,14 @@
 <section class="page-hero blended-hero">
   <div class="container hero-copy">
     <h1>Plant Genera</h1>
-    <p class="page-hero-lede">Explore the genera that connect plant families to individual species.</p>
+    <p class="page-hero-lede">Browse the genera represented in each plant family.</p>
   </div>
 </section>
 
 <main>
   <div class="page-wrap">
     <div class="page-hero-actions">
-      <a class="btn" href="#genus-nav">Explore Genera <span class="arrow" aria-hidden="true">&darr;</span></a>
+      <a class="btn" href="#genus-nav" id="explore-genera">Explore Genera <span class="arrow" aria-hidden="true">&darr;</span></a>
       <a class="btn btn-outline" href="identify.html">Identify a Plant</a>
     </div>
     <p class="breadcrumb"><a href="explore.html">&larr; Explore</a> <span class="sep">/</span> <span class="current">Plant Genera</span></p>
@@ -121,23 +121,23 @@
       <div class="genus-jump-buttons">
         <div class="genus-jump-group">
           <span class="genus-jump-family">Myristicaceae</span>
-          <a href="#horsfieldia" class="genus-jump-btn">Horsfieldia</a>
-          <a href="#knema" class="genus-jump-btn">Knema</a>
+          <a href="#horsfieldia" class="genus-jump-btn" id="jump-horsfieldia">Horsfieldia</a>
+          <a href="#knema" class="genus-jump-btn" id="jump-knema">Knema</a>
         </div>
         <div class="genus-jump-group">
           <span class="genus-jump-family">Chrysobalanaceae</span>
-          <a href="#parastemon" class="genus-jump-btn">Parastemon</a>
-          <a href="#hirtella" class="genus-jump-btn">Hirtella</a>
+          <a href="#parastemon" class="genus-jump-btn" id="jump-parastemon">Parastemon</a>
+          <a href="#hirtella" class="genus-jump-btn" id="jump-hirtella">Hirtella</a>
         </div>
         <div class="genus-jump-group">
           <span class="genus-jump-family">Meliaceae</span>
-          <a href="#aglaia" class="genus-jump-btn">Aglaia</a>
-          <a href="#dysoxylum" class="genus-jump-btn">Dysoxylum</a>
+          <a href="#aglaia" class="genus-jump-btn" id="jump-aglaia">Aglaia</a>
+          <a href="#dysoxylum" class="genus-jump-btn" id="jump-dysoxylum">Dysoxylum</a>
         </div>
         <div class="genus-jump-group">
           <span class="genus-jump-family">Ebenaceae</span>
-          <a href="#diospyros" class="genus-jump-btn">Diospyros</a>
-          <a href="#euclea" class="genus-jump-btn">Euclea</a>
+          <a href="#diospyros" class="genus-jump-btn" id="jump-diospyros">Diospyros</a>
+          <a href="#euclea" class="genus-jump-btn" id="jump-euclea">Euclea</a>
         </div>
       </div>
     </div>
@@ -456,10 +456,10 @@
     quite different depending on which continent it evolved on.</p>
     <p class="continue-label">Continue exploring</p>
     <div class="continue-links">
-      <a class="continue-link" href="explore1.html">Browse Families <span class="arrow" aria-hidden="true">&rarr;</span></a>
-      <a class="continue-link" href="explore3.html">Browse Species <span class="arrow" aria-hidden="true">&rarr;</span></a>
-      <a class="continue-link" href="identify.html">Identify a Plant <span class="arrow" aria-hidden="true">&rarr;</span></a>
-      <a class="continue-link" href="contribute.html">Contribute Your Findings <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="explore1.html" id="genus-browse-families">Browse Families <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="explore3.html" id="genus-browse-species">Browse Species <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="identify.html" id="genus-identify">Identify a Plant <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="continue-link" href="contribute.html" id="genus-contribute">Contribute Your Findings <span class="arrow" aria-hidden="true">&rarr;</span></a>
     </div>
     <svg class="insight-decor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true" focusable="false"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
   </aside>
@@ -480,7 +480,6 @@
         <li><a href="contribute.html">Contribution</a></li>
         <li><a href="identify.html">Identification</a></li>
         <li><a href="profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -494,6 +493,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
 </footer>
 
 </body>

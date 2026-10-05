@@ -27,7 +27,7 @@
       </li>
       <li><a href="../contribute.html">Contribution</a></li>
       <li><a href="../identify.html">Identification</a></li>
-      <li><a href="profile.html">Profile</a></li>
+      <li><a href="profile.html" aria-current="page">Profile</a></li>
       <li><a href="../enquiry.html">Enquiry</a></li>
     </ul>
       <div class="nav-auth">
@@ -46,12 +46,6 @@
   <div class="profile-static-wrapper">
     <div class="profile-static-card pokemon-trio">
       <img src="../images/nicholas-profile-picture-1-removebg-preview.png" alt="Charmander" class="pokemon-corner pokemon-corner-tl trio-first">
-        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Charizard">
-        <img src="../images/nicholas-profile-picture-2-removebg-preview.png" alt="Charizard" class="venusaur-peek trio-second">
-        <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
-        <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
-      </div>
-      <img src="../images/nicholas-profile-3.gif" alt="Animated Charizard" class="pokemon-corner trio-third">
       <img src="../images/nicholas-profile-picture.jpg" alt="Nicholas Sia Siang Wei" class="profile-avatar-large">
       <h1 class="profile-name">Nicholas Sia Siang Wei</h1>
       <div class="profile-student-id">Student ID: 106758936</div>
@@ -60,7 +54,8 @@
   </div>
 
   <!-- Right: details flip to the introduction -->
-  <div class="details-flip-wrapper">
+  <div class="details-flip-wrapper pokemon-decorated">
+      <img src="../images/nicholas-profile-3.gif" alt="Animated Charizard" class="pokemon-corner trio-third">
     <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
       <div class="info-table-card details-face details-front">
         <h3><span></span> Personal Details</h3>
@@ -99,7 +94,12 @@
 <!-- ===== EXTRA ROW: Map ===== -->
 <div class="extra-row">
 
-  <div class="map-card">
+  <div class="map-card pokemon-decorated" id="hometown-map">
+        <div class="bush-split trio-bush" tabindex="0" aria-label="Hover or focus to part the grass around Charizard">
+        <img src="../images/nicholas-profile-picture-2-removebg-preview.png" alt="Charizard" class="venusaur-peek trio-second">
+        <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+        <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
+      </div>
     <h2 class="map-title"><span>🗺️</span> Hometown — Sibu, Sarawak</h2>
     <div class="map-frame">
       <iframe src="https://www.google.com/maps?q=Sibu%2C%20Sarawak&amp;output=embed"
@@ -113,7 +113,7 @@
 
 </div>
 
-<div class="email-section profile-contact">
+<div class="email-section profile-contact" id="profile-email">
   <a href="mailto:106758936@students.swinburne.edu.my" class="email-btn">
     <span class="email-icon">✉️</span> Email Me
   </a>
@@ -135,7 +135,6 @@
         <li><a href="../contribute.html">Contribution</a></li>
         <li><a href="../identify.html">Identification</a></li>
         <li><a href="../profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -149,6 +148,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav>
 </footer>
 
 <!-- Background music: starts on first click/keypress (browser autoplay policy), toggle to mute -->
@@ -189,6 +189,5 @@
 })();
 </script>
 
-<script src="pokemon-placement.js?v=4"></script>
 </body>
 </html>

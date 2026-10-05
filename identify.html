@@ -8,7 +8,7 @@
 <meta name="description" content="Plant identification page for Plant Story">
 <title>Plant Identification — Plant Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=47">
+<link rel="stylesheet" href="css/style.css?v=48">
 </head>
 
 <body class="community-page identification-page">
@@ -31,7 +31,7 @@
       </li>
 
       <li><a href="contribute.html">Contribution</a></li>
-      <li><a href="identify.html" aria-current="page">Identification</a></li>
+      <li><a href="identify.html" aria-current="page" aria-current="page">Identification</a></li>
       <li><a href="profile/profile.html">Profile</a></li>
       <li><a href="enquiry.html">Enquiry</a></li>
     </ul>
@@ -46,7 +46,7 @@
 <header class="page-hero blended-hero">
   <div class="container">
     <h1>Plant Identification</h1>
-    <p class="page-hero-lede">Every leaf has a story. Start with a photo of your plant.</p>
+    <p class="page-hero-lede">Select a plant photo and view a sample identification result.</p>
   </div>
 </header>
 <main>
@@ -60,8 +60,8 @@
         <fieldset>
           <legend>Plant Identification</legend>
 
-          <div class="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose a plant photo</label><p id="photo-hint">JPG or PNG · a clear image works best.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/jpeg,image/png" aria-describedby="photo-hint"></div>
-          <p class="form-actions"><a class="identify-example-link" href="#example-results">View example result</a> <input type="reset" value="Reset"></p>
+          <div class="plant-upload" id="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose a plant photo</label><p id="photo-hint">JPG or PNG · a clear image works best.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/jpeg,image/png" aria-describedby="photo-hint"></div>
+          <p class="form-actions"><a class="identify-example-link" href="#example-results" id="view-example-button">View example result</a> <input type="reset" id="identify-reset" value="Reset"></p>
 
         </fieldset>
 
@@ -108,14 +108,23 @@
             <div><dt>Care tips</dt><dd>Suitable light, water and growing conditions.</dd></div>
             <div><dt>Location</dt><dd>Where the plant grows.</dd></div>
           </dl>
-          <a class="identify-catalogue-link" href="explore3.html">Explore the plant catalogue <span aria-hidden="true">&rarr;</span></a>
+          <a class="identify-catalogue-link" href="explore3.html" id="identify-catalogue-button">Explore the plant catalogue <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <div class="identify-sample">
-          <p class="identify-sample-label">Sample identification</p>
-          <img src="images/horsfieldia-kingii.jpg" alt="Horsfieldia kingii fruit and leaves">
-          <h3><i>Horsfieldia kingii</i></h3>
-          <p>Example confidence: <strong>92.4%</strong></p>
-          <p class="identify-sample-note">Illustrative result only; it is not based on the photo you choose.</p>
+        <div class="identify-sample-flip" tabindex="0" role="group" aria-label="Focus or hover to see habitat and care notes">
+          <div class="identify-sample-card">
+            <div class="identify-sample identify-sample-face identify-sample-front">
+              <p class="identify-sample-label">Sample identification</p>
+              <img src="images/horsfieldia-kingii.jpg" alt="Horsfieldia kingii fruit and leaves">
+              <h3><i>Horsfieldia kingii</i></h3>
+              <p>Example confidence: <strong>92.4%</strong></p>
+              <p class="identify-sample-note">Illustrative result only; it is not based on the photo you choose.</p>
+              <p class="identify-sample-hint">Hover or focus to see habitat &amp; care</p>
+            </div>
+            <div class="identify-sample-face identify-sample-back">
+              <p class="identify-sample-label">Care tips</p>
+              <p>Grow in warm, humid conditions with partial shade. Keep the soil moist but well-drained, and avoid letting it dry out completely.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -137,7 +146,6 @@
         <li><a href="contribute.html">Contribution</a></li>
         <li><a href="identify.html">Identification</a></li>
         <li><a href="profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -151,6 +159,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
 </footer>
 
 </body>

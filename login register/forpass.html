@@ -31,7 +31,7 @@
     </ul>
       <div class="nav-auth">
         <a href="register.html" class="btn-navstyle">Registration</a>
-        <a href="login.html" class="btn-navstyle">Login</a>
+        <a href="login.html" class="btn-navstyle" aria-current="page">Login</a>
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@
             <form>
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
-                <button type="submit" class="submit-btn">Send reset link</button>
+                <button type="submit" class="submit-btn" id="reset-link-submit">Send reset link</button>
             </form>
             <p class="back-text">Remember your password?
             <a href="login.html">Back to login</a>
@@ -67,7 +67,6 @@
         <li><a href="../contribute.html">Contribution</a></li>
         <li><a href="../identify.html">Identification</a></li>
         <li><a href="../profile/profile.html">Profile</a></li>
-        <li><a href="#">Enhancement Page</a></li>
       </ul>
     </nav>
     <div class="footer-credits">
@@ -81,6 +80,7 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav>
 </footer>
 
 </body>
