@@ -46,6 +46,7 @@
   <div class="profile-static-wrapper">
     <div class="profile-static-card">
         <img src="../images/bulbasaur.png" alt="Bulbasaur" class="pokemon-corner pokemon-corner-tl">
+        <img src="../images/ivysaur.png" alt="Ivysaur" class="pokemon-corner pokemon-corner-tr">
         <div class="bush-split" tabindex="0" aria-label="Hover to reveal a hidden Venusaur">
           <img src="../images/venusaur.png" alt="Venusaur" class="venusaur-peek">
           <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
@@ -89,13 +90,57 @@
           <p>Hello! I'm Muhammad Hishamuddin Ngu, a Swinburne University student. I am passionate about technology and its applications in solving real-world problems.</p>
           <p>I hit Radiant#499 in Valorant, Faceit Level 10 in CS:GO, and 4.0 in my foundation year.</p>
           <p>I love to ruin my mental health with excessive gaming and studies.</p>
-          <p class="profile-motto">"Day by Day, Nothing - Noan"</p>
+          <p class="profile-motto">"He never sleeps, the judge.  He is dancing, dancing. He says that he will never die. -Holden"</p>
         </div>
       </div>
     </div>
   </div>
 
 </main>
+
+<!-- ===== EXTRA ROW: Skill Garden (grows with CSS animation only) ===== -->
+<div class="extra-row">
+
+  <section class="skill-garden" aria-labelledby="skill-garden-title">
+    <h2 class="map-title" id="skill-garden-title"><span>🌿</span> Skill Garden</h2>
+    <p class="map-select-label">Every stem grows to the level I have reached so far — hover or focus a plant to read more.</p>
+
+    <ul class="garden-bed">
+      <li class="garden-plant plant-python" tabindex="0">
+        <span class="plant-tip">My main language for data work, scripting and automation.</span>
+        <span class="plant-stem"><span class="plant-level">90%</span></span>
+        <span class="plant-name">Python</span>
+      </li>
+      <li class="garden-plant plant-js" tabindex="0">
+        <span class="plant-tip">Logic, events and interactivity — used outside this unit.</span>
+        <span class="plant-stem"><span class="plant-level">85%</span></span>
+        <span class="plant-name">Javascript</span>
+      </li>
+      <li class="garden-plant plant-cpp" tabindex="0">
+        <span class="plant-tip">My beginner language for learning programming concepts.</span>
+        <span class="plant-stem"><span class="plant-level">80%</span></span>
+        <span class="plant-name">C++</span>
+      </li>
+      <li class="garden-plant plant-css" tabindex="0">
+        <span class="plant-tip">Flexbox, grid, animation and responsive media queries.</span>
+        <span class="plant-stem"><span class="plant-level">75%</span></span>
+        <span class="plant-name">CSS</span>
+      </li>
+      <li class="garden-plant plant-data" tabindex="0">
+        <span class="plant-tip">Cleaning, analysing and visualising data — my degree major.</span>
+        <span class="plant-stem"><span class="plant-level">70%</span></span>
+        <span class="plant-name">Data Science</span>
+      </li>
+      <li class="garden-plant plant-html" tabindex="0">
+        <span class="plant-tip">Semantic structure, tables, forms and accessible markup.</span>
+        <span class="plant-stem"><span class="plant-level">60%</span></span>
+        <span class="plant-name">HTML</span>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
 <!-- ===== EXTRA ROW: Map ===== -->
 <div class="extra-row">
 
@@ -174,7 +219,7 @@
 
 <!-- Background music: native HTML5 audio player, no scripting required -->
 <audio id="bgm-toggle" class="bgm-player" controls loop preload="none" title="Background music">
-  <source src="../songs/music1.mp3" type="audio/mpeg">
+  <source src="../songs/hishamusic.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
