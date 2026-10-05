@@ -101,18 +101,37 @@
 
   <div class="map-card">
     <h2 class="map-title"><span>🗺️</span> Hometown</h2>
-    <label for="hometown-select" class="map-select-label">Choose a hometown to view:</label>
-    <select id="hometown-select" class="map-select">
-      <option value="sarikei" data-query="Sarikei%2C%20Sarawak" data-caption="Sarikei, my hometown in Sarawak.">Sarikei, Sarawak</option>
-      <option value="bukit-timah" data-query="Bukit%20Timah%2C%20Singapore" data-caption="Bukit Timah, my second hometown in Singapore.">Bukit Timah, Singapore</option>
-    </select>
-    <div class="map-frame">
-      <iframe id="hometown-map" src="https://www.google.com/maps?q=Sarikei%2C%20Sarawak&amp;output=embed"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Map of Sarikei, Sarawak" allowfullscreen></iframe>
+    <p class="map-select-label">Choose a hometown to view:</p>
+
+    <!-- CSS-only switcher: the checked radio reveals its matching map panel -->
+    <input type="radio" id="hometown-select" name="hometown" class="map-radio" checked>
+    <input type="radio" id="map-bukit-timah" name="hometown" class="map-radio">
+
+    <div class="map-tabs">
+      <label for="hometown-select" class="map-tab">Sarikei, Sarawak</label>
+      <label for="map-bukit-timah" class="map-tab">Bukit Timah, Singapore</label>
     </div>
-    <div class="map-caption">
-      <span>📍</span> <span id="hometown-caption">Sarikei, my hometown in Sarawak.</span>
+
+    <div class="map-panel map-panel-sarikei">
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Sarikei%2C%20Sarawak&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map of Sarikei, Sarawak" allowfullscreen></iframe>
+      </div>
+      <div class="map-caption">
+        <span>📍</span> <span>Sarikei, my hometown in Sarawak.</span>
+      </div>
+    </div>
+
+    <div class="map-panel map-panel-bukit-timah">
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Bukit%20Timah%2C%20Singapore&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map of Bukit Timah, Singapore" allowfullscreen></iframe>
+      </div>
+      <div class="map-caption">
+        <span>📍</span> <span>Bukit Timah, my second hometown in Singapore.</span>
+      </div>
     </div>
   </div>
 
@@ -122,20 +141,6 @@
     <span class="email-icon">✉️</span> Email Me
   </a>
 </div>
-<script>
-(function () {
-  var select = document.getElementById('hometown-select');
-  var map = document.getElementById('hometown-map');
-  var caption = document.getElementById('hometown-caption');
-
-  select.addEventListener('change', function () {
-    var option = select.options[select.selectedIndex];
-    map.src = 'https://www.google.com/maps?q=' + option.dataset.query + '&output=embed';
-    map.title = 'Map of ' + option.textContent;
-    caption.textContent = option.dataset.caption;
-  });
-})();
-</script>
 
 <footer class="site-footer">
   <div class="container footer-grid">
@@ -167,43 +172,11 @@
 <nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav>
 </footer>
 
-<!-- Background music: starts on first click/keypress (browser autoplay policy), toggle to mute -->
-<button id="bgm-toggle" class="bgm-toggle" type="button" aria-pressed="false" aria-label="Play background music">
-  <span class="bgm-icon" aria-hidden="true">🔈</span>
-</button>
-<audio id="bgm-audio" loop preload="none">
+<!-- Background music: native HTML5 audio player, no scripting required -->
+<audio id="bgm-toggle" class="bgm-player" controls loop preload="none" title="Background music">
   <source src="../songs/music1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
-<script>
-(function () {
-  var audio = document.getElementById('bgm-audio');
-  var btn = document.getElementById('bgm-toggle');
-  var icon = btn.querySelector('.bgm-icon');
-  audio.volume = 0.5;
-
-  function updateIcon() {
-    var playing = !audio.paused;
-    icon.textContent = playing ? '🔊' : '🔈';
-    btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
-    btn.setAttribute('aria-label', playing ? 'Mute background music' : 'Play background music');
-  }
-  audio.addEventListener('play', updateIcon);
-  audio.addEventListener('pause', updateIcon);
-
-  function firstInteraction() {
-    audio.play().catch(function () {});
-    document.removeEventListener('click', firstInteraction);
-    document.removeEventListener('keydown', firstInteraction);
-  }
-  document.addEventListener('click', firstInteraction);
-  document.addEventListener('keydown', firstInteraction);
-
-  btn.addEventListener('click', function () {
-    if (audio.paused) { audio.play().catch(function () {}); }
-    else { audio.pause(); }
-  });
-})();
-</script>
 
 </body>
 </html>

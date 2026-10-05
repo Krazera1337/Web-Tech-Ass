@@ -1028,7 +1028,7 @@ figcaption {
 
 .flip-card:hover .flip-card-inner,
 .flip-card:focus-visible .flip-card-inner,
-.flip-card.is-flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-card:focus-within .flip-card-inner { transform: rotateY(180deg); }
 
 .flip-card:focus-visible { outline: none; }
 
@@ -1773,7 +1773,21 @@ button[type="reset"]:hover { background: var(--sage); }
   display: block;
 }
 
-.profile-page .map-select {
+/* CSS-only hometown switcher: radios stay off-screen, labels act as the tabs */
+.profile-page .map-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile-page .map-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.profile-page .map-tab {
   font-size: 1rem;
   font-weight: 600;
   color: var(--forest-dark);
@@ -1781,9 +1795,33 @@ button[type="reset"]:hover { background: var(--sage); }
   border: 1px solid var(--sage);
   border-radius: 40px;
   padding: 0.6rem 1.4rem;
-  margin-bottom: 1.2rem;
   cursor: pointer;
   max-width: 100%;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.profile-page .map-tab:hover { background: var(--sage); }
+
+.profile-page #hometown-select:checked ~ .map-tabs label[for="hometown-select"],
+.profile-page #map-bukit-timah:checked ~ .map-tabs label[for="map-bukit-timah"] {
+  background: var(--forest);
+  color: var(--white);
+  border-color: var(--forest);
+}
+
+.profile-page #hometown-select:focus-visible ~ .map-tabs label[for="hometown-select"],
+.profile-page #map-bukit-timah:focus-visible ~ .map-tabs label[for="map-bukit-timah"] {
+  outline: 3px solid var(--forest-dark);
+  outline-offset: 2px;
+}
+
+.profile-page .map-panel { display: none; }
+
+.profile-page #hometown-select:checked ~ .map-panel-sarikei,
+.profile-page #map-bukit-timah:checked ~ .map-panel-bukit-timah {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .profile-page .map-frame {
@@ -2143,28 +2181,16 @@ button[type="reset"]:hover { background: var(--sage); }
 .profile-page.theme-grass .pokemon-corner-tr { width: 96px; }
 
 /* ---------- Background music toggle (profile pages) ---------- */
-.bgm-toggle {
+.bgm-player {
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: none;
-  background: var(--forest);
-  color: var(--white);
-  font-size: 1.4rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  width: 260px;
+  max-width: calc(100vw - 2.5rem);
+  border-radius: 40px;
   box-shadow: var(--shadow-lg);
   z-index: 1000;
-  transition: transform 200ms ease, background 200ms ease;
 }
-.bgm-toggle:hover,
-.bgm-toggle:focus-visible { background: var(--forest-dark); transform: scale(1.08); }
 
 /* ---------- Profile picker (profile/profile.html) ---------- */
 .profile-picker-page main { padding: 3rem 0 4rem; }

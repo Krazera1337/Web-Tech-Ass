@@ -44,7 +44,7 @@
       <p>Explore four rainforest plant families, their genera and species.</p>
       <p class="hero-actions">
         <a class="btn" href="explore.html" id="home-explore">Start Exploring</a>
-        <a class="btn btn-outline" href="explore3.html" id="random-plant-link">Explore a Random Plant</a>
+        <a class="btn btn-outline" href="explore3.html#aglaia-elliptica" id="random-plant-link">Explore a Featured Plant</a>
         <a class="btn btn-outline" href="identify.html" id="home-identify">Identify a Plant</a>
         <a class="btn btn-outline" href="contribute.html" id="home-contribute">Contribute Your Findings</a>
       </p>
@@ -187,36 +187,5 @@
 <nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
 </footer>
 
-<script>
-(function () {
-  var link = document.getElementById("random-plant-link");
-  if (!link) return;
-  var species = [
-    "horsfieldia-flocculosa", "horsfieldia-kingii", "knema-cinerea", "knema-sumatrana",
-    "parastemon-urophyllus", "parastemon-grandifructus", "hirtella-triandra", "hirtella-racemosa",
-    "aglaia-elliptica", "aglaia-korthalsii", "dysoxylum-acutangulum", "dysoxylum-grande",
-    "diospyros-ferrea", "diospyros-ebenum", "euclea-natalensis", "euclea-racemosa"
-  ];
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    var pick = species[Math.floor(Math.random() * species.length)];
-    window.location.href = "explore3.html#" + pick;
-  });
-})();
-
-(function () {
-  document.querySelectorAll(".flip-card").forEach(function (card) {
-    card.addEventListener("click", function () {
-      card.classList.toggle("is-flipped");
-    });
-    card.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        card.classList.toggle("is-flipped");
-      }
-    });
-  });
-})();
-</script>
 </body>
 </html>
