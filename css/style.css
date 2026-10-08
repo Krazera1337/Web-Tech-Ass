@@ -1,5 +1,5 @@
-/* =========================================================
-   PLANTSTORY — shared stylesheet
+﻿/* =========================================================
+   PLANTSTORY â€” shared stylesheet
    Palette: Forest Green #2F5D50 | Sage Green #A8BFA3 | Warm Ivory #F4F0E6
    ========================================================= */
 
@@ -1860,7 +1860,7 @@ button[type="reset"]:hover { background: var(--sage); }
 
 .profile-page .map-caption span { font-size: 1.3rem; }
 
-/* ===== SKILL GARDEN — stems grow with CSS keyframes, no scripting ===== */
+/* ===== SKILL GARDEN â€” stems grow with CSS keyframes, no scripting ===== */
 .profile-page .skill-garden {
   background: var(--white);
   border-radius: 2rem;
@@ -2434,20 +2434,28 @@ button[type="reset"]:hover { background: var(--sage); }
 /* ---------- contribute page and identify page ---------- */
 /* These rules apply only to the contribution and identification pages. */
 /* Contribution form: botanical introduction and a separate, readable form card. */
-.contribution-form-page { background: #f6f4ed; }
+.contribution-form-page {
+  background-color: var(--ivory);
+  background-image: linear-gradient(rgba(244,240,230,.93), rgba(244,240,230,.93)), url('../images/hero-background.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 .contribution-form-page .contribution-stage {
   padding: 3rem 1.5rem;
-  background: linear-gradient(90deg, rgba(245,244,235,.9), rgba(245,244,235,.68)), url('../images/contribution-form-back.jpg') center / cover;
+  background: transparent;
 }
 .contribution-form-page .contribution-form-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
-  max-width: 1160px;
+  grid-template-columns: minmax(0, 860px);
+  justify-content: center;
+  gap: 1rem;
+  max-width: 100%;
   margin: 0 auto;
 }
-.contribution-form-page .contribution-intro { padding: 2rem 0; }
+.contribution-form-page .contribution-intro { display: none; }
+.contribution-form-page .contribution-back-wrap { text-align: center; }
 .contribution-form-page .form-eyebrow {
   font-size: .78rem;
   font-weight: 700;
@@ -2466,7 +2474,7 @@ button[type="reset"]:hover { background: var(--sage); }
 .contribution-form-page .contribution-intro > p:not(.form-eyebrow) { max-width: 340px; font-size: 1.15rem; }
 .contribution-form-page .form-back-link {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 0;
   padding: .7rem 1rem;
   border: 1px solid rgba(18,61,50,.2);
   border-radius: 999px;
@@ -2486,7 +2494,7 @@ button[type="reset"]:hover { background: var(--sage); }
 .contribution-form-page .form-back-link:active { transform: scale(.96); }
 .contribution-form-page main .contribution-form-card {
   min-width: 0;
-  padding: clamp(1.4rem, 3vw, 2.5rem);
+  padding: clamp(1.8rem, 3.5vw, 3rem);
   margin: 0;
   background: #f7f8f5;
   border-radius: 24px;
@@ -2494,21 +2502,25 @@ button[type="reset"]:hover { background: var(--sage); }
   box-shadow: 0 18px 48px rgba(18,61,50,.16);
 }
 .contribution-form-page .form-card-heading { text-align: center; }
-.contribution-form-page .form-card-heading h2 { margin: 0; font-size: 1.5rem; }
-.contribution-form-page .form-card-heading p { margin: .35rem 0 1.25rem; color: var(--text-light); font-size: .9rem; }
+.contribution-form-page .form-card-heading h2 { margin: 0; font-size: 1.8rem; }
+.contribution-form-page .form-card-heading p { margin: .45rem 0 1.5rem; color: var(--text-light); font-size: 1rem; }
 .contribution-form-page .contribution-form-card form { margin-top: 1.25rem; }
-.contribution-form-page form label { font-size: .88rem; }
+.contribution-form-page form label { font-size: 1rem; }
 .contribution-form-page form input:not([type='submit']):not([type='reset']),
 .contribution-form-page textarea { min-width: 0; background: #fcfdfb; border-color: #dce3d7; }
 .contribution-form-page .nav-right { min-width: 0; max-width: 100%; }
 .contribution-form-page .main-nav .nav-right > ul { min-width: 0; max-width: 100%; }
+.contribution-form-page .contribution-form-card form { font-size: 1rem; }
+.contribution-form-page .contribution-form-card textarea { min-height: 180px; }
 .contribution-form-page .form-actions { margin-bottom: 0; }
-.contribution-form-page input[type='submit'] { flex: 1; }
+.contribution-form-page input[type='submit'] { flex: 1; font-size: 1rem; padding: .95rem 1.5rem; }
+.contribution-form-page input[type='reset'] { font-size: 1rem; padding: .95rem 1.5rem; }
 .contribution-form-page .site-footer { margin-top: 0; }
 @media (max-width: 780px) {
-  .contribution-form-page .contribution-form-layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; max-width: 560px; }
+  .contribution-form-page .contribution-form-layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; max-width: 680px; }
   .contribution-form-page .contribution-stage { padding: 1.5rem 1rem 2.5rem; }
-  .contribution-form-page .contribution-intro { padding: 0; }
+  .contribution-form-page .contribution-intro { display: none; }
+.contribution-form-page .contribution-back-wrap { text-align: center; }
   .contribution-form-page .form-back-link { margin-top: .5rem; }
 }
 .community-page .page-hero {
@@ -3218,6 +3230,13 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   text-align: center;
 }
 .enquiry-page .enquiry-card__title { margin-bottom: 1.5rem; }
+.auth-page .login-box h1,
+.auth-page .register-box h1 {
+  padding-bottom: .7rem;
+  border-bottom: 3px solid #a9c4a2;
+}
+.auth-page .login-box .subtitle,
+.auth-page .register-box .subtitle { margin-top: .65rem; }
 .enquiry-page .enquiry-form__group { margin-bottom: 1.1rem; }
 .enquiry-page .enquiry-form__label,
 .auth-main form label {
@@ -3355,7 +3374,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .docs-index { margin-bottom: 2rem; }
 .docs-index a, .source-links a { padding: .6rem 1rem; border: 1px solid var(--border); border-radius: 999px; background: #f5f7f0; color: var(--forest-dark); font-size: .9rem; }
 .docs-index a:hover, .source-links a:hover { background: var(--forest); color: #fff; }
-.credits-page section { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--sage); border-radius: 16px; padding: clamp(1.25rem, 3vw, 2rem); margin: 1.5rem 0; box-shadow: 0 8px 24px rgba(18,61,50,.04); scroll-margin-top: 1.5rem; }
+.credits-page section { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--sage); border-radius: 16px; padding: clamp(1.25rem, 3vw, 2rem); margin: 1.5rem 0; box-shadow: 0 8px 24px rgba(18,61,50,.04); scroll-margin-top: 0; }
 .credits-page section h2 { margin: 0 0 1rem; font-size: 1.35rem; }
 .credits-page h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
 .credits-page p { line-height: 1.75; }
@@ -3450,3 +3469,41 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   ::view-transition-group(nav-active-highlight) { animation-duration: 1ms; }
 }.main-nav .nav-auth a[aria-current="page"] { position: relative; isolation: isolate; background: transparent; }
 .main-nav .nav-auth a[aria-current="page"]::before { content: ""; position: absolute; inset: -2px; z-index: -1; border: 2px solid var(--sage); border-radius: inherit; background: var(--forest); view-transition-name: nav-active-highlight; }
+
+/* Registration fields and consistent form reset controls. */
+.auth-main .register-box { max-width: 720px; }
+.register-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+.register-field { min-width: 0; }
+.register-field-wide { grid-column: 1 / -1; }
+.register-field input, .register-field select { width: 100%; }
+.register-address { min-width: 0; grid-column: 1 / -1; margin: .2rem 0 1rem; padding: 1rem; border: 1px solid #cbdac7; border-radius: 12px; }
+.register-address legend { padding: 0 .5rem; color: var(--forest); font-weight: 700; }
+.register-address .register-grid { gap: 0 1rem; }
+.auth-form-actions, .enquiry-form__actions { display: flex; gap: .8rem; align-items: stretch; margin-top: .5rem; }
+.auth-form-actions > :first-child, .enquiry-form__actions > :first-child { flex: 1; }
+.auth-form-actions .register-btn, .auth-form-actions .login-btn, .auth-form-actions .submit-btn { width: auto; margin: 0; }
+.auth-reset-btn, .enquiry-form__reset-btn { flex: 0 0 auto; padding: .8rem 1.4rem; border: 1px solid #b8cbb0; border-radius: 9px; background: #fff; color: var(--forest); font: inherit; font-weight: 600; cursor: pointer; }
+.auth-reset-btn:hover, .enquiry-form__reset-btn:hover { background: #eaf0e4; }
+.auth-main .auth-reset-btn { align-self: stretch; }
+.auth-main .auth-reset-btn { align-self: stretch; }
+.enquiry-form__actions .enquiry-form__submit-btn { width: auto; margin: 0; }
+@media (max-width: 600px) { .register-grid { grid-template-columns: 1fr; } .register-field-wide { grid-column: auto; } .auth-form-actions, .enquiry-form__actions { flex-wrap: wrap; } .auth-form-actions > :first-child, .enquiry-form__actions > :first-child { flex: 1 1 10rem; } }
+/* Readable form text and a more compact form-page hero. */
+.auth-main form label, .enquiry-page .enquiry-form__label, .community-page form label { font-size: 1rem; }
+.auth-main form input:not([type='checkbox']), .auth-main form select, .auth-main form textarea,
+.enquiry-page .enquiry-form__input, .enquiry-page .enquiry-form__select, .enquiry-page .enquiry-form__textarea,
+.contribution-form-page form input:not([type='submit']):not([type='reset']), .contribution-form-page textarea { font-size: 1rem; }
+:is(.auth-page, .enquiry-page, .contribution-form-page) .form-page-hero.blended-hero { min-height: 230px; padding-block: 2rem; }
+@media (max-width: 640px) { :is(.auth-page, .enquiry-page, .contribution-form-page) .form-page-hero.blended-hero { min-height: 185px; padding-block: 1.5rem; } }.identification-page .page-hero { min-height: 230px; }
+.identification-page .identify-panel label { font-size: 1rem; }
+@media (max-width: 640px) { .identification-page .page-hero { min-height: 185px; } }
+/* Keep all form text comfortably larger than the footer copy. */
+.auth-main form, .enquiry-page .enquiry-form, .community-page .contribution-form-card form, .identification-page .identify-panel form { font-size: 1.05rem; }
+.auth-main form label, .enquiry-page .enquiry-form__label, .community-page form label, .identification-page .identify-panel label { font-size: 1.05rem; }
+.auth-main form input:not([type='checkbox']), .auth-main form select, .auth-main form textarea,
+.enquiry-page .enquiry-form__input, .enquiry-page .enquiry-form__select, .enquiry-page .enquiry-form__textarea,
+.contribution-form-page form input:not([type='submit']):not([type='reset']), .contribution-form-page textarea,
+.identification-page .identify-panel input { font-size: 1.05rem; }
+.auth-main .login-box { max-width: 560px; }
+.auth-main .login-box .options { font-size: 1.05rem; }
+.auth-main .login-box .subtitle { font-size: 1rem; }

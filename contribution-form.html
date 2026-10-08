@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,17 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Nicholas Sia">
 <meta name="description" content="Plant contribution form for Plant Story">
-<title>Contribution Form — Plant Story</title>
+<title>Contribution Form â€” Plant Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=41">
+<link rel="stylesheet" href="css/style.css?v=54">
 </head>
 
-<body class="community-page contribution-form-page">
+<body class="community-page contribution-page contribution-form-page">
 
 <nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="index.html" class="brand">
-      <img src="images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
+      <img src="images/LogoPlantStory.png" alt="Plant Story â€” Rainforest Plant Explorer" class="logo-mark">
     </a>
     <div class="nav-right">
     <ul>
@@ -43,15 +43,17 @@
   </div>
 </nav>
 
-
-
+<section class="page-hero blended-hero">
+  <div class="container">
+    <h1>Your Contribution</h1>
+    <p class="page-hero-lede">View plant contributions and the contribution form.</p>
+  </div>
+</section>
 
 <main class="contribution-stage">
   <div class="contribution-form-layout">
     <header class="contribution-intro">
-      <h1>Your observations.<br><span>Our growing story.</span></h1>
-      <p>Share a plant, a photo, and what you noticed.</p>
-      <a class="form-back-link" href="contribute.html" id="back-to-contributors">&larr; Back to Contributors</a>
+
     </header>
     <section class="contribution-form-card" aria-labelledby="contribution-form-title">
       <div class="form-card-heading">
@@ -59,9 +61,9 @@
       </div>
 <form method="post" enctype="multipart/form-data">
 
-          <p><label for="contributor">Name of the Contributor:</label> <input type="text" id="contributor" name="contributor" maxlength="25" pattern="[A-Za-z ]+" required></p>
+          <p><label for="contributor">Name of the Contributor:</label> <input type="text" id="contributor" name="contributor" placeholder="Enter your name" maxlength="25" pattern="[A-Za-z ]+" required></p>
 
-          <p><label for="plantname">Plant's Name:</label> <input type="text" id="plantname" name="plantname" maxlength="25" pattern="[A-Za-z ]+" required></p>
+          <p><label for="plantname">Plant's Name:</label> <input type="text" id="plantname" name="plantname" placeholder="Enter the plant name" maxlength="25" pattern="[A-Za-z ]+" required></p>
 
           <p><label for="photo">Photo(s):</label> <input type="file" id="photo" name="photo" accept="image/*" multiple required></p>
 
@@ -72,6 +74,7 @@
 
       </form>
     </section>
+    <div class="contribution-back-wrap"><a class="form-back-link" href="contribute.html" id="back-to-contributors">&larr; Back to Contributors</a></div>
   </div>
 </main>
 <footer class="site-footer">

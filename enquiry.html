@@ -1,19 +1,19 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Explore the Collection — Forest Story</title>
+<title>Explore the Collection â€” Forest Story</title>
 <link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="css/style.css?v=46">
+<link rel="stylesheet" href="css/style.css?v=54">
 </head>
 <body class="enquiry-page">
 
 <nav class="main-nav" aria-label="Primary">
   <div class="container">
     <a href="index.html" class="brand">
-      <img src="images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
+      <img src="images/LogoPlantStory.png" alt="Plant Story â€” Rainforest Plant Explorer" class="logo-mark">
     </a>
     <div class="nav-right">
     <ul>
@@ -56,7 +56,7 @@
         <input 
           type="text" 
           id="fname" 
-          name="firstname" 
+          name="firstname" placeholder="Enter your first name" 
           class="enquiry-form__input"
           maxlength="25" 
           pattern="[A-Za-z\s]+" 
@@ -71,7 +71,7 @@
         <input 
           type="text" 
           id="lname" 
-          name="lastname" 
+          name="lastname" placeholder="Enter your last name" 
           class="enquiry-form__input"
           maxlength="25" 
           pattern="[A-Za-z\s]+" 
@@ -86,7 +86,7 @@
         <input 
           type="email" 
           id="email" 
-          name="email" 
+          name="email" placeholder="name@example.com" 
           class="enquiry-form__input"
           required
         >
@@ -133,16 +133,39 @@
       </div>
 
       <!-- Submit Button -->
-      <button type="submit" class="enquiry-form__submit-btn" id="enquiry-submit">Submit Enquiry</button>
+      <div class="enquiry-form__actions"><button type="submit" class="enquiry-form__submit-btn" id="enquiry-submit">Submit Enquiry</button><button type="reset" class="enquiry-form__reset-btn" id="enquiry-reset">Reset</button></div>
 
     </form>
   </div>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Forest Story. A student project for COS10026 Web Technology.</p>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">Plant Story</p>
+      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contribute.html">Contribution</a></li>
+        <li><a href="identify.html">Identification</a></li>
+        <li><a href="profile/profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <div class="footer-credits">
+      <h4>Data &amp; Credits</h4>
+      <ul>
+        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
+        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
+        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
+        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
+      </ul>
+    </div>
   </div>
-<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
+  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
+  <nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a></nav>
 </footer>
 
 </body>

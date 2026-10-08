@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Register — Plant Story</title>
 <link rel="icon" type="image/jpeg" href="../images/leaf-icon.jpg">
-<link rel="stylesheet" href="../css/style.css?v=46">
+<link rel="stylesheet" href="../css/style.css?v=53">
 </head>
 <body class="auth-page register-page">
 
@@ -15,20 +15,20 @@
       <img src="../images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
     </a>
     <div class="nav-right">
-    <ul>
-      <li class="has-dropdown">
-        <a href="../explore.html">Explore</a>
-        <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
-          <li><a href="../explore1.html">Families</a></li>
-          <li><a href="../explore2.html">Genera</a></li>
-          <li><a href="../explore3.html">Species</a></li>
-        </ul>
-      </li>
-      <li><a href="../contribute.html">Contribution</a></li>
-      <li><a href="../identify.html">Identification</a></li>
-      <li><a href="../profile/profile.html">Profile</a></li>
-      <li><a href="../enquiry.html">Enquiry</a></li>
-    </ul>
+      <ul>
+        <li class="has-dropdown">
+          <a href="../explore.html">Explore</a>
+          <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
+            <li><a href="../explore1.html">Families</a></li>
+            <li><a href="../explore2.html">Genera</a></li>
+            <li><a href="../explore3.html">Species</a></li>
+          </ul>
+        </li>
+        <li><a href="../contribute.html">Contribution</a></li>
+        <li><a href="../identify.html">Identification</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+        <li><a href="../enquiry.html">Enquiry</a></li>
+      </ul>
       <div class="nav-auth">
         <a href="register.html" class="btn-navstyle" aria-current="page">Registration</a>
         <a href="login.html" class="btn-navstyle">Login</a>
@@ -37,69 +37,34 @@
   </div>
 </nav>
 
-<header class="form-page-hero blended-hero">
-  <div class="hero-copy">
-    <h1>Registration</h1>
-    <p>Account registration form for Plant Story.</p>
-  </div>
-</header>
+<header class="form-page-hero blended-hero"><div class="hero-copy"><h1>Registration</h1><p>Create a Plant Story account.</p></div></header>
 
 <main class="auth-main">
-    <div class="register-box">
-        <h1>Sign up</h1>
-        <p class="subtitle">Create your account</p>
-
-        <form>
-        <label for="name">Username</label>
-        <input type="text" id="name" placeholder="Username" maxlength="10" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your email" required>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Create a password" maxlength="25" required>
-
-        <label for="confirm">Confirm password</label>
-        <input type="password" id="confirm" placeholder="Confirm your password" maxlength="25" required>
-
-        <button type="submit" class="register-btn" id="register-submit">Sign up</button>
-        </form>
-
-        <p class="signup-text">Already have an account?
-        <a href="login.html">Login</a>
-        </p>
-    </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <p class="footer-logo">Plant Story</p>
-      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
-    </div>
-    <nav class="footer-links" aria-label="Footer">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../explore.html">Explore</a></li>
-        <li><a href="../contribute.html">Contribution</a></li>
-        <li><a href="../identify.html">Identification</a></li>
-        <li><a href="../profile/profile.html">Profile</a></li>
-      </ul>
-    </nav>
-    <div class="footer-credits">
-      <h4>Data &amp; Credits</h4>
-      <ul>
-        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
-        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
-        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
-        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
-      </ul>
-    </div>
+  <div class="register-box">
+    <h1>Sign up</h1>
+    <p class="subtitle">Create your account</p>
+    <form>
+      <div class="register-grid">
+        <div class="register-field"><label for="first-name">First name</label><input type="text" id="first-name" name="first_name" placeholder="First name" maxlength="25" pattern="[A-Za-z]+" title="Use letters only, up to 25 characters" required></div>
+        <div class="register-field"><label for="last-name">Last name</label><input type="text" id="last-name" name="last_name" placeholder="Last name" maxlength="25" pattern="[A-Za-z]+" title="Use letters only, up to 25 characters" required></div>
+        <div class="register-field register-field-wide"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="Your email" required></div>
+        <fieldset class="register-address register-field-wide"><legend>Address</legend>
+          <div class="register-grid">
+            <div class="register-field register-field-wide"><label for="street">Street address</label><input type="text" id="street" name="street" placeholder="Street address" maxlength="40" required></div>
+            <div class="register-field"><label for="city">City / town</label><input type="text" id="city" name="city" placeholder="City or town" maxlength="20" required></div>
+            <div class="register-field"><label for="state">State / federal territory</label><select id="state" name="state" required><option value="" disabled selected>Select a state or territory</option><option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option><option>Negeri Sembilan</option><option>Pahang</option><option>Penang</option><option>Perak</option><option>Perlis</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option><option>Terengganu</option><option>Kuala Lumpur</option><option>Labuan</option><option>Putrajaya</option></select></div>
+            <div class="register-field"><label for="postcode">Postcode</label><input type="text" id="postcode" name="postcode" placeholder="Enter your postcode" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" title="Enter exactly 5 digits" required></div>
+          </div>
+        </fieldset>
+        <div class="register-field register-field-wide"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" placeholder="0123456789" inputmode="numeric" maxlength="10" pattern="[0-9]{1,10}" title="Enter up to 10 digits" required></div>
+        <div class="register-field"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Create a password" maxlength="25" required></div>
+        <div class="register-field"><label for="confirm">Confirm password</label><input type="password" id="confirm" name="confirm_password" placeholder="Confirm your password" maxlength="25" required></div>
+      </div>
+      <div class="auth-form-actions"><button type="submit" class="register-btn" id="register-submit">Sign up</button><button type="reset" class="auth-reset-btn" id="register-reset">Reset</button></div>
+    </form>
+    <p class="signup-text">Already have an account? <a href="login.html">Login</a></p>
   </div>
-  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
-<nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav>
-</footer>
-
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><p class="footer-logo">Plant Story</p><p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p></div><nav class="footer-links" aria-label="Footer"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../explore.html">Explore</a></li><li><a href="../contribute.html">Contribution</a></li><li><a href="../identify.html">Identification</a></li><li><a href="../profile/profile.html">Profile</a></li></ul></nav><div class="footer-credits"><h4>Data &amp; Credits</h4><ul><li><a href="https://plantnet.org/">Pl@ntNet</a></li><li><a href="https://powo.science.kew.org/">Kew POWO</a></li></ul></div></div><p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p><nav class="footer-page-links" aria-label="Project information"><a href="../acknowledgement.html">Acknowledgement</a><a href="../enhancement.html">Enhancements</a></nav></footer>
 </body>
 </html>
