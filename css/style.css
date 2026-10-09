@@ -981,7 +981,8 @@ figcaption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   padding: 0.9rem 1rem 0.75rem;
-  background: linear-gradient(to top, rgba(32,63,55,0.92), rgba(32,63,55,0));
+  background: linear-gradient(to top, rgba(18,61,50,0.97) 0%, rgba(18,61,50,0.84) 55%, rgba(18,61,50,0) 100%);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.45);
   font-weight: 700;
   font-size: 1.05rem;
 }
@@ -3450,3 +3451,134 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   ::view-transition-group(nav-active-highlight) { animation-duration: 1ms; }
 }.main-nav .nav-auth a[aria-current="page"] { position: relative; isolation: isolate; background: transparent; }
 .main-nav .nav-auth a[aria-current="page"]::before { content: ""; position: absolute; inset: -2px; z-index: -1; border: 2px solid var(--sage); border-radius: inherit; background: var(--forest); view-transition-name: nav-active-highlight; }
+
+/* ---------- Collection at a glance (explore.html) ---------- */
+/* Status colours are the reserved good/warning/serious scale, darkened to clear
+   3:1 against --ivory (#F5F1E7); every status also carries a shape + label, so
+   colour never carries the meaning on its own. */
+
+.collection-stats {
+  --st-good: #0ca00c;
+  --st-warning: #b48012;
+  --st-serious: #cb714d;
+  --st-none: #8a8778;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-tile {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--forest);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--forest);
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.stat-note {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ----- conservation status: horizontal stacked bar ----- */
+
+.status-block { margin-top: 0.5rem; }
+
+.status-block h3 {
+  font-size: 1rem;
+  margin: 0 0 0.15rem;
+}
+
+.status-caption {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.status-bar {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  gap: 2px;                     /* 2px surface gap between stacked segments */
+  background: var(--ivory);
+}
+
+.status-seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.status-seg:first-child { border-radius: 4px 0 0 4px; }
+.status-seg:last-child  { border-radius: 0 4px 4px 0; }
+
+.status-seg.is-good    { background: var(--st-good); }
+.status-seg.is-warning { background: var(--st-warning); }
+.status-seg.is-serious { background: var(--st-serious); }
+.status-seg.is-none    { background: var(--st-none); }
+
+.status-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.status-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text);
+}
+
+/* shape carries identity alongside hue, so the legend is readable under CVD */
+.status-key {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+.status-key.is-good    { color: var(--st-good); }
+.status-key.is-warning { color: var(--st-warning); }
+.status-key.is-serious { color: var(--st-serious); }
+.status-key.is-none    { color: var(--st-none); }
+
+.status-count {
+  color: var(--text-light);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (forced-colors: active) {
+  .status-seg { border: 1px solid CanvasText; }
+  .status-bar { gap: 2px; }
+}
