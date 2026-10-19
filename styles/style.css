@@ -1,4 +1,4 @@
-﻿/* =========================================================
+/* =========================================================
    PLANTSTORY â€” shared stylesheet
    Palette: Forest Green #2F5D50 | Sage Green #A8BFA3 | Warm Ivory #F4F0E6
    ========================================================= */
@@ -43,7 +43,7 @@ body {
   background-color: var(--ivory);
   background-image:
     linear-gradient(rgba(244,240,230,0.93), rgba(244,240,230,0.93)),
-    url("../images/hero-background.jpg");
+    url("images/hero-background.jpg");
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -209,7 +209,7 @@ a:hover, a:focus { text-decoration: underline; }
   position: relative;
   background:
     linear-gradient(180deg, rgba(18,61,50,0.58) 0%, rgba(18,61,50,0.88) 100%),
-    url("../images/hero-background.jpg") center 30% / cover no-repeat;
+    url("images/hero-background.jpg") center 30% / cover no-repeat;
   color: var(--white);
   padding: 5.5rem 0 4.5rem;
   text-align: center;
@@ -745,7 +745,7 @@ a:hover, a:focus { text-decoration: underline; }
 .hero {
   background:
     linear-gradient(135deg, rgba(32,63,55,0.88) 0%, rgba(32,63,55,0.7) 100%),
-    url("../images/hero-background.jpg") center / cover no-repeat;
+    url("images/hero-background.jpg") center / cover no-repeat;
   color: var(--ivory);
   padding: 3.5rem 0;
 }
@@ -2436,7 +2436,7 @@ button[type="reset"]:hover { background: var(--sage); }
 /* Contribution form: botanical introduction and a separate, readable form card. */
 .contribution-form-page {
   background-color: var(--ivory);
-  background-image: linear-gradient(rgba(244,240,230,.93), rgba(244,240,230,.93)), url('../images/hero-background.jpg');
+  background-image: linear-gradient(rgba(244,240,230,.93), rgba(244,240,230,.93)), url('images/hero-background.jpg');
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -2527,7 +2527,7 @@ button[type="reset"]:hover { background: var(--sage); }
   border-radius: 0;
   margin-bottom: 0;
   padding: 4.5rem 1rem;
-  background: linear-gradient(110deg, rgba(18,61,50,.88), rgba(18,61,50,.52)), url('../images/background-contribute.png') center 45% / cover;
+  background: linear-gradient(110deg, rgba(18,61,50,.88), rgba(18,61,50,.52)), url('images/background-contribute.png') center 45% / cover;
 }
 .contribution-page .page-hero {
   isolation: isolate;
@@ -2539,7 +2539,7 @@ button[type="reset"]:hover { background: var(--sage); }
   position: absolute;
   inset: -3%;
   z-index: -2;
-  background: url('../images/background-contribute.png') center 45% / cover no-repeat;
+  background: url('images/background-contribute.png') center 45% / cover no-repeat;
   animation: contribution-hero-drift 8s ease-in-out infinite alternate;
   pointer-events: none;
 }
@@ -2556,7 +2556,7 @@ button[type="reset"]:hover { background: var(--sage); }
   to { transform: scale(1.06) translate3d(1.5%, -1%, 0); }
 }
 .identification-page .page-hero {
-  background-image: linear-gradient(110deg, rgba(18,61,50,.8), rgba(18,61,50,.55)), url('../images/background-identify.jpg');
+  background-image: linear-gradient(110deg, rgba(18,61,50,.8), rgba(18,61,50,.55)), url('images/background-identify.jpg');
   background-position: center, center 35%;
 }
 .community-page .page-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
@@ -2964,7 +2964,7 @@ button[type="reset"]:hover { background: var(--sage); }
   inset: -2% -2% -2% auto;
   width: min(85%, 800px);
   z-index: -2;
-  background: url('../images/background-identify.jpg') center 50% / cover no-repeat;
+  background: url('images/background-identify.jpg') center 50% / cover no-repeat;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 30%);
   mask-image: linear-gradient(90deg, transparent, #000 30%);
   transform-origin: center;
@@ -3123,7 +3123,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
 /* Shared banner size, soft photo edges and gentle movement. */
 :is(.community-page, .explore-page, .auth-page, .enquiry-page, .profile-picker-page, .documentation-page) .blended-hero {
-  --hero-image: url('../images/hero-background.jpg');
+  --hero-image: url('images/hero-background.jpg');
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -3183,12 +3183,12 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   color: #f4f7ef;
   font-size: 1.05rem;
 }
-.login-page .blended-hero { --hero-image: url('../images/loginpagehro.jpg'); }
-.register-page .blended-hero { --hero-image: url('../images/registartionpagehro.jpg'); }
-.enquiry-page .blended-hero { --hero-image: url('../images/engquirypagehero.jpg'); }
-.contribution-page .blended-hero { --hero-image: url('../images/background-contribute.png'); }
-.identification-page .blended-hero { --hero-image: url('../images/background-identify.jpg'); }
-.profile-picker-page .blended-hero { --hero-image: url('../images/profileheroback.jpg'); }
+.login-page .blended-hero { --hero-image: url('images/loginpagehro.jpg'); }
+.register-page .blended-hero { --hero-image: url('images/registartionpagehro.jpg'); }
+.enquiry-page .blended-hero { --hero-image: url('images/engquirypagehero.jpg'); }
+.contribution-page .blended-hero { --hero-image: url('images/background-contribute.png'); }
+.identification-page .blended-hero { --hero-image: url('images/background-identify.jpg'); }
+.profile-picker-page .blended-hero { --hero-image: url('images/profileheroback.jpg'); }
 .explore-page main .page-hero-actions .btn-outline { color: var(--forest-dark); }
 @keyframes banner-drift {
   from { transform: translateX(-14px) scale(1.04); }
@@ -3201,10 +3201,10 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) {
   :is(.community-page, .explore-page, .auth-page, .enquiry-page, .profile-picker-page, .documentation-page) .blended-hero::before { animation: none; }
 }
-/* Login, registration and enquiry share the default Explore/Contribution background. */
+/* Form pages: login, registration, password reset and enquiry. */
 .auth-page:not(.login-page):not(.register-page) {
   background: linear-gradient(rgba(246, 244, 237, .86), rgba(246, 244, 237, .92)),
-    url('../images/contribution-form-back.jpg') center / cover fixed;
+    url('images/contribution-form-back.jpg') center / cover fixed;
 }
 
 .enquiry-page .enquiry-card,
@@ -3237,6 +3237,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 }
 .auth-page .login-box .subtitle,
 .auth-page .register-box .subtitle { margin-top: .65rem; }
+/* Form controls: shared labels, inputs and primary actions. */
 .enquiry-page .enquiry-form__group { margin-bottom: 1.1rem; }
 .enquiry-page .enquiry-form__label,
 .auth-main form label {
@@ -3291,7 +3292,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .auth-main .register-btn:active,
 .auth-main .submit-btn:active { transform: scale(.98); }
 
-/* Account form layout stays the same; only the card and controls change. */
+/* Account layout: centred cards for login, registration and password reset. */
 .auth-main {
   display: flex;
   justify-content: center;
@@ -3314,6 +3315,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   font-size: .9rem;
   text-align: center;
 }
+/* Login: remember-me row and account links. */
 .auth-main .options {
   display: flex;
   align-items: center;
@@ -3334,6 +3336,9 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .auth-main .forgot,
 .auth-main .signup-text a,
 .auth-main .back-text a { color: var(--forest); font-weight: 700; }
+.auth-main .forgot:hover,
+.auth-main .signup-text a:hover,
+.auth-main .back-text a:hover { text-decoration: underline; }
 .auth-main .signup-text,
 .auth-main .back-text {
   margin: 1.3rem 0 0;
@@ -3341,6 +3346,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   font-size: .9rem;
   text-align: center;
 }
+/* Password reset: card, heading and lock icon. */
 .auth-main .forgot-box {
   border-radius: 10px;
   background: var(--white);
@@ -3470,7 +3476,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 }.main-nav .nav-auth a[aria-current="page"] { position: relative; isolation: isolate; background: transparent; }
 .main-nav .nav-auth a[aria-current="page"]::before { content: ""; position: absolute; inset: -2px; z-index: -1; border: 2px solid var(--sage); border-radius: inherit; background: var(--forest); view-transition-name: nav-active-highlight; }
 
-/* Registration fields and consistent form reset controls. */
+/* Registration: address fields and shared Reset button layout. */
 .auth-main .register-box { max-width: 720px; }
 .register-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
 .register-field { min-width: 0; }
