@@ -1,0 +1,9 @@
+# Show a browsable folder listing instead of auto-loading index.php
+DirectoryIndex disabled
+Options +Indexes
+
+# Nicer listing: icons, sortable columns, folders first, full filenames
+IndexOptions FancyIndexing HTMLTable FoldersFirst NameWidth=* SuppressDescription IconsAreLinks
+
+# Hide private/dev files from the listing
+IndexIgnore .env .git .gitignore .htaccess

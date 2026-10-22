@@ -203,7 +203,7 @@ a:hover, a:focus { text-decoration: underline; }
   .dropdown-menu { position: static; box-shadow: none; }
 }
 
-/* ---------- Page hero (explore1.html) ---------- */
+/* ---------- Page hero (explore1.php) ---------- */
 
 .page-hero {
   position: relative;
@@ -327,7 +327,7 @@ a:hover, a:focus { text-decoration: underline; }
   margin: 0;
 }
 
-/* ---------- Family cards (explore1.html) ---------- */
+/* ---------- Family cards (explore1.php) ---------- */
 
 .family-cards {
   display: grid;
@@ -423,7 +423,7 @@ a:hover, a:focus { text-decoration: underline; }
   .family-cards { grid-template-columns: 1fr; }
 }
 
-/* ---------- Comparison table (explore1.html) ---------- */
+/* ---------- Comparison table (explore1.php) ---------- */
 
 .comparison-table-wrap {
   overflow-x: auto;
@@ -482,7 +482,7 @@ a:hover, a:focus { text-decoration: underline; }
 .comparison-table tbody tr:hover td,
 .comparison-table tbody tr:hover th { background: rgba(169, 196, 162, 0.32); }
 
-/* ---------- Taxonomy flow (explore2.html) ---------- */
+/* ---------- Taxonomy flow (explore2.php) ---------- */
 
 .taxonomy-flow { max-width: 420px; margin: 1.25rem auto 0.5rem; }
 
@@ -521,7 +521,7 @@ a:hover, a:focus { text-decoration: underline; }
 
 .taxonomy-step.is-current .taxonomy-step-value { color: var(--white); font-size: 1.35rem; }
 
-/* ---------- Genus profile cards (explore2.html) ---------- */
+/* ---------- Genus profile cards (explore2.php) ---------- */
 
 .genus-picker-group {
   background: transparent;
@@ -1004,7 +1004,7 @@ figcaption {
   letter-spacing: 0.05em;
 }
 
-/* ---------- Contributor flip cards (index.html) ---------- */
+/* ---------- Contributor flip cards (index.php) ---------- */
 
 .flip-card-grid {
   display: grid;
@@ -1091,7 +1091,7 @@ figcaption {
   .flip-card-inner { transition: none; }
 }
 
-/* ---------- Family tab picker (explore1.html) ---------- */
+/* ---------- Family tab picker (explore1.php) ---------- */
 
 .family-picker { position: relative; }
 
@@ -1108,7 +1108,7 @@ figcaption {
 #meliaceae:target,
 #ebenaceae:target { display: block; }
 
-/* ---------- Catalogue jump menu (explore1/2/3.html) ---------- */
+/* ---------- Catalogue jump menu (explore1/2/3.php) ---------- */
 
 .catalogue-jump {
   background: var(--white);
@@ -1170,7 +1170,7 @@ figcaption {
 
 .catalogue-jump-grid a { font-size: 0.92rem; }
 
-/* ---------- Select picker (explore2.html, explore3.html) ---------- */
+/* ---------- Select picker (explore2.html, explore3.php) ---------- */
 
 .select-picker { margin-bottom: 1.75rem; }
 
@@ -2385,7 +2385,7 @@ button[type="reset"]:hover { background: var(--sage); }
   z-index: 1000;
 }
 
-/* ---------- Profile picker (profile/profile.html) ---------- */
+/* ---------- Profile picker (profile/profile.php) ---------- */
 .profile-picker-page main { padding: 3rem 0 4rem; }
 .team-grid {
   width: calc(100% - 40px);
@@ -3452,7 +3452,7 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 }.main-nav .nav-auth a[aria-current="page"] { position: relative; isolation: isolate; background: transparent; }
 .main-nav .nav-auth a[aria-current="page"]::before { content: ""; position: absolute; inset: -2px; z-index: -1; border: 2px solid var(--sage); border-radius: inherit; background: var(--forest); view-transition-name: nav-active-highlight; }
 
-/* ---------- Collection at a glance (explore.html) ---------- */
+/* ---------- Collection at a glance (explore.php) ---------- */
 /* Status colours are the reserved good/warning/serious scale, darkened to clear
    3:1 against --ivory (#F5F1E7); every status also carries a shape + label, so
    colour never carries the meaning on its own. */
