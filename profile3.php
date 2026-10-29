@@ -1,10 +1,22 @@
 <?php
+<<<<<<< HEAD
 $bodyClass = 'profile-page right-flip-profile pokemon-themed theme-grass';
 $activePage = 'profile';
 $profileEmail = 'hishamuddin@students.swinburne.edu.my';
 $profileSong = 'music/hishamusic.mp3';
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
+=======
+$pageTitle = 'Muhammad Hishamuddin Ngu — Plant Story';
+$pageDescription = 'Muhammad Hishamuddin Ngu, a Plant Story team member.';
+$pageAuthor = 'Muhammad Hishamuddin Ngu';
+$bodyClass = 'profile-page right-flip-profile pokemon-themed theme-grass';
+$activePage = 'profile';
+$profileEmail = 'hishamuddin@students.swinburne.edu.my';
+$profileSong = 'hishamusic.mp3';
+include __DIR__ . '/includes/header.inc.php';
+include __DIR__ . '/includes/nav.inc.php';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 <!-- Main profile area -->
 <main class="profile-container">
@@ -35,6 +47,7 @@ include('includes/nav.inc.php');
     <table class="info-table">
       <tbody>
         <tr>
+<<<<<<< HEAD
           <th>ðŸ¡ Hometown</th>
           <td>Sarikei, Sarawak &amp; Bukit Timah, Singapore</td>
         </tr>
@@ -44,6 +57,17 @@ include('includes/nav.inc.php');
         </tr>
         <tr>
           <th>ðŸ”¬ Interests</th>
+=======
+          <th>🏡 Hometown</th>
+          <td>Sarikei, Sarawak &amp; Bukit Timah, Singapore</td>
+        </tr>
+        <tr>
+          <th>🎨 Hobbies</th>
+          <td>Gaming, Reading, Workout, Tinkering & Collecting TCG</td>
+        </tr>
+        <tr>
+          <th>🔬 Interests</th>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           <td>TCG, Technology, Medicine & Gaming</td>
         </tr>
       </tbody>
@@ -52,7 +76,11 @@ include('includes/nav.inc.php');
         <p class="flip-hint">flip &amp; read intro</p>
       </div>
       <div class="details-face details-back">
+<<<<<<< HEAD
         <h2 class="back-title">ðŸŒ± About Me</h2>
+=======
+        <h2 class="back-title">🌱 About Me</h2>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         <div class="back-intro-text">
           <p>Hello! I'm Muhammad Hishamuddin Ngu, a Swinburne University student. I am passionate about technology and its applications in solving real-world problems.</p>
           <p>I hit Radiant#499 in Valorant, Faceit Level 10 in CS:GO, and 4.0 in my foundation year.</p>
@@ -69,8 +97,13 @@ include('includes/nav.inc.php');
 <div class="extra-row">
 
   <section class="skill-garden" aria-labelledby="skill-garden-title">
+<<<<<<< HEAD
     <h2 class="map-title" id="skill-garden-title"><span>ðŸŒ¿</span> Skill Garden</h2>
     <p class="map-select-label">Every stem grows to the level I have reached so far â€” hover or focus a plant to read more.</p>
+=======
+    <h2 class="map-title" id="skill-garden-title"><span>🌿</span> Skill Garden</h2>
+    <p class="map-select-label">Every stem grows to the level I have reached so far — hover or focus a plant to read more.</p>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 
     <ul class="garden-bed">
       <li class="garden-plant plant-python" tabindex="0">
@@ -79,7 +112,11 @@ include('includes/nav.inc.php');
         <span class="plant-name">Python</span>
       </li>
       <li class="garden-plant plant-js" tabindex="0">
+<<<<<<< HEAD
         <span class="plant-tip">Logic, events and interactivity â€” used outside this unit.</span>
+=======
+        <span class="plant-tip">Logic, events and interactivity — used outside this unit.</span>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         <span class="plant-stem"><span class="plant-level">85%</span></span>
         <span class="plant-name">Javascript</span>
       </li>
@@ -94,7 +131,11 @@ include('includes/nav.inc.php');
         <span class="plant-name">CSS</span>
       </li>
       <li class="garden-plant plant-data" tabindex="0">
+<<<<<<< HEAD
         <span class="plant-tip">Cleaning, analysing and visualising data â€” my degree major.</span>
+=======
+        <span class="plant-tip">Cleaning, analysing and visualising data — my degree major.</span>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         <span class="plant-stem"><span class="plant-level">70%</span></span>
         <span class="plant-name">Data Science</span>
       </li>
@@ -112,7 +153,11 @@ include('includes/nav.inc.php');
 <div class="extra-row">
 
   <div class="map-card">
+<<<<<<< HEAD
     <h2 class="map-title"><span>ðŸ—ºï¸</span> Hometown</h2>
+=======
+    <h2 class="map-title"><span>🗺️</span> Hometown</h2>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     <p class="map-select-label">Choose a hometown to view:</p>
 
     <!-- CSS-only switcher: the checked radio reveals its matching map panel -->
@@ -131,7 +176,11 @@ include('includes/nav.inc.php');
           title="Map of Sarikei, Sarawak" allowfullscreen></iframe>
       </div>
       <div class="map-caption">
+<<<<<<< HEAD
         <span>ðŸ“</span> <span>Sarikei, my hometown in Sarawak.</span>
+=======
+        <span>📍</span> <span>Sarikei, my hometown in Sarawak.</span>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </div>
     </div>
 
@@ -142,12 +191,22 @@ include('includes/nav.inc.php');
           title="Map of Bukit Timah, Singapore" allowfullscreen></iframe>
       </div>
       <div class="map-caption">
+<<<<<<< HEAD
         <span>ðŸ“</span> <span>Bukit Timah, my second hometown in Singapore.</span>
+=======
+        <span>📍</span> <span>Bukit Timah, my second hometown in Singapore.</span>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </div>
     </div>
   </div>
 
 </div>
+<<<<<<< HEAD
 <?php include('includes/profile-extras.inc.php'); ?>
 
 <?php include('includes/footer.inc.php'); ?>
+=======
+<?php include __DIR__ . '/includes/profile-extras.inc.php'; ?>
+
+<?php include __DIR__ . '/includes/footer.inc.php'; ?>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

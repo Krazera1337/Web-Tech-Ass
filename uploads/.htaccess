@@ -1,0 +1,8 @@
+# Uploaded images only: no folder listing and never run anything as code.
+Options -Indexes -ExecCGI
+<FilesMatch "\.(php\d?|phtml|phar|cgi|pl|py)$">
+    Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>

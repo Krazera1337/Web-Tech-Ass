@@ -281,7 +281,7 @@ include('includes/nav.inc.php');
     <section id="skill-garden">
       <div class="enhancement-copy">
         <h2>Skill Garden</h2>
-        <p>Muhammadâ€™s skills appear as six growing stems with percentage labels. Hover over or focus a plant to read more about that skill; the illustration and motion use CSS.</p>
+        <p>Muhammad's skills appear as six growing stems with percentage labels. Hover over or focus a plant to read more about that skill; the illustration and motion use CSS.</p>
         <video class="enhancement-demo" autoplay muted loop playsinline preload="metadata" aria-label="Skill Garden demonstration">
           <source src="videos/skill-garden.mp4" type="video/mp4">
           Your browser does not support embedded video.
@@ -306,7 +306,7 @@ include('includes/nav.inc.php');
     <section id="form-reset">
       <div class="enhancement-copy">
         <h2>Form reset buttons</h2>
-        <p>A Reset button clears the values entered in its form and restores the original field values. This uses the browserâ€™s built-in HTML form behaviour.</p>
+        <p>A Reset button clears the values entered in its form and restores the original field values. This uses the browser's built-in HTML form behaviour.</p>
         <video class="enhancement-demo" autoplay muted loop playsinline preload="metadata" aria-label="Form reset button demonstration">
           <source src="videos/form-reset.mp4" type="video/mp4">
           Your browser does not support embedded video.

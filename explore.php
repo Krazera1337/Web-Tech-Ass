@@ -1,13 +1,23 @@
 <?php
+<<<<<<< HEAD
+=======
+$pageTitle = 'Explore the Collection — Forest Story';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'explore-page';
 $activePage = 'explore';
 $heroTitle = 'Explore the Collection';
 $heroLede = 'Browse the plant collection by family, genus and species.';
 $heroTag = 'header';
 $heroCopyClass = true;
+<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
+=======
+include __DIR__ . '/includes/header.inc.php';
+include __DIR__ . '/includes/nav.inc.php';
+include __DIR__ . '/includes/page-hero.inc.php';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 
 <div class="page-wrap">
@@ -18,7 +28,11 @@ include('includes/page-hero.inc.php');
     Browse the families below, use the search to jump straight to any genus
     or species, or scan the full hierarchy in the overview table.</p>
 
+<<<<<<< HEAD
     <?php include('includes/catalogue-jump.inc.php'); ?>
+=======
+    <?php include __DIR__ . '/includes/catalogue-jump.inc.php'; ?>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 
     <section aria-labelledby="gallery-heading">
       <h2 id="gallery-heading" class="mt-0">Meet the families</h2>
@@ -27,7 +41,11 @@ include('includes/page-hero.inc.php');
       <div class="family-gallery">
         <a class="family-photo-card" href="explore1.php#myristicaceae">
           <img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae">
+<<<<<<< HEAD
           <span class="family-photo-label">Myristicaceae<small>The Nutmeg Family</small><small class="family-photo-origin">Native to tropical Asia â€” Himalaya to Malesia</small></span>
+=======
+          <span class="family-photo-label">Myristicaceae<small>The Nutmeg Family</small><small class="family-photo-origin">Native to tropical Asia — Himalaya to Malesia</small></span>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         </a>
         <a class="family-photo-card" href="explore1.php#chrysobalanaceae">
           <img src="images/family-chrysobalanaceae.jpg" alt="A flowering tree of the cocoplum family, Chrysobalanaceae">
@@ -35,7 +53,11 @@ include('includes/page-hero.inc.php');
         </a>
         <a class="family-photo-card" href="explore1.php#meliaceae">
           <img src="images/family-meliaceae.jpg" alt="Flowers of a mahogany family tree, Meliaceae">
+<<<<<<< HEAD
           <span class="family-photo-label">Meliaceae<small>The Mahogany Family</small><small class="family-photo-origin">Native to Asia-Pacific â€” South Asia to N. Australia</small></span>
+=======
+          <span class="family-photo-label">Meliaceae<small>The Mahogany Family</small><small class="family-photo-origin">Native to Asia-Pacific — South Asia to N. Australia</small></span>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         </a>
         <a class="family-photo-card" href="explore1.php#ebenaceae">
           <img src="images/family-ebenaceae.jpg" alt="Foliage of an ebony family tree, Ebenaceae">
@@ -59,6 +81,15 @@ include('includes/page-hero.inc.php');
           observations with the collection.</p>
           <a href="contributor.php">Contribute Your Findings &rarr;</a>
         </div>
+<<<<<<< HEAD
+=======
+        <div class="card">
+          <h3>New Additions</h3>
+          <p>See the species added to the collection since the core
+          catalogue was published.</p>
+          <a href="plants.php">See What's New &rarr;</a>
+        </div>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </div>
     </section>
 
@@ -84,4 +115,8 @@ include('includes/page-hero.inc.php');
   </main>
 </div>
 
+<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
+=======
+<?php include __DIR__ . '/includes/footer.inc.php'; ?>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

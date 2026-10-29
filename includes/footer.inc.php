@@ -1,5 +1,14 @@
 <?php
+<<<<<<< HEAD
 echo '<footer class="site-footer">
+=======
+/*
+ * Site footer and closing tags. Relies on current_attr() from
+ * header.inc.php, so include that first.
+ */
+?>
+<footer class="site-footer">
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
   <div class="container footer-grid">
     <div class="footer-brand">
       <p class="footer-logo">Plant Story</p>
@@ -25,6 +34,7 @@ echo '<footer class="site-footer">
       </ul>
     </div>
   </div>
+<<<<<<< HEAD
   <p class="footer-bottom">&copy; ';
 echo date('Y');
 echo ' Plant Story. A student project for COS10026 Web Technology.</p>
@@ -33,8 +43,15 @@ echo current_attr('acknowledgement');
 echo '>Acknowledgement</a><a href="enhancement.php"';
 echo current_attr('enhancement');
 echo '>Enhancements</a><a href="https://youtu.be/Hr3BoP4BBVc" target="_blank" rel="noopener">YouTube video</a></nav>
+=======
+  <p class="footer-bottom">&copy; <?= date('Y') ?> Plant Story. A student project for COS10026 Web Technology.</p>
+<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.php"<?= current_attr('acknowledgement') ?>>Acknowledgement</a><a href="enhancement.php"<?= current_attr('enhancement') ?>>Enhancements</a><a href="https://youtu.be/Hr3BoP4BBVc" target="_blank" rel="noopener">YouTube video</a></nav>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 </footer>
 
 </body>
 </html>
+<<<<<<< HEAD
 ';
+=======
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

@@ -1,13 +1,23 @@
 <?php
+<<<<<<< HEAD
+=======
+$pageTitle = 'Login — Plant Story';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'auth-page login-page';
 $activePage = 'login';
 $heroTitle = 'Login';
 $heroLede = 'Account sign-in form for Plant Story.';
 $heroTag = 'header';
 $heroVariant = 'form';
+<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
+=======
+include __DIR__ . '/includes/header.inc.php';
+include __DIR__ . '/includes/nav.inc.php';
+include __DIR__ . '/includes/page-hero.inc.php';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 
 <main class="auth-main">
@@ -39,4 +49,8 @@ include('includes/page-hero.inc.php');
     </div>
 </main>
 
+<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
+=======
+<?php include __DIR__ . '/includes/footer.inc.php'; ?>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

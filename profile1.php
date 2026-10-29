@@ -1,10 +1,22 @@
 <?php
+<<<<<<< HEAD
 $bodyClass = 'profile-page right-flip-profile pokemon-themed theme-fire';
 $activePage = 'profile';
 $profileEmail = '106758936@students.swinburne.edu.my';
 $profileSong = 'music/nickmusic.mp3';
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
+=======
+$pageTitle = 'Nicholas Sia — Plant Story';
+$pageDescription = 'Nicholas Sia, a Plant Story team member.';
+$pageAuthor = 'Nicholas Sia';
+$bodyClass = 'profile-page right-flip-profile pokemon-themed theme-fire';
+$activePage = 'profile';
+$profileEmail = '106758936@students.swinburne.edu.my';
+$profileSong = 'nickmusic.mp3';
+include __DIR__ . '/includes/header.inc.php';
+include __DIR__ . '/includes/nav.inc.php';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 <!-- Main profile area -->
 <main class="profile-container">
@@ -29,6 +41,7 @@ include('includes/nav.inc.php');
         <table class="info-table">
           <tbody>
             <tr>
+<<<<<<< HEAD
               <th>ðŸ¡ Hometown</th>
               <td>Sibu, Sarawak</td>
             </tr>
@@ -38,6 +51,17 @@ include('includes/nav.inc.php');
             </tr>
             <tr>
               <th>ðŸ”¬ Interests</th>
+=======
+              <th>🏡 Hometown</th>
+              <td>Sibu, Sarawak</td>
+            </tr>
+            <tr>
+              <th>🎨 Hobbies</th>
+              <td>Gaming, Drawing, Jogging</td>
+            </tr>
+            <tr>
+              <th>🔬 Interests</th>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               <td>Game Development, Drawing, Listen to songs</td>
             </tr>
           </tbody>
@@ -45,7 +69,11 @@ include('includes/nav.inc.php');
         <p class="flip-hint">flip &amp; read intro</p>
       </div>
       <div class="details-face details-back">
+<<<<<<< HEAD
         <h2 class="back-title">ðŸŒ± About Me</h2>
+=======
+        <h2 class="back-title">🌱 About Me</h2>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         <div class="back-intro-text">
           <p>Hello! I'm Nicholas, a first-year Computer Science student at Swinburne University of Technology Sarawak. I am just an ordinary person.</p>
           <p>In my free time, I enjoy gaming, drawing and exploring different kinds of technology. I hope to improve my programming skills and possibly work in the game industry in the future.</p>
@@ -67,19 +95,33 @@ include('includes/nav.inc.php');
         <img src="images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
         <img src="images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
       </div>
+<<<<<<< HEAD
     <h2 class="map-title"><span>ðŸ—ºï¸</span> Hometown â€” Sibu, Sarawak</h2>
+=======
+    <h2 class="map-title"><span>🗺️</span> Hometown — Sibu, Sarawak</h2>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     <div class="map-frame">
       <iframe src="https://www.google.com/maps?q=Sibu%2C%20Sarawak&amp;output=embed"
         loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Map of Sibu, Sarawak" allowfullscreen></iframe>
     </div>
     <div class="map-caption">
+<<<<<<< HEAD
       <span>ðŸ“</span> Sibu, my hometown in central Sarawak.
+=======
+      <span>📍</span> Sibu, my hometown in central Sarawak.
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     </div>
   </div>
 
 </div>
 
+<<<<<<< HEAD
 <?php include('includes/profile-extras.inc.php'); ?>
 
 <?php include('includes/footer.inc.php'); ?>
+=======
+<?php include __DIR__ . '/includes/profile-extras.inc.php'; ?>
+
+<?php include __DIR__ . '/includes/footer.inc.php'; ?>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

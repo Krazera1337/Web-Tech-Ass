@@ -1,7 +1,14 @@
 <?php
+<<<<<<< HEAD
 $activePage = 'home';
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
+=======
+$pageTitle = 'Plant Story — Discover the World of Rainforest Plants';
+$activePage = 'home';
+include __DIR__ . '/includes/header.inc.php';
+include __DIR__ . '/includes/nav.inc.php';
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 <section class="hero">
   <div class="container">
@@ -37,7 +44,11 @@ include('includes/nav.inc.php');
       tropical Asia and Africa: <em>Myristicaceae</em>, <em>Chrysobalanaceae</em>,
       <em>Meliaceae</em>, and <em>Ebenaceae</em>. For each family we describe two
       representative genera, and for each genus we profile two species in
+<<<<<<< HEAD
       detail â€” covering their appearance, habitat, distribution, and human
+=======
+      detail — covering their appearance, habitat, distribution, and human
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       uses. All botanical information has been cross-checked against
       recognised references such as Kew's Plants of the World Online and the
       IUCN Red List.</p>
@@ -48,7 +59,11 @@ include('includes/nav.inc.php');
       <div class="card-grid">
         <div class="card">
           <h3>Families</h3>
+<<<<<<< HEAD
           <p>Start with the broadest grouping â€” four plant families and what sets each one apart.</p>
+=======
+          <p>Start with the broadest grouping — four plant families and what sets each one apart.</p>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           <a href="explore1.php">Go to Families &rarr;</a>
         </div>
         <div class="card">
@@ -123,4 +138,8 @@ include('includes/nav.inc.php');
   </div>
 </main>
 
+<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
+=======
+<?php include __DIR__ . '/includes/footer.inc.php'; ?>
+>>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

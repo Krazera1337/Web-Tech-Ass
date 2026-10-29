@@ -1,58 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Hishamuddin Ngu — Plant Story</title>
-<meta name="author" content="Muhammad Hishamuddin Ngu">
-<meta name="description" content="Muhammad Hishamuddin Ngu, a Plant Story team member.">
-<link rel="icon" type="image/jpeg" href="images/leaf-icon.jpg">
-<link rel="stylesheet" href="styles/style.css?v=57">
-</head>
-<body class="profile-page right-flip-profile pokemon-themed theme-grass">
-<nav class="main-nav" aria-label="Primary">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <img src="images/LogoPlantStory.png" alt="Plant Story — Rainforest Plant Explorer" class="logo-mark">
-    </a>
-    <div class="nav-right">
-    <ul>
-      <li class="has-dropdown">
-        <a href="explore.html">Explore</a>
-        <ul class="dropdown-menu" aria-label="Explore the plant catalogue">
-          <li><a href="explore1.html">Families</a></li>
-          <li><a href="explore2.html">Genera</a></li>
-          <li><a href="explore3.html">Species</a></li>
-        </ul>
-      </li>
-      <li><a href="contributor.html">Contribution</a></li>
-      <li><a href="identify.html">Identification</a></li>
-      <li><a href="profile.html" aria-current="page">Profile</a></li>
-      <li><a href="enquiry.html">Enquiry</a></li>
-    </ul>
-      <div class="nav-auth">
-        <a href="register.html" class="btn-navstyle">Registration</a>
-        <a href="login.html" class="btn-navstyle">Login</a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
+<?php
+$base = '../';
+$pageTitle = 'Muhammad Hishamuddin Ngu — Plant Story';
+$pageDescription = 'Muhammad Hishamuddin Ngu, a Plant Story team member.';
+$pageAuthor = 'Muhammad Hishamuddin Ngu';
+$bodyClass = 'profile-page right-flip-profile pokemon-themed theme-grass';
+$activePage = 'profile';
+$profileEmail = 'hishamuddin@students.swinburne.edu.my';
+$profileSong = 'hishamusic.mp3';
+include __DIR__ . '/../includes/header.inc.php';
+include __DIR__ . '/../includes/nav.inc.php';
+?>
 <!-- Main profile area -->
 <main class="profile-container">
 
   <!-- Left: profile card -->
   <div class="profile-static-wrapper">
     <div class="profile-static-card">
-        <img src="images/bulbasaur.png" alt="Bulbasaur" class="pokemon-corner pokemon-corner-tl">
-        <img src="images/ivysaur.png" alt="Ivysaur" class="pokemon-corner pokemon-corner-tr">
+        <img src="../images/bulbasaur.png" alt="Bulbasaur" class="pokemon-corner pokemon-corner-tl">
+        <img src="../images/ivysaur.png" alt="Ivysaur" class="pokemon-corner pokemon-corner-tr">
         <div class="bush-split" tabindex="0" aria-label="Hover to reveal a hidden Venusaur">
-          <img src="images/venusaur.png" alt="Venusaur" class="venusaur-peek">
-          <img src="images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
-          <img src="images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
+          <img src="../images/venusaur.png" alt="Venusaur" class="venusaur-peek">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-left" aria-hidden="true">
+          <img src="../images/bush.png" alt="" class="bush-half bush-half-right" aria-hidden="true">
         </div>
-        <img src="images/muhammad-profile-picture.jpg" alt="Muhammad Hishamuddin Ngu" class="profile-avatar-large">
+        <img src="../images/muhammad-profile-picture.jpg" alt="Muhammad Hishamuddin Ngu" class="profile-avatar-large">
         <h1 class="profile-name">Muhammad Hishamuddin Ngu</h1>
         <div class="profile-student-id">Student ID: 105825538 </div>
         <div class="profile-course">Bachelor of Computer Science (Data Science)</div>
@@ -63,7 +34,7 @@
   <div class="details-flip-wrapper">
     <div class="details-flip" role="group" tabindex="0" aria-label="Focus to read About Me">
       <div class="info-table-card details-face details-front">
-    <img src="images/rayquaza.png" alt="Rayquaza" class="pokemon-corner pokemon-corner-tr">
+    <img src="../images/rayquaza.png" alt="Rayquaza" class="pokemon-corner pokemon-corner-tr">
     <h3><span></span> Personal Details</h3>
     <table class="info-table">
       <tbody>
@@ -181,47 +152,6 @@
   </div>
 
 </div>
-<div class="email-section profile-contact" id="profile-email">
-  <a href="mailto:hishamuddin@students.swinburne.edu.my" class="email-btn">
-    <span class="email-icon">✉️</span> Email Me
-  </a>
-</div>
+<?php include __DIR__ . '/../includes/profile-extras.inc.php'; ?>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <p class="footer-logo">Plant Story</p>
-      <p>A student project documenting rainforest plant families, genera and species for COS10026 Web Technology.</p>
-    </div>
-    <nav class="footer-links" aria-label="Footer">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="contributor.html">Contribution</a></li>
-        <li><a href="identify.html">Identification</a></li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
-    </nav>
-    <div class="footer-credits">
-      <h4>Data &amp; Credits</h4>
-      <ul>
-        <li><a href="https://plantnet.org/" target="_blank" rel="noopener">Pl@ntNet</a></li>
-        <li><a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Kew POWO</a></li>
-        <li><a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a></li>
-        <li><a href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="footer-bottom">&copy; 2026 Plant Story. A student project for COS10026 Web Technology.</p>
-<nav class="footer-page-links" aria-label="Project information"><a href="acknowledgement.html">Acknowledgement</a><a href="enhancement.html">Enhancements</a><a href="https://youtu.be/Hr3BoP4BBVc" target="_blank" rel="noopener">YouTube video</a></nav>
-</footer>
-
-<!-- Background music: native HTML5 audio player, no scripting required -->
-<audio id="bgm-toggle" class="bgm-player" controls loop preload="none" title="Background music">
-  <source src="music/hishamusic.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-</body>
-</html>
+<?php include __DIR__ . '/../includes/footer.inc.php'; ?>
