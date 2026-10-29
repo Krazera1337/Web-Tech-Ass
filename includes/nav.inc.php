@@ -17,6 +17,7 @@
           <li><a href="explore1.php">Families</a></li>
           <li><a href="explore2.php">Genera</a></li>
           <li><a href="explore3.php">Species</a></li>
+          <li><a href="plants.php">New Additions</a></li>
         </ul>
       </li>
       <li><a href="contributor.php"<?= current_attr('contribute') ?>>Contribution</a></li>

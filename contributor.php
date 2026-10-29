@@ -1,4 +1,12 @@
 <?php
+require_once __DIR__ . '/includes/db.inc.php';
+
+// Community contributions approved by an admin, newest first, with their first photo.
+$community = mysqli_fetch_all(mysqli_query($conn, "SELECT c.contributor_name, c.plant_name, c.comments, c.created_at,
+        (SELECT p.file_path FROM `contribution_photo` p WHERE p.contribution_id = c.contribution_id ORDER BY p.photo_id LIMIT 1) AS photo
+    FROM `contribution` c WHERE c.status = 'approved'
+    ORDER BY c.created_at DESC LIMIT 12"), MYSQLI_ASSOC);
+
 $pageTitle = 'Contribution — Plant Story';
 $pageDescription = 'Plant contributors and observations for Plant Story';
 $pageAuthor = 'Nicholas Sia';
@@ -122,6 +130,23 @@ include __DIR__ . '/includes/page-hero.inc.php';
         </a>
 
       </div>
+
+      <?php if ($community): ?>
+      <h2 class="contributor-title">From the Community</h2>
+      <div class="community-grid">
+        <?php foreach ($community as $c): ?>
+        <article class="community-card">
+          <?php if ($c['photo']): ?><img src="<?= htmlspecialchars($c['photo']) ?>" alt="<?= htmlspecialchars($c['plant_name']) ?>, photographed by <?= htmlspecialchars($c['contributor_name']) ?>" loading="lazy"><?php endif; ?>
+          <div class="community-card__body">
+            <h3><?= htmlspecialchars($c['plant_name']) ?></h3>
+            <p class="community-card__by">Shared by <?= htmlspecialchars($c['contributor_name']) ?> &middot; <?= date('j M Y', strtotime($c['created_at'])) ?></p>
+            <p><?= htmlspecialchars(mb_strimwidth($c['comments'], 0, 220, '…')) ?></p>
+          </div>
+        </article>
+        <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
+
       <p class="contributors-cta text-center"><a href="contribute.php" class="btn" id="contribution-form-button">Go to Contribution Form</a></p>
     </section>
 

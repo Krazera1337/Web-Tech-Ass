@@ -60,6 +60,12 @@ include __DIR__ . '/includes/page-hero.inc.php';
           observations with the collection.</p>
           <a href="contributor.php">Contribute Your Findings &rarr;</a>
         </div>
+        <div class="card">
+          <h3>New Additions</h3>
+          <p>See the species added to the collection since the core
+          catalogue was published.</p>
+          <a href="plants.php">See What's New &rarr;</a>
+        </div>
       </div>
     </section>
 
