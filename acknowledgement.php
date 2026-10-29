@@ -9,14 +9,14 @@ include('includes/nav.inc.php');
   <section id="photographs">
     <h2>Photos / Pictures</h2>
     <div class="ack-section-content">  
-      <h3>Plant photos &mdash; Families</h3>
+      <h3>Plant photos â€” Families</h3>
       <div class="enhancement-buttons">
         <a class="enhancement-button" href="images/family-myristicaceae.jpg">Myristicaceae</a>
         <a class="enhancement-button" href="images/family-chrysobalanaceae.jpg">Chrysobalanaceae</a>
         <a class="enhancement-button" href="images/family-meliaceae.jpg">Meliaceae</a>
         <a class="enhancement-button" href="images/family-ebenaceae.jpg">Ebenaceae</a>
       </div>
-      <h3>Plant photos &mdash; Genera</h3>
+      <h3>Plant photos â€” Genera</h3>
       <div class="enhancement-buttons">
         <a class="enhancement-button" href="images/genus-horsfieldia.jpg">Horsfieldia</a>
         <a class="enhancement-button" href="images/genus-knema.jpg">Knema</a>
@@ -27,7 +27,7 @@ include('includes/nav.inc.php');
         <a class="enhancement-button" href="images/genus-diospyros.jpg">Diospyros</a>
         <a class="enhancement-button" href="images/genus-euclea.jpg">Euclea</a>
       </div>
-      <h3>Plant photos &mdash; Species</h3>
+      <h3>Plant photos â€” Species</h3>
       <div class="enhancement-buttons">
         <a class="enhancement-button" href="images/horsfieldia-flocculosa.jpg">Horsfieldia flocculosa</a>
         <a class="enhancement-button" href="images/horsfieldia-kingii.jpg">Horsfieldia kingii</a>
@@ -46,7 +46,7 @@ include('includes/nav.inc.php');
         <a class="enhancement-button" href="images/euclea-natalensis.jpg">Euclea natalensis</a>
         <a class="enhancement-button" href="images/euclea-racemosa.jpg">Euclea racemosa</a>
       </div>
-<h3>Profile portraits and Pok&eacute;mon images</h3>
+      <h3>Profile portraits and PokÃ©mon images</h3>
       <div class="enhancement-buttons">
         <a class="enhancement-button" href="images/nicholas-profile-picture.jpg">Nicholas portrait</a>
         <a class="enhancement-button" href="images/charmander.png">Nicholas: Charmander</a>

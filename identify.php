@@ -1,24 +1,12 @@
 <?php
-<<<<<<< HEAD
-=======
-$pageTitle = 'Plant Identification — Plant Story';
-$pageDescription = 'Plant identification page for Plant Story';
-$pageAuthor = 'Nicholas Sia';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'community-page identification-page';
 $activePage = 'identify';
 $heroTitle = 'Plant Identification';
 $heroLede = 'Select a plant photo and view a sample identification result.';
 $heroTag = 'header';
-<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
-=======
-include __DIR__ . '/includes/header.inc.php';
-include __DIR__ . '/includes/nav.inc.php';
-include __DIR__ . '/includes/page-hero.inc.php';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 <main>
   <div class="page-wrap identification-layout">
@@ -31,11 +19,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <fieldset>
           <legend>Plant Identification</legend>
 
-<<<<<<< HEAD
           <div class="plant-upload" id="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose a plant photo</label><p id="photo-hint">JPG or PNG - a clear image works best.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/jpeg,image/png" aria-describedby="photo-hint"></div>
-=======
-          <div class="plant-upload" id="plant-upload"><span class="upload-symbol" aria-hidden="true"><img src="images/upload-icon.png" alt=""></span><label for="plantphoto">Choose a plant photo</label><p id="photo-hint">JPG or PNG Â· a clear image works best.</p><input type="file" id="plantphoto" name="plantphoto" accept="image/jpeg,image/png" aria-describedby="photo-hint"></div>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           <p class="form-actions"><a class="identify-example-link" href="#example-results" id="view-example-button">View example result</a> <input type="reset" id="identify-reset" value="Reset"></p>
 
         </fieldset>
@@ -107,8 +91,4 @@ include __DIR__ . '/includes/page-hero.inc.php';
   </div>
 </main>
 
-<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
-=======
-<?php include __DIR__ . '/includes/footer.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

@@ -3513,7 +3513,6 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .auth-main .login-box { max-width: 560px; }
 .auth-main .login-box .options { font-size: 1.05rem; }
 .auth-main .login-box .subtitle { font-size: 1rem; }
-<<<<<<< HEAD
 /* Form submission result pages */
 .form-result-main {
   width: min(860px, calc(100% - 2rem));
@@ -3611,8 +3610,6 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
 
 
-=======
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 /* ---------- User management module (admin pages) ---------- */
 .admin-main { width: min(94%, var(--max-width)); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem) 0; }
 .admin-form-main { flex-direction: column; justify-content: flex-start; gap: 1.5rem; }
@@ -3779,7 +3776,4 @@ a.tag:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   .admin-bars li { grid-template-columns: 6.5rem 1fr 2rem; }
   .confirm-details > div { grid-template-columns: 1fr; gap: .15rem; }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

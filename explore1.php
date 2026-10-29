@@ -1,22 +1,12 @@
 <?php
-<<<<<<< HEAD
-=======
-$pageTitle = 'Plant Families — Forest Story';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'explore-page';
 $activePage = 'explore';
 $heroTitle = 'Plant Families';
 $heroLede = 'Compare the four plant families in this collection.';
 $heroCopyClass = true;
-<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
-=======
-include __DIR__ . '/includes/header.inc.php';
-include __DIR__ . '/includes/nav.inc.php';
-include __DIR__ . '/includes/page-hero.inc.php';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 
 <main>
@@ -27,11 +17,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
     </div>
     <p class="back-link"><a href="explore.php">&larr; Back to Explore</a></p>
 
-<<<<<<< HEAD
     <?php include('includes/catalogue-jump.inc.php'); ?>
-=======
-    <?php include __DIR__ . '/includes/catalogue-jump.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 
     <div class="intro-section">
       <h2>Understanding Plant Families</h2>
@@ -39,11 +25,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <p class="lede">A plant family is the taxonomic rank that groups
         genera sharing a common evolutionary ancestor and a broadly similar
         flower and fruit structure.</p>
-<<<<<<< HEAD
         <p class="supporting-text">Forest Story features four families â€”
-=======
-        <p class="supporting-text">Forest Story features four families —
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         two rooted mainly in tropical Asia, and two whose genera split
         between Asia, Africa and the Americas. Each entry below covers a
         family's growth habit and distribution, its diagnostic leaf, flower
@@ -91,17 +73,10 @@ include __DIR__ . '/includes/page-hero.inc.php';
       </div>
 
     <section id="myristicaceae" class="tab-panel" aria-labelledby="myristicaceae-heading">
-<<<<<<< HEAD
       <h2 id="myristicaceae-heading">Myristicaceae â€” the Nutmeg Family</h2>
       <figure>
         <img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae, showing its foliage and fruit" width="500">
         <figcaption>Fig. 1 â€” A representative tree of the nutmeg family (Myristicaceae).</figcaption>
-=======
-      <h2 id="myristicaceae-heading">Myristicaceae — the Nutmeg Family</h2>
-      <figure>
-        <img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae, showing its foliage and fruit" width="500">
-        <figcaption>Fig. 1 — A representative tree of the nutmeg family (Myristicaceae).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </figure>
       <p>Myristicaceae is a family of aromatic evergreen trees found across
       the tropics of Asia, Africa and the Americas, most famous for giving
@@ -115,13 +90,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
       genera concentrated in the rainforests of tropical Asia.</p>
       <h3>Genera in this family</h3>
       <ul>
-<<<<<<< HEAD
         <li><a href="explore2.php#horsfieldia"><em>Horsfieldia</em></a> â€” trees ranging from the eastern Himalaya to Sumatra and the Malay Peninsula.</li>
         <li><a href="explore2.php#knema"><em>Knema</em></a> â€” trees of central and eastern Malesia with densely hairy fruit.</li>
-=======
-        <li><a href="explore2.php#horsfieldia"><em>Horsfieldia</em></a> — trees ranging from the eastern Himalaya to Sumatra and the Malay Peninsula.</li>
-        <li><a href="explore2.php#knema"><em>Knema</em></a> — trees of central and eastern Malesia with densely hairy fruit.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </ul>
       <h3>Species in this family</h3>
       <ul>
@@ -133,7 +103,6 @@ include __DIR__ . '/includes/page-hero.inc.php';
     </section>
 
     <section id="chrysobalanaceae" class="tab-panel" aria-labelledby="chrysobalanaceae-heading">
-<<<<<<< HEAD
       <h2 id="chrysobalanaceae-heading">Chrysobalanaceae â€” the Cocoplum Family</h2>
       <figure>
         <img src="images/family-chrysobalanaceae.jpg" alt="A tree of the cocoplum family, Chrysobalanaceae, in flower" width="500">
@@ -141,15 +110,6 @@ include __DIR__ . '/includes/page-hero.inc.php';
       </figure>
       <p>Chrysobalanaceae is a pantropical family whose genera are split
       between Asia and the Neotropics â€” a pattern reflected directly in our
-=======
-      <h2 id="chrysobalanaceae-heading">Chrysobalanaceae — the Cocoplum Family</h2>
-      <figure>
-        <img src="images/family-chrysobalanaceae.jpg" alt="A tree of the cocoplum family, Chrysobalanaceae, in flower" width="500">
-        <figcaption>Fig. 2 — A flowering member of the cocoplum family (Chrysobalanaceae).</figcaption>
-      </figure>
-      <p>Chrysobalanaceae is a pantropical family whose genera are split
-      between Asia and the Neotropics — a pattern reflected directly in our
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       two chosen genera. Species are trees or shrubs with alternate, simple
       leaves, small paired stipules at the leaf base, and small white,
       cream or pink flowers arranged in racemes or panicles. The fruit is
@@ -160,13 +120,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
       lineage.</p>
       <h3>Genera in this family</h3>
       <ul>
-<<<<<<< HEAD
         <li><a href="explore2.php#parastemon"><em>Parastemon</em></a> â€” large canopy trees of Southeast Asian peat-swamp and heath forest.</li>
         <li><a href="explore2.php#hirtella"><em>Hirtella</em></a> â€” shrubs and small understorey trees of Central and South America.</li>
-=======
-        <li><a href="explore2.php#parastemon"><em>Parastemon</em></a> — large canopy trees of Southeast Asian peat-swamp and heath forest.</li>
-        <li><a href="explore2.php#hirtella"><em>Hirtella</em></a> — shrubs and small understorey trees of Central and South America.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </ul>
       <h3>Species in this family</h3>
       <ul>
@@ -178,17 +133,10 @@ include __DIR__ . '/includes/page-hero.inc.php';
     </section>
 
     <section id="meliaceae" class="tab-panel" aria-labelledby="meliaceae-heading">
-<<<<<<< HEAD
       <h2 id="meliaceae-heading">Meliaceae â€” the Mahogany Family</h2>
       <figure>
         <img src="images/family-meliaceae.jpg" alt="Flowers of Melia azedarach, a member of the mahogany family Meliaceae" width="500">
         <figcaption>Fig. 3 â€” Flowers of a mahogany-family (Meliaceae) tree.</figcaption>
-=======
-      <h2 id="meliaceae-heading">Meliaceae — the Mahogany Family</h2>
-      <figure>
-        <img src="images/family-meliaceae.jpg" alt="Flowers of Melia azedarach, a member of the mahogany family Meliaceae" width="500">
-        <figcaption>Fig. 3 — Flowers of a mahogany-family (Meliaceae) tree.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </figure>
       <p>Meliaceae is the family that gives the timber industry true
       mahogany, and its two featured genera here, <em>Aglaia</em> and
@@ -202,13 +150,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
       emergent rainforest trees reaching well over 30 metres tall.</p>
       <h3>Genera in this family</h3>
       <ul>
-<<<<<<< HEAD
         <li><a href="explore2.php#aglaia"><em>Aglaia</em></a> â€” trees and shrubs known for fragrant flowers and edible arillate fruit.</li>
         <li><a href="explore2.php#dysoxylum"><em>Dysoxylum</em></a> â€” large timber trees ranging from mainland Asia to northern Australia.</li>
-=======
-        <li><a href="explore2.php#aglaia"><em>Aglaia</em></a> — trees and shrubs known for fragrant flowers and edible arillate fruit.</li>
-        <li><a href="explore2.php#dysoxylum"><em>Dysoxylum</em></a> — large timber trees ranging from mainland Asia to northern Australia.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </ul>
       <h3>Species in this family</h3>
       <ul>
@@ -220,17 +163,10 @@ include __DIR__ . '/includes/page-hero.inc.php';
     </section>
 
     <section id="ebenaceae" class="tab-panel" aria-labelledby="ebenaceae-heading">
-<<<<<<< HEAD
       <h2 id="ebenaceae-heading">Ebenaceae â€” the Ebony Family</h2>
       <figure>
         <img src="images/family-ebenaceae.jpg" alt="Foliage of a tree in the ebony family, Ebenaceae" width="500">
         <figcaption>Fig. 4 â€” Foliage of an ebony-family (Ebenaceae) tree.</figcaption>
-=======
-      <h2 id="ebenaceae-heading">Ebenaceae — the Ebony Family</h2>
-      <figure>
-        <img src="images/family-ebenaceae.jpg" alt="Foliage of a tree in the ebony family, Ebenaceae" width="500">
-        <figcaption>Fig. 4 — Foliage of an ebony-family (Ebenaceae) tree.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </figure>
       <p>Ebenaceae is best known for producing the dense, jet-black
       heartwood traditionally called ebony. Like Chrysobalanaceae, this
@@ -243,13 +179,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
       traditional medicine as well as fine timber.</p>
       <h3>Genera in this family</h3>
       <ul>
-<<<<<<< HEAD
         <li><a href="explore2.php#diospyros"><em>Diospyros</em></a> â€” the ebony genus, ranging from India across Malesia to the Pacific.</li>
         <li><a href="explore2.php#euclea"><em>Euclea</em></a> â€” shrubs and small trees native to eastern and southern Africa.</li>
-=======
-        <li><a href="explore2.php#diospyros"><em>Diospyros</em></a> — the ebony genus, ranging from India across Malesia to the Pacific.</li>
-        <li><a href="explore2.php#euclea"><em>Euclea</em></a> — shrubs and small trees native to eastern and southern Africa.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       </ul>
       <h3>Species in this family</h3>
       <ul>
@@ -325,11 +256,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
   <aside aria-labelledby="aside-heading" class="insight-panel">
     <svg class="insight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
     <h2 id="aside-heading">Why families matter</h2>
-<<<<<<< HEAD
     <p>Taxonomic families are more than filing categories â€” plants in the
-=======
-    <p>Taxonomic families are more than filing categories — plants in the
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     same family often share useful chemical compounds, pollinator
     relationships, and vulnerabilities to pests or disease. Foresters and
     conservationists frequently make management decisions at the family
@@ -344,8 +271,4 @@ include __DIR__ . '/includes/page-hero.inc.php';
   </div>
 </main>
 
-<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
-=======
-<?php include __DIR__ . '/includes/footer.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

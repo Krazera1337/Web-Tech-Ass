@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-=======
-$pageTitle = 'Plant Species — Plant Story';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'explore-page';
 $activePage = 'explore';
 $extraHead = <<<'HTML'
@@ -152,15 +148,9 @@ HTML;
 $heroTitle = 'Plant Species';
 $heroLede = 'View profiles of 16 plant species in the collection.';
 $heroCopyClass = true;
-<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
-=======
-include __DIR__ . '/includes/header.inc.php';
-include __DIR__ . '/includes/nav.inc.php';
-include __DIR__ . '/includes/page-hero.inc.php';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 
 <main>
@@ -171,15 +161,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
     </div>
     <p class="breadcrumb"><a href="explore.php">&larr; Explore</a> <span class="sep">/</span> <span class="current">Plant Species</span></p>
 
-<<<<<<< HEAD
     <?php include('includes/catalogue-jump.inc.php'); ?>
     <p>This page holds the detailed species record for every plant featured
     on Forest Story â€” sixteen species in total, two from each of the eight
-=======
-    <?php include __DIR__ . '/includes/catalogue-jump.inc.php'; ?>
-    <p>This page holds the detailed species record for every plant featured
-    on Forest Story — sixteen species in total, two from each of the eight
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     genera covered on the <a href="explore2.php">Genera</a> page. Every
     entry was checked against Kew's Plants of the World Online, GBIF and the
     IUCN Red List before being written up in our own words, and any detail
@@ -197,11 +181,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
           <span class="family-card-media"><img src="images/family-myristicaceae.jpg" alt="A tree of the nutmeg family, Myristicaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Myristicaceae</span>
-<<<<<<< HEAD
             <span class="family-card-desc"><em>Horsfieldia</em> &amp; <em>Knema</em> â€” 4 species</span>
-=======
-            <span class="family-card-desc"><em>Horsfieldia</em> &amp; <em>Knema</em> — 4 species</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
@@ -209,11 +189,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
           <span class="family-card-media"><img src="images/family-chrysobalanaceae.jpg" alt="A flowering tree of the cocoplum family, Chrysobalanaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Chrysobalanaceae</span>
-<<<<<<< HEAD
             <span class="family-card-desc"><em>Parastemon</em> &amp; <em>Hirtella</em> â€” 4 species</span>
-=======
-            <span class="family-card-desc"><em>Parastemon</em> &amp; <em>Hirtella</em> — 4 species</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
@@ -221,11 +197,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
           <span class="family-card-media"><img src="images/family-meliaceae.jpg" alt="Flowers of a mahogany family tree, Meliaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Meliaceae</span>
-<<<<<<< HEAD
             <span class="family-card-desc"><em>Aglaia</em> &amp; <em>Dysoxylum</em> â€” 4 species</span>
-=======
-            <span class="family-card-desc"><em>Aglaia</em> &amp; <em>Dysoxylum</em> — 4 species</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
@@ -233,11 +205,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
           <span class="family-card-media"><img src="images/family-ebenaceae.jpg" alt="Foliage of an ebony family tree, Ebenaceae"></span>
           <span class="family-card-body">
             <span class="family-card-name">Ebenaceae</span>
-<<<<<<< HEAD
             <span class="family-card-desc"><em>Diospyros</em> &amp; <em>Euclea</em> â€” 4 species</span>
-=======
-            <span class="family-card-desc"><em>Diospyros</em> &amp; <em>Euclea</em> — 4 species</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             <span class="family-card-cta">View species <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </span>
         </a>
@@ -252,11 +220,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/horsfieldia-flocculosa.jpg" alt="Foliage of Horsfieldia flocculosa, shown here via a related Horsfieldia species">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Horsfieldia</em> foliage (species-specific photo unavailable; genus stand-in used).</figcaption>
-=======
-            <figcaption>Fig. — <em>Horsfieldia</em> foliage (species-specific photo unavailable; genus stand-in used).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -267,11 +231,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore1.php#myristicaceae"><strong>Family:</strong> Myristicaceae</a>
             <a class="chip chip-link" href="explore2.php#horsfieldia"><strong>Genus:</strong> Horsfieldia</a>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Peninsular Malaysia, Sumatra (Indonesia)</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Peninsular Malaysia, Sumatra (Indonesia)</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Horsfieldia flocculosa</em> is an evergreen tree first
             described in 1891 as <em>Myristica flocculosa</em> by George
@@ -304,11 +264,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Horsfieldia flocculosa</em> (King) Warb.</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Horsfieldia flocculosa</em> (King) Warb.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <li>IUCN Red List data via GBIF distributions API</li>
                 <li>Wikipedia (cross-check only)</li>
               </ul>
@@ -323,11 +279,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/horsfieldia-kingii.jpg" alt="Horsfieldia kingii photographed at Pakke Tiger Reserve, Arunachal Pradesh">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Horsfieldia kingii</em>, Pakke Tiger Reserve, India.</figcaption>
-=======
-            <figcaption>Fig. — <em>Horsfieldia kingii</em>, Pakke Tiger Reserve, India.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -339,11 +291,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#horsfieldia"><strong>Genus:</strong> Horsfieldia</a>
             <span class="chip"><strong>Also known as:</strong> Ramtamul (Assamese)</span>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Nepal, India, Bangladesh, Myanmar, Thailand, Vietnam, China</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Nepal, India, Bangladesh, Myanmar, Thailand, Vietnam, China</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Horsfieldia kingii</em> is a dioecious evergreen tree
             found across the eastern Himalayan foothills and mainland
@@ -356,21 +304,12 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves obovate to
-<<<<<<< HEAD
             oblanceolate, 12â€“55 x 5â€“15 cm, papery, glabrous, with 14â€“18
             pairs of lateral veins. Male and female flowers occur on
             separate trees; female buds are nearly globose, about 5 mm.
             Fruit is an ovoid-to-oblong arillate capsule, 4â€“4.5 cm long,
             with a thick, leathery, bi-coloured pericarp, fruiting
             Februaryâ€“May.</p>
-=======
-            oblanceolate, 12–55 x 5–15 cm, papery, glabrous, with 14–18
-            pairs of lateral veins. Male and female flowers occur on
-            separate trees; female buds are nearly globose, about 5 mm.
-            Fruit is an ovoid-to-oblong arillate capsule, 4–4.5 cm long,
-            with a thick, leathery, bi-coloured pericarp, fruiting
-            February–May.</p>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <p><strong>Ecology &amp; uses:</strong> Fruits are a key food
             source for hornbills and imperial pigeons, which disperse the
             large seeds; foliage is browsed by the endangered capped langur.
@@ -383,15 +322,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Horsfieldia kingii</em> (Hook.f.) Warb.</li>
                 <li>IUCN Red List data via GBIF distributions API</li>
                 <li>Wikimedia Commons â€” File:Horsfieldia kingii.jpg (photo by Nandini Velho)</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Horsfieldia kingii</em> (Hook.f.) Warb.</li>
-                <li>IUCN Red List data via GBIF distributions API</li>
-                <li>Wikimedia Commons — File:Horsfieldia kingii.jpg (photo by Nandini Velho)</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -404,11 +337,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/knema-cinerea.jpg" alt="Foliage of a Knema species in Thailand, standing in for Knema cinerea">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Knema</em> foliage (species-specific photo unavailable; genus stand-in used).</figcaption>
-=======
-            <figcaption>Fig. — <em>Knema</em> foliage (species-specific photo unavailable; genus stand-in used).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -419,11 +348,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore1.php#myristicaceae"><strong>Family:</strong> Myristicaceae</a>
             <a class="chip chip-link" href="explore2.php#knema"><strong>Genus:</strong> Knema</a>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Indonesia (Lesser Sundas, Sulawesi, Moluccas), Philippines</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Indonesia (Lesser Sundas, Sulawesi, Moluccas), Philippines</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Knema cinerea</em> is a small to medium tree native to
             central and eastern Malesia, found in the Lesser Sunda Islands,
@@ -435,17 +360,10 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves membranous
-<<<<<<< HEAD
             to chartaceous, elliptic to oblong-lanceolate, 8â€“25 x 2.5â€“9 cm,
             with minute persistent scale-like or stellate hairs on the lower
             surface. Flowers are small and unpedicellate detail is limited.
             Fruit is subglobose to obovoid, 1.2â€“1.8 x 1â€“1.6 cm, covered in
-=======
-            to chartaceous, elliptic to oblong-lanceolate, 8–25 x 2.5–9 cm,
-            with minute persistent scale-like or stellate hairs on the lower
-            surface. Flowers are small and unpedicellate detail is limited.
-            Fruit is subglobose to obovoid, 1.2–1.8 x 1–1.6 cm, covered in
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             persistent short hairs.</p>
                 <p><strong>Ecology &amp; uses:</strong> Specific ecological role
             not documented; the genus generally provides arillate fruit
@@ -458,15 +376,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Knema cinerea</em> (Poir.) Warb.</li>
                 <li>Flora Malesiana (Naturalis) â€” <em>Knema cinerea</em></li>
                 <li>POWO â€” <em>Knema cinerea</em> (Poir.) Warb.</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Knema cinerea</em> (Poir.) Warb.</li>
-                <li>Flora Malesiana (Naturalis) — <em>Knema cinerea</em></li>
-                <li>POWO — <em>Knema cinerea</em> (Poir.) Warb.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -479,11 +391,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/knema-sumatrana.jpg" alt="Foliage of a Knema species in Thailand, standing in for Knema sumatrana">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Knema</em> foliage (species-specific photo unavailable; genus stand-in used).</figcaption>
-=======
-            <figcaption>Fig. — <em>Knema</em> foliage (species-specific photo unavailable; genus stand-in used).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -494,15 +402,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore1.php#myristicaceae"><strong>Family:</strong> Myristicaceae</a>
             <a class="chip chip-link" href="explore2.php#knema"><strong>Genus:</strong> Knema</a>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Thailand, Peninsular Malaysia, Indonesia (Sumatra)</span>
             </div>
             <p><em>Knema sumatrana</em> is a medium-sized tree (10â€“20 m)
-=======
-            <span class="chip"><strong>Range:</strong> Native — Thailand, Peninsular Malaysia, Indonesia (Sumatra)</span>
-            </div>
-            <p><em>Knema sumatrana</em> is a medium-sized tree (10–20 m)
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             restricted to peninsular Thailand, Peninsular Malaysia (Perak,
             Kelantan) and Sumatra, including Simeulue Island. It was
             originally described as <em>Myristica sumatrana</em> by Blume
@@ -511,40 +413,23 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves membranous
-<<<<<<< HEAD
             to chartaceous, elliptic to oblong-lanceolate, 12â€“30 x 4.5â€“12
             cm, drying greenish to brown above. Flowers are small and
             unisexual, as typical for the dioecious genus. Fruits are
             ovoid-ellipsoid to ellipsoid-oblong, 3â€“4 x 1.4â€“2 cm, with a fine
-=======
-            to chartaceous, elliptic to oblong-lanceolate, 12–30 x 4.5–12
-            cm, drying greenish to brown above. Flowers are small and
-            unisexual, as typical for the dioecious genus. Fruits are
-            ovoid-ellipsoid to ellipsoid-oblong, 3–4 x 1.4–2 cm, with a fine
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             indumentum lost early, leaving a finely granulate surface.</p>
                 <p><strong>Ecology &amp; uses:</strong> Specific ecological role
             and documented uses were not found in accessible sources.</p>
                 <ol class="facts-list">
               <li>Originally named <em>Myristica sumatrana</em> by Blume in 1837.</li>
-<<<<<<< HEAD
               <li>Grows 10â€“20 m tall, a medium-sized tree for the genus.</li>
-=======
-              <li>Grows 10–20 m tall, a medium-sized tree for the genus.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </ol>
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Knema sumatrana</em> (Blume) W.J.de Wilde</li>
                 <li>Flora Malesiana (Naturalis) â€” <em>Knema sumatrana</em></li>
                 <li>POWO â€” <em>Knema sumatrana</em> (Blume) W.J.de Wilde</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Knema sumatrana</em> (Blume) W.J.de Wilde</li>
-                <li>Flora Malesiana (Naturalis) — <em>Knema sumatrana</em></li>
-                <li>POWO — <em>Knema sumatrana</em> (Blume) W.J.de Wilde</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -562,11 +447,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/parastemon-urophyllus.jpg" alt="Parastemon urophyllus, known locally as Nyilas Padang, in Bako National Park, Sarawak">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Parastemon urophyllus</em> ("Nyilas Padang"), Bako National Park, Sarawak.</figcaption>
-=======
-            <figcaption>Fig. — <em>Parastemon urophyllus</em> ("Nyilas Padang"), Bako National Park, Sarawak.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -578,17 +459,10 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#parastemon"><strong>Genus:</strong> Parastemon</a>
             <span class="chip"><strong>Also known as:</strong> Nyilas Padang, Malas</span>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” India (Andaman &amp; Nicobar), Myanmar, Thailand, Malaysia, Singapore, Indonesia, Brunei</span>
             </div>
             <p><em>Parastemon urophyllus</em> is a large evergreen tree
             reaching 35â€“40 m tall with a long, straight, often buttressed
-=======
-            <span class="chip"><strong>Range:</strong> Native — India (Andaman &amp; Nicobar), Myanmar, Thailand, Malaysia, Singapore, Indonesia, Brunei</span>
-            </div>
-            <p><em>Parastemon urophyllus</em> is a large evergreen tree
-            reaching 35–40 m tall with a long, straight, often buttressed
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             bole. Its specific epithet "urophyllus" means "tail-leaf",
             referring to its tapering leaf tip. It is a common component of
             peat-swamp, kerangas (heath) and secondary forests across
@@ -597,15 +471,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves coriaceous,
-<<<<<<< HEAD
             elliptic-lanceolate, 5â€“8 x 3â€“4 cm, with an acuminate, tail-like
             tip. Flowers are small (about 1.5 mm), polygamo-dioecious, borne
             in axillary racemes 4â€“14 cm long, with 5 petals, 2 fertile
-=======
-            elliptic-lanceolate, 5–8 x 3–4 cm, with an acuminate, tail-like
-            tip. Flowers are small (about 1.5 mm), polygamo-dioecious, borne
-            in axillary racemes 4–14 cm long, with 5 petals, 2 fertile
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             stamens and 3 sterile staminodes. Fruit is a smooth, yellowish,
             ellipsoid drupe about 12 x 6 mm.</p>
                 <p><strong>Ecology &amp; uses:</strong> A structurally important
@@ -621,15 +489,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Parastemon urophyllus</em></li>
                 <li>ITTO Lesser Used Species â€” Malas (<em>Parastemon urophyllus</em>)</li>
                 <li>Wikimedia Commons â€” File:Nyilas Padang (Parastemon urophyllus).jpg, Bako NP</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Parastemon urophyllus</em></li>
-                <li>ITTO Lesser Used Species — Malas (<em>Parastemon urophyllus</em>)</li>
-                <li>Wikimedia Commons — File:Nyilas Padang (Parastemon urophyllus).jpg, Bako NP</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -642,11 +504,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/parastemon-grandifructus.jpg" alt="Parastemon foliage, standing in for the Borneo endemic Parastemon grandifructus">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Parastemon</em> foliage (species-specific photo unavailable; congener <em>P. urophyllus</em> used as stand-in).</figcaption>
-=======
-            <figcaption>Fig. — <em>Parastemon</em> foliage (species-specific photo unavailable; congener <em>P. urophyllus</em> used as stand-in).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -657,11 +515,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore1.php#chrysobalanaceae"><strong>Family:</strong> Chrysobalanaceae</a>
             <a class="chip chip-link" href="explore2.php#parastemon"><strong>Genus:</strong> Parastemon</a>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Malaysia (Sabah, Sarawak), Brunei (Borneo endemic)</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Malaysia (Sabah, Sarawak), Brunei (Borneo endemic)</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Parastemon grandifructus</em> Prance is a tree endemic to
             Malaysian Borneo, closely related to the more widespread
@@ -687,11 +541,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Parastemon grandifructum</em> Prance</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Parastemon grandifructum</em> Prance</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <li>IUCN Red List data via GBIF distributions API</li>
                 <li>Wikipedia (cross-check only)</li>
               </ul>
@@ -706,11 +556,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/hirtella-triandra.jpg" alt="Hirtella racemosa foliage and flowers, standing in for its congener Hirtella triandra">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Hirtella</em> in flower (species-specific photo unavailable; congener <em>H. racemosa</em> used as stand-in).</figcaption>
-=======
-            <figcaption>Fig. — <em>Hirtella</em> in flower (species-specific photo unavailable; congener <em>H. racemosa</em> used as stand-in).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -722,11 +568,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#hirtella"><strong>Genus:</strong> Hirtella</a>
             <span class="chip"><strong>Also known as:</strong> Pigeonberry</span>
             <span class="chip"><strong>Type:</strong> Shrub or small tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Mexico through Central America to Brazil, Bolivia, Caribbean</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Mexico through Central America to Brazil, Bolivia, Caribbean</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Hirtella triandra</em> is a shrub or tree, usually small
             but capable of reaching up to 15 m, native to lowland humid
@@ -739,11 +581,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves simple and
             alternate. Flowers are borne in terminal and axillary panicles
-<<<<<<< HEAD
             3.5â€“17 cm long; white, aromatic, with 5 glabrous petals and 3
-=======
-            3.5–17 cm long; white, aromatic, with 5 glabrous petals and 3
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             conspicuously purple stamens. Fruit is ellipsoid, purple when
             ripe, soft and sweet, with a thin fleshy mesocarp and a hard,
             hairy-lined endocarp.</p>
@@ -757,11 +595,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Hirtella triandra</em> Sw.</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Hirtella triandra</em> Sw.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <li>Useful Tropical Plants (tropical.theferns.info)</li>
               </ul>
             </details>
@@ -775,11 +609,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/hirtella-racemosa.jpg" alt="Hirtella racemosa in flower, known in Brazil as azeitona-da-mata">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Hirtella racemosa</em> in flower.</figcaption>
-=======
-            <figcaption>Fig. — <em>Hirtella racemosa</em> in flower.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -791,17 +621,10 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#hirtella"><strong>Genus:</strong> Hirtella</a>
             <span class="chip"><strong>Also known as:</strong> Azeitona-da-mata (Brazil)</span>
             <span class="chip"><strong>Type:</strong> Shrub or small tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Mexico through Central America, Caribbean, to Peru, Bolivia, Brazil</span>
             </div>
             <p><em>Hirtella racemosa</em> is a small evergreen understorey
             shrub or treelet, usually only 4â€“5 m tall, widespread from
-=======
-            <span class="chip"><strong>Range:</strong> Native — Mexico through Central America, Caribbean, to Peru, Bolivia, Brazil</span>
-            </div>
-            <p><em>Hirtella racemosa</em> is a small evergreen understorey
-            shrub or treelet, usually only 4–5 m tall, widespread from
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             Mexico to Brazil and Bolivia. It is inconspicuous except when in
             bloom, when it is decorated with silky racemes of pink to
             lavender flowers, and it is a common pioneer species in
@@ -811,11 +634,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves simple,
             alternate, small (about 8 x 2.5 cm) and nearly sessile. Flowers
-<<<<<<< HEAD
             are borne in silky racemes 3.5â€“6 mm long with 5 pink-to-lavender
-=======
-            are borne in silky racemes 3.5–6 mm long with 5 pink-to-lavender
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             petals. Fruit is an elongated berry about 2 cm long, ripening
             from green to maroon or black, enclosing a single rod-shaped
             seed.</p>
@@ -830,15 +649,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Hirtella racemosa</em> Lam.</li>
                 <li>Trees of Costa Rica's Pacific Slope (crtrees.org)</li>
                 <li>Wikimedia Commons â€” File:Hirtella racemosa - Flickr - Tarciso LeÃ£o.jpg</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Hirtella racemosa</em> Lam.</li>
-                <li>Trees of Costa Rica's Pacific Slope (crtrees.org)</li>
-                <li>Wikimedia Commons — File:Hirtella racemosa - Flickr - Tarciso Leão.jpg</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -856,11 +669,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/aglaia-elliptica.jpg" alt="Aglaia elliptica photographed at Kebun Raya Bogor botanical garden, Indonesia">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Aglaia elliptica</em>, Kebun Raya Bogor, Indonesia.</figcaption>
-=======
-            <figcaption>Fig. — <em>Aglaia elliptica</em>, Kebun Raya Bogor, Indonesia.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -872,11 +681,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#aglaia"><strong>Genus:</strong> Aglaia</a>
             <span class="chip"><strong>Also known as:</strong> Lambunau (Malaysia)</span>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Myanmar, Thailand, Malaysia, Brunei, Indonesia, Philippines</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Myanmar, Thailand, Malaysia, Brunei, Indonesia, Philippines</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Aglaia elliptica</em> is a tree most often found along
             riverbanks and in forest subject to periodic flooding, from
@@ -906,15 +711,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Aglaia elliptica</em> (C.DC.) Blume</li>
                 <li>PROSEA â€” Plant Resources of South East Asia</li>
                 <li>Wikimedia Commons â€” File:Aglaia elliptica Blume.jpg</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Aglaia elliptica</em> (C.DC.) Blume</li>
-                <li>PROSEA — Plant Resources of South East Asia</li>
-                <li>Wikimedia Commons — File:Aglaia elliptica Blume.jpg</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -927,31 +726,19 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/aglaia-korthalsii.jpg" alt="Fruit and foliage of Aglaia korthalsii, known as keriat in Malaysia">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Aglaia korthalsii</em> ("keriat") fruit and foliage.</figcaption>
-=======
-            <figcaption>Fig. — <em>Aglaia korthalsii</em> ("keriat") fruit and foliage.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
               <h3><em>Aglaia korthalsii</em></h3>
-<<<<<<< HEAD
               <p class="species-status">Near Threatened (older 1998 IUCN assessment â€” treat as potentially outdated)</p>
-=======
-              <p class="species-status">Near Threatened (older 1998 IUCN assessment — treat as potentially outdated)</p>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <div class="fact-chips">
             <a class="chip chip-link" href="explore1.php#meliaceae"><strong>Family:</strong> Meliaceae</a>
             <a class="chip chip-link" href="explore2.php#aglaia"><strong>Genus:</strong> Aglaia</a>
             <span class="chip"><strong>Also known as:</strong> Keriat / Sekiat (Malay)</span>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Bhutan, India (Nicobar Is.), Myanmar, Thailand, Vietnam, Malaysia, Indonesia</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Bhutan, India (Nicobar Is.), Myanmar, Thailand, Vietnam, Malaysia, Indonesia</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Aglaia korthalsii</em> is a small to medium dioecious
             tree ranging from Bhutan through mainland Southeast Asia to
@@ -965,11 +752,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves odd-pinnate,
             up to 30 cm long, usually with 5 leaflets covered in shiny
             reddish-brown scales. Flowers are tiny, yellow and intensely
-<<<<<<< HEAD
             fragrant. Fruit is ellipsoid to subglobose, 20â€“40 mm long,
-=======
-            fragrant. Fruit is ellipsoid to subglobose, 20–40 mm long,
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             orange when ripe, with up to 3 edible seeds and notably high
             vitamin C content.</p>
                 <p><strong>Ecology &amp; uses:</strong> Fruit is edible and
@@ -985,15 +768,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Aglaia korthalsii</em> (Miq.) Pellegr.</li>
                 <li>Forest Research Institute Malaysia (FRIM) â€” "Aglaia korthalsii: Of fragrant flowers and edible fruits"</li>
                 <li>Wikimedia Commons â€” File:Aglaia korthalsii (keriat).jpg</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Aglaia korthalsii</em> (Miq.) Pellegr.</li>
-                <li>Forest Research Institute Malaysia (FRIM) — "Aglaia korthalsii: Of fragrant flowers and edible fruits"</li>
-                <li>Wikimedia Commons — File:Aglaia korthalsii (keriat).jpg</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -1006,11 +783,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/dysoxylum-acutangulum.jpg" alt="A Dysoxylum tree at Kebun Raya Bogor, standing in for Dysoxylum acutangulum">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Dysoxylum</em> tree (species-specific photo unavailable; genus stand-in used).</figcaption>
-=======
-            <figcaption>Fig. — <em>Dysoxylum</em> tree (species-specific photo unavailable; genus stand-in used).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -1022,11 +795,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#dysoxylum"><strong>Genus:</strong> Dysoxylum</a>
             <span class="chip"><strong>Also known as:</strong> Membalo (trade name), Bekak (Malaysia), Langkang (Borneo)</span>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Thailand to Malesia, Solomon Islands, northern Australia</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Thailand to Malesia, Solomon Islands, northern Australia</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Dysoxylum acutangulum</em> is a massive upper-canopy
             timber tree found in rainforests from Thailand and Malesia to
@@ -1046,21 +815,13 @@ include __DIR__ . '/includes/page-hero.inc.php';
             structure. Its wood is used for furniture, Chinese coffins and
             construction; in Indonesia, its seeds are used to poison fish.</p>
                 <ol class="facts-list">
-<<<<<<< HEAD
               <li>Can reach 47 m tall with a bole branchless for up to 18 m â€” among the largest trees in its family.</li>
-=======
-              <li>Can reach 47 m tall with a bole branchless for up to 18 m — among the largest trees in its family.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               <li>Its seeds are traditionally used as a fish poison in Indonesia.</li>
             </ol>
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Dysoxylum acutangulum</em> Miq.</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Dysoxylum acutangulum</em> Miq.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <li>Useful Tropical Plants (tropical.theferns.info)</li>
               </ul>
             </details>
@@ -1074,11 +835,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/dysoxylum-grande.jpg" alt="A Dysoxylum tree at Kebun Raya Bogor, standing in for Dysoxylum grande">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Dysoxylum</em> tree (species-specific photo unavailable; genus stand-in used).</figcaption>
-=======
-            <figcaption>Fig. — <em>Dysoxylum</em> tree (species-specific photo unavailable; genus stand-in used).</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -1089,21 +846,13 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore1.php#meliaceae"><strong>Family:</strong> Meliaceae</a>
             <a class="chip chip-link" href="explore2.php#dysoxylum"><strong>Genus:</strong> Dysoxylum</a>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Bhutan, India, Bangladesh, Myanmar, China, mainland &amp; western Malesia</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Bhutan, India, Bangladesh, Myanmar, China, mainland &amp; western Malesia</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Dysoxylum grande</em> Hiern is a large tree found from
             Bhutan through southern China, Thailand and mainland Southeast
             Asia to western and central Malesia. It bears fragrant,
             creamy-yellow flowers and large, round, orange fruit up to 11 cm
-<<<<<<< HEAD
             in diameter â€” among the largest fruit in the genus.</p>
-=======
-            in diameter — among the largest fruit in the genus.</p>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             <details class="species-more">
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
@@ -1123,13 +872,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Dysoxylum grande</em> Hiern</li>
                 <li>POWO â€” <em>Dysoxylum grande</em> Hiern</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Dysoxylum grande</em> Hiern</li>
-                <li>POWO — <em>Dysoxylum grande</em> Hiern</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <li>Wikipedia (cross-check only)</li>
               </ul>
             </details>
@@ -1148,11 +892,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/diospyros-ferrea.jpg" alt="Diospyros ferrea foliage photographed in Taiwan">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Diospyros ferrea</em>, Taiwan.</figcaption>
-=======
-            <figcaption>Fig. — <em>Diospyros ferrea</em>, Taiwan.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -1164,37 +904,22 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#diospyros"><strong>Genus:</strong> Diospyros</a>
             <span class="chip"><strong>Also known as:</strong> Black ebony, English ironwood</span>
             <span class="chip"><strong>Type:</strong> Shrub or small to medium tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” India, Sri Lanka to Melanesia, Micronesia, Polynesia, Hawaii</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — India, Sri Lanka to Melanesia, Micronesia, Polynesia, Hawaii</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Diospyros ferrea</em> is a variable evergreen shrub or
             small tree distributed extremely widely from South and
             Southeast Asia across Malesia to Melanesia, Micronesia,
-<<<<<<< HEAD
             Polynesia and Hawaii â€” one of the most geographically
-=======
-            Polynesia and Hawaii — one of the most geographically
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             widespread species in the genus. It has small, leathery leaves
             and small yellow-brown fruit.</p>
             <details class="species-more">
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves alternate,
-<<<<<<< HEAD
             small (1â€“2.5 x 1â€“1.8 cm), obovate-oblong to spathulate,
             coriaceous, with a very short petiole. Flowers are white. Fruit
             is a subglobose berry 5â€“7 mm long, yellow to brownish-red when
             ripe, containing 1â€“3 wedge-shaped seeds.</p>
-=======
-            small (1–2.5 x 1–1.8 cm), obovate-oblong to spathulate,
-            coriaceous, with a very short petiole. Flowers are white. Fruit
-            is a subglobose berry 5–7 mm long, yellow to brownish-red when
-            ripe, containing 1–3 wedge-shaped seeds.</p>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <p><strong>Ecology &amp; uses:</strong> As a widespread
             understorey/coastal shrub-tree, it likely supports local
             frugivores. In traditional medicine, leaves are used for
@@ -1209,15 +934,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Diospyros ferrea</em> (Willd.) Bakh.</li>
                 <li>eFlora of India â€” <em>Diospyros ferrea</em></li>
                 <li>Wikimedia Commons â€” File:è±¡ç‰™æŸ¿ Diospyros ferrea.jpg (Taiwan)</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Diospyros ferrea</em> (Willd.) Bakh.</li>
-                <li>eFlora of India — <em>Diospyros ferrea</em></li>
-                <li>Wikimedia Commons — File:象牙柿 Diospyros ferrea.jpg (Taiwan)</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -1230,11 +949,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/diospyros-ebenum.jpg" alt="Diospyros ebenum, the source of true ebony wood, photographed in Kerala, India">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Diospyros ebenum</em>, Kerala, India.</figcaption>
-=======
-            <figcaption>Fig. — <em>Diospyros ebenum</em>, Kerala, India.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -1246,11 +961,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#diospyros"><strong>Genus:</strong> Diospyros</a>
             <span class="chip"><strong>Also known as:</strong> Ceylon ebony, East Indian ebony, True ebony</span>
             <span class="chip"><strong>Type:</strong> Tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” southern India, Sri Lanka</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — southern India, Sri Lanka</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p><em>Diospyros ebenum</em> is a slow-growing evergreen tree of
             southern India and Sri Lanka, historically the primary
@@ -1262,13 +973,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
               <summary>Full profile &amp; references <span class="more-arrow" aria-hidden="true">&#9656;</span></summary>
               <div class="species-more-body">
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves dark green
-<<<<<<< HEAD
             and glossy, elliptic-lanceolate to ovate, 6â€“15 x 2â€“5 cm. Male
             flowers occur in 3â€“16-flowered cymes with 16 stamens; female and
-=======
-            and glossy, elliptic-lanceolate to ovate, 6–15 x 2–5 cm. Male
-            flowers occur in 3–16-flowered cymes with 16 stamens; female and
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             bisexual flowers are solitary. Fruit is a depressed-globose
             berry up to 1.5 cm across.</p>
                 <p><strong>Ecology &amp; uses:</strong> A slow-growing forest
@@ -1276,11 +982,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             been used as a famine food and fish poison. Its wood is the
             classic source of finest commercial black ebony, used for sports
             goods, musical instruments, piano keys, chess pieces and
-<<<<<<< HEAD
             turnery. Heartwood has a specific gravity of about 1.12 â€” dense
-=======
-            turnery. Heartwood has a specific gravity of about 1.12 — dense
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             enough to sink in water.</p>
                 <ol class="facts-list">
               <li>The historical source of the finest, jet-black commercial ebony wood.</li>
@@ -1290,15 +992,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Diospyros ebenum</em> J.Koenig ex Retz.</li>
                 <li>World Agroforestry (apps.worldagroforestry.org) species factsheet</li>
                 <li>Wikimedia Commons â€” File:Diospyros ebenum - à´•à´°à´¿à´®à´°à´‚ 01.jpg (Kerala)</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Diospyros ebenum</em> J.Koenig ex Retz.</li>
-                <li>World Agroforestry (apps.worldagroforestry.org) species factsheet</li>
-                <li>Wikimedia Commons — File:Diospyros ebenum - കരിമരം 01.jpg (Kerala)</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -1311,11 +1007,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/euclea-natalensis.jpg" alt="Euclea natalensis leaves at eMakhosini, South Africa">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Euclea natalensis</em> leaves, eMakhosini, South Africa.</figcaption>
-=======
-            <figcaption>Fig. — <em>Euclea natalensis</em> leaves, eMakhosini, South Africa.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -1327,11 +1019,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#euclea"><strong>Genus:</strong> Euclea</a>
             <span class="chip"><strong>Also known as:</strong> Natal guarri</span>
             <span class="chip"><strong>Type:</strong> Shrub or small to medium tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Ethiopia, Somalia south through East Africa to South Africa</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Ethiopia, Somalia south through East Africa to South Africa</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p>The Natal guarri, <em>Euclea natalensis</em>, is a shrub or
             small tree native to eastern and southern Africa, from Ethiopia
@@ -1345,11 +1033,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves hard and
             leathery, dark green and shiny above, often with thick, velvety
             red hairs beneath. Flowers are small, greenish-cream to pale
-<<<<<<< HEAD
             yellow and scented, borne in axillary clusters of 10â€“30. Fruit
-=======
-            yellow and scented, borne in axillary clusters of 10–30. Fruit
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             is a globose berry, red ripening to black, edible.</p>
                 <p><strong>Ecology &amp; uses:</strong> Its edible berries are
             an important food source for birds, monkeys and people. Twigs
@@ -1360,24 +1044,14 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <ol class="facts-list">
               <li>One of the most important traditional medicinal plants in tropical Africa.</li>
               <li>Its twigs are used as natural toothbrushes ("chewing sticks").</li>
-<<<<<<< HEAD
               <li>Under warm, well-watered conditions can grow into a medium tree 12â€“18 m tall.</li>
-=======
-              <li>Under warm, well-watered conditions can grow into a medium tree 12–18 m tall.</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </ol>
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Euclea natalensis</em> A.DC.</li>
                 <li>PlantZAfrica (SANBI) â€” <em>Euclea natalensis</em></li>
                 <li>Wikimedia Commons â€” File:Euclea natalensis subsp natalensis, eMakhosini.jpg</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Euclea natalensis</em> A.DC.</li>
-                <li>PlantZAfrica (SANBI) — <em>Euclea natalensis</em></li>
-                <li>Wikimedia Commons — File:Euclea natalensis subsp natalensis, eMakhosini.jpg</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -1390,11 +1064,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="species-body">
           <figure>
             <img src="images/euclea-racemosa.jpg" alt="Euclea racemosa, the sea guarrie, growing near Cape Town, South Africa">
-<<<<<<< HEAD
             <figcaption>Fig. â€” <em>Euclea racemosa</em>, the "sea guarrie", Cape Town.</figcaption>
-=======
-            <figcaption>Fig. — <em>Euclea racemosa</em>, the "sea guarrie", Cape Town.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
           <div class="species-summary">
             <div class="species-title-row">
@@ -1406,11 +1076,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
             <a class="chip chip-link" href="explore2.php#euclea"><strong>Genus:</strong> Euclea</a>
             <span class="chip"><strong>Also known as:</strong> Sea guarrie, Dune guarrie</span>
             <span class="chip"><strong>Type:</strong> Shrub or small tree</span>
-<<<<<<< HEAD
             <span class="chip"><strong>Range:</strong> Native â€” Egypt, Arabian Peninsula, East Africa to South Africa, Comoros</span>
-=======
-            <span class="chip"><strong>Range:</strong> Native — Egypt, Arabian Peninsula, East Africa to South Africa, Comoros</span>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
             </div>
             <p>The sea guarrie, <em>Euclea racemosa</em>, is an evergreen
             shrub or small tree widespread along coasts and in scrub from
@@ -1424,13 +1090,8 @@ include __DIR__ . '/includes/page-hero.inc.php';
                 <p><strong>Leaf, flower &amp; fruit:</strong> Leaves thickly
             leathery, oblanceolate to obovate, up to 11 x 4 cm, dark glossy
             green above. Flowers are small, creamy-white and drooping,
-<<<<<<< HEAD
             borne in 8â€“20-flowered axillary spikes, blooming
             Decemberâ€“March. Fruit is round, 5â€“7 mm across, ripening black.</p>
-=======
-            borne in 8–20-flowered axillary spikes, blooming
-            December–March. Fruit is round, 5–7 mm across, ripening black.</p>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
                 <p><strong>Ecology &amp; uses:</strong> Its black berries
             provide food for birds and wildlife along coastal habitats, and
             the shrub helps stabilise coastal scrub and dune vegetation. Its
@@ -1438,25 +1099,15 @@ include __DIR__ . '/includes/page-hero.inc.php';
             turners for wooden screws and tool parts.</p>
                 <ol class="facts-list">
               <li>Commonly called the "sea guarrie" or "dune guarrie" for its typical coastal habitat.</li>
-<<<<<<< HEAD
               <li>Its sweetly scented flowers bloom in the southern hemisphere summer (Decemberâ€“March).</li>
-=======
-              <li>Its sweetly scented flowers bloom in the southern hemisphere summer (December–March).</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               <li>Its dense, reddish-purple wood was traditionally prized by wheelwrights.</li>
             </ol>
                 <details class="refs">
               <summary>References</summary>
               <ul>
-<<<<<<< HEAD
                 <li>GBIF Backbone Taxonomy â€” <em>Euclea racemosa</em> L.</li>
                 <li>SANBI Biodiversity Advisor â€” <em>Euclea racemosa</em></li>
                 <li>Wikimedia Commons â€” File:Euclea racemosa - Sea Guarrie tree - Cape Town.jpg</li>
-=======
-                <li>GBIF Backbone Taxonomy — <em>Euclea racemosa</em> L.</li>
-                <li>SANBI Biodiversity Advisor — <em>Euclea racemosa</em></li>
-                <li>Wikimedia Commons — File:Euclea racemosa - Sea Guarrie tree - Cape Town.jpg</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
               </ul>
             </details>
               </div>
@@ -1473,11 +1124,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
     <p>Seven of the sixteen species above use a genus-level photograph
     rather than a species-specific one, because no freely licensed,
     species-confirmed photograph could be located on Wikimedia Commons at
-<<<<<<< HEAD
     the time of writing â€” several of these species are known mainly from
-=======
-    the time of writing — several of these species are known mainly from
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     herbarium specimens rather than field photography. Any field or
     measurement detail we could not verify is marked "Not available" rather
     than guessed.</p>
@@ -1492,8 +1139,4 @@ include __DIR__ . '/includes/page-hero.inc.php';
   </div>
 </main>
 
-<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
-=======
-<?php include __DIR__ . '/includes/footer.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

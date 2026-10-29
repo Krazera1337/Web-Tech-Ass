@@ -1,22 +1,12 @@
 <?php
-<<<<<<< HEAD
-=======
-$pageTitle = 'Plant Genera — Forest Story';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'explore-page';
 $activePage = 'explore';
 $heroTitle = 'Plant Genera';
 $heroLede = 'Browse the genera represented in each plant family.';
 $heroCopyClass = true;
-<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
-=======
-include __DIR__ . '/includes/header.inc.php';
-include __DIR__ . '/includes/nav.inc.php';
-include __DIR__ . '/includes/page-hero.inc.php';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 
 <main>
@@ -27,11 +17,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
     </div>
     <p class="breadcrumb"><a href="explore.php">&larr; Explore</a> <span class="sep">/</span> <span class="current">Plant Genera</span></p>
 
-<<<<<<< HEAD
     <?php include('includes/catalogue-jump.inc.php'); ?>
-=======
-    <?php include __DIR__ . '/includes/catalogue-jump.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 
     <div class="intro-section">
       <h2>Explore plant genera</h2>
@@ -40,11 +26,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         that share a very recent common ancestor and a distinctive set of
         flower, fruit and leaf traits.</p>
         <p class="supporting-text">This page profiles the eight genera
-<<<<<<< HEAD
         featured on Forest Story â€” two nested inside each of the four
-=======
-        featured on Forest Story — two nested inside each of the four
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         families covered in the <a href="explore1.php">Families</a>
         section. Each entry covers the genus's distribution and defining
         traits, with links through to its two profiled species.</p>
@@ -81,11 +63,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
     <section aria-labelledby="hierarchy-heading">
       <h2 id="hierarchy-heading">Where genus sits in the hierarchy</h2>
       <p>Botanical classification narrows step by step from very broad to
-<<<<<<< HEAD
       very specific â€” here's a worked example using <em>Aglaia</em>:</p>
-=======
-      very specific — here's a worked example using <em>Aglaia</em>:</p>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       <div class="taxonomy-flow">
         <div class="taxonomy-step">
           <div class="taxonomy-step-label">Kingdom</div>
@@ -121,11 +99,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-horsfieldia.jpg" alt="Foliage and fruit of a Horsfieldia tree">
-<<<<<<< HEAD
             <figcaption>Fig. 1 â€” A <em>Horsfieldia</em> tree showing its typical simple, leathery foliage.</figcaption>
-=======
-            <figcaption>Fig. 1 — A <em>Horsfieldia</em> tree showing its typical simple, leathery foliage.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -140,15 +114,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           Sumatra.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Dioecious trees, roughly 100 species</li>
             <li><strong>Leaves</strong> â€” Obovate-to-oblanceolate, with prominent lateral veins</li>
             <li><strong>Fruit</strong> â€” Arillate capsular fruit relished by hornbills and imperial pigeons</li>
-=======
-            <li><strong>Growth</strong> — Dioecious trees, roughly 100 species</li>
-            <li><strong>Leaves</strong> — Obovate-to-oblanceolate, with prominent lateral veins</li>
-            <li><strong>Fruit</strong> — Arillate capsular fruit relished by hornbills and imperial pigeons</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -162,11 +130,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-knema.jpg" alt="Foliage of a Knema tree in Thailand">
-<<<<<<< HEAD
             <figcaption>Fig. 2 â€” Foliage of a <em>Knema</em> species, showing the family's typical simple leaves.</figcaption>
-=======
-            <figcaption>Fig. 2 — Foliage of a <em>Knema</em> species, showing the family's typical simple leaves.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -179,15 +143,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           lowland forest across the Indonesian archipelago.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Small to medium trees, roughly 90 species</li>
             <li><strong>Leaves</strong> â€” Membranous-to-leathery, with tiny scale-like hairs beneath</li>
             <li><strong>Fruit</strong> â€” Covered in a persistent, fine hairy indumentum</li>
-=======
-            <li><strong>Growth</strong> — Small to medium trees, roughly 90 species</li>
-            <li><strong>Leaves</strong> — Membranous-to-leathery, with tiny scale-like hairs beneath</li>
-            <li><strong>Fruit</strong> — Covered in a persistent, fine hairy indumentum</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -205,11 +163,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-parastemon.jpg" alt="A Parastemon urophyllus tree in Bako National Park, Sarawak">
-<<<<<<< HEAD
             <figcaption>Fig. 3 â€” <em>Parastemon urophyllus</em>, Bako National Park, Sarawak.</figcaption>
-=======
-            <figcaption>Fig. 3 — <em>Parastemon urophyllus</em>, Bako National Park, Sarawak.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -223,15 +177,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           endemic to Borneo and notably larger-fruited.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Major canopy trees of peat-swamp and heath forest</li>
             <li><strong>Leaves</strong> â€” Leathery, with a tapering, tail-like tip</li>
             <li><strong>Flowers</strong> â€” Borne in slender racemes</li>
-=======
-            <li><strong>Growth</strong> — Major canopy trees of peat-swamp and heath forest</li>
-            <li><strong>Leaves</strong> — Leathery, with a tapering, tail-like tip</li>
-            <li><strong>Flowers</strong> — Borne in slender racemes</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -245,11 +193,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-hirtella.jpg" alt="Hirtella racemosa in flower">
-<<<<<<< HEAD
             <figcaption>Fig. 4 â€” <em>Hirtella racemosa</em> in flower.</figcaption>
-=======
-            <figcaption>Fig. 4 — <em>Hirtella racemosa</em> in flower.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -261,15 +205,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           the understorey of humid lowland forest.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Shrubs and small trees, roughly 100 species</li>
             <li><strong>Flowers</strong> â€” Small, white or pink, with asymmetrical stamens</li>
             <li><strong>Fruit</strong> â€” Fleshy, single-seeded drupe eaten by monkeys and birds</li>
-=======
-            <li><strong>Growth</strong> — Shrubs and small trees, roughly 100 species</li>
-            <li><strong>Flowers</strong> — Small, white or pink, with asymmetrical stamens</li>
-            <li><strong>Fruit</strong> — Fleshy, single-seeded drupe eaten by monkeys and birds</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -287,11 +225,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-aglaia.jpg" alt="Foliage of an Aglaia tree at Kebun Raya Bogor">
-<<<<<<< HEAD
             <figcaption>Fig. 5 â€” <em>Aglaia</em> foliage, Kebun Raya Bogor botanical garden, Indonesia.</figcaption>
-=======
-            <figcaption>Fig. 5 — <em>Aglaia</em> foliage, Kebun Raya Bogor botanical garden, Indonesia.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -304,15 +238,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           history of local cultivation for their fruit.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Trees and shrubs, roughly 120 species</li>
             <li><strong>Foliage</strong> â€” Covered in star-shaped (stellate) scales or hairs</li>
             <li><strong>Flowers</strong> â€” Tiny but extremely fragrant</li>
-=======
-            <li><strong>Growth</strong> — Trees and shrubs, roughly 120 species</li>
-            <li><strong>Foliage</strong> — Covered in star-shaped (stellate) scales or hairs</li>
-            <li><strong>Flowers</strong> — Tiny but extremely fragrant</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -326,11 +254,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-dysoxylum.jpg" alt="A Dysoxylum tree at Kebun Raya Bogor botanical garden">
-<<<<<<< HEAD
             <figcaption>Fig. 6 â€” A <em>Dysoxylum</em> tree, Kebun Raya Bogor botanical garden.</figcaption>
-=======
-            <figcaption>Fig. 6 — A <em>Dysoxylum</em> tree, Kebun Raya Bogor botanical garden.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -343,15 +267,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           different threat categories.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Large forest and emergent canopy timber trees</li>
             <li><strong>Leaves</strong> â€” Large, pinnately compound</li>
             <li><strong>Flowers</strong> â€” Often borne directly on the trunk (cauliflory)</li>
-=======
-            <li><strong>Growth</strong> — Large forest and emergent canopy timber trees</li>
-            <li><strong>Leaves</strong> — Large, pinnately compound</li>
-            <li><strong>Flowers</strong> — Often borne directly on the trunk (cauliflory)</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -369,39 +287,24 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-diospyros.jpg" alt="A Diospyros ebenum ebony tree in Kerala, India">
-<<<<<<< HEAD
             <figcaption>Fig. 7 â€” <em>Diospyros ebenum</em>, the source of true ebony timber, Kerala, India.</figcaption>
-=======
-            <figcaption>Fig. 7 — <em>Diospyros ebenum</em>, the source of true ebony timber, Kerala, India.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
           <a class="tag" href="explore1.php#ebenaceae">Ebenaceae</a>
           <h3><em>Diospyros</em></h3>
           <h4 class="eyebrow-heading">About the genus</h4>
-<<<<<<< HEAD
           <p><em>Diospyros</em> is a huge genus of some 700 species â€” the
           ebony genus â€” distributed across the tropics and subtropics of
-=======
-          <p><em>Diospyros</em> is a huge genus of some 700 species — the
-          ebony genus — distributed across the tropics and subtropics of
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           Asia, Africa and the Americas, and also the genus that gives us
           the cultivated persimmon. Several species, including one featured
           here, have historically been the primary commercial source of
           black ebony wood.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Pantropical, roughly 700 species</li>
             <li><strong>Leaves</strong> â€” Simple and alternate</li>
             <li><strong>Fruit</strong> â€” Berry seated in a persistent calyx</li>
-=======
-            <li><strong>Growth</strong> — Pantropical, roughly 700 species</li>
-            <li><strong>Leaves</strong> — Simple and alternate</li>
-            <li><strong>Fruit</strong> — Berry seated in a persistent calyx</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -415,11 +318,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <div class="genus-card-media">
           <figure>
             <img src="images/genus-euclea.jpg" alt="Euclea racemosa, the sea guarrie, growing near Cape Town">
-<<<<<<< HEAD
             <figcaption>Fig. 8 â€” <em>Euclea racemosa</em>, the "sea guarrie", near Cape Town, South Africa.</figcaption>
-=======
-            <figcaption>Fig. 8 — <em>Euclea racemosa</em>, the "sea guarrie", near Cape Town, South Africa.</figcaption>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </figure>
         </div>
         <div class="genus-card-body">
@@ -433,15 +332,9 @@ include __DIR__ . '/includes/page-hero.inc.php';
           traditional medicine and material culture.</p>
           <h4 class="eyebrow-heading">Key characteristics</h4>
           <ul class="characteristics-list">
-<<<<<<< HEAD
             <li><strong>Growth</strong> â€” Shrubs and small trees, roughly 20 species</li>
             <li><strong>Leaves</strong> â€” Hard and leathery</li>
             <li><strong>Flowers</strong> â€” Small, cream-coloured, sweetly scented</li>
-=======
-            <li><strong>Growth</strong> — Shrubs and small trees, roughly 20 species</li>
-            <li><strong>Leaves</strong> — Hard and leathery</li>
-            <li><strong>Flowers</strong> — Small, cream-coloured, sweetly scented</li>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
           </ul>
           <h4 class="eyebrow-heading">Species</h4>
           <div class="species-links">
@@ -463,11 +356,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
         <dt>Cauliflory</dt>
         <dd>The habit of producing flowers (and later fruit) directly from the trunk or older branches, seen in some <em>Dysoxylum</em> species.</dd>
         <dt>Congener</dt>
-<<<<<<< HEAD
         <dd>A species belonging to the same genus as another â€” for example, <em>Hirtella triandra</em> and <em>Hirtella racemosa</em> are congeners.</dd>
-=======
-        <dd>A species belonging to the same genus as another — for example, <em>Hirtella triandra</em> and <em>Hirtella racemosa</em> are congeners.</dd>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
         <dt>Type species</dt>
         <dd>The species formally designated as the reference point that anchors the definition of a genus.</dd>
       </dl>
@@ -477,11 +366,7 @@ include __DIR__ . '/includes/page-hero.inc.php';
   <aside aria-labelledby="aside-heading" class="insight-panel">
     <svg class="insight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16Z"/><path d="M6 18C10 14 13 11 18 6"/></svg>
     <h2 id="aside-heading">A tale of two continents</h2>
-<<<<<<< HEAD
     <p>Two of our four families â€” Chrysobalanaceae and Ebenaceae â€” show a
-=======
-    <p>Two of our four families — Chrysobalanaceae and Ebenaceae — show a
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
     striking pattern where one genus evolved mainly in Asia and its closest
     relative evolved independently in Africa or the Americas. Comparing
     <em>Parastemon</em> with <em>Hirtella</em>, or <em>Diospyros</em> with
@@ -499,8 +384,4 @@ include __DIR__ . '/includes/page-hero.inc.php';
   </div>
 </main>
 
-<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
-=======
-<?php include __DIR__ . '/includes/footer.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

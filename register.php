@@ -1,34 +1,20 @@
 <?php
-<<<<<<< HEAD
-=======
-$pageTitle = 'Register — Plant Story';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 $bodyClass = 'auth-page register-page';
 $activePage = 'register';
 $heroTitle = 'Registration';
 $heroLede = 'Create a Plant Story account.';
 $heroTag = 'header';
 $heroVariant = 'form';
-<<<<<<< HEAD
 include('includes/header.inc.php');
 include('includes/nav.inc.php');
 include('includes/page-hero.inc.php');
-=======
-include __DIR__ . '/includes/header.inc.php';
-include __DIR__ . '/includes/nav.inc.php';
-include __DIR__ . '/includes/page-hero.inc.php';
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
 ?>
 
 <main class="auth-main">
   <div class="register-box">
     <h1>Sign up</h1>
     <p class="subtitle">Create your account</p>
-<<<<<<< HEAD
     <form action="register_process.php" method="post">
-=======
-    <form>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       <div class="register-grid">
         <div class="register-field"><label for="first-name">First name</label><input type="text" id="first-name" name="first_name" placeholder="First name" maxlength="25" pattern="[A-Za-z]+" title="Use letters only, up to 25 characters" required></div>
         <div class="register-field"><label for="last-name">Last name</label><input type="text" id="last-name" name="last_name" placeholder="Last name" maxlength="25" pattern="[A-Za-z]+" title="Use letters only, up to 25 characters" required></div>
@@ -52,8 +38,4 @@ include __DIR__ . '/includes/page-hero.inc.php';
   </div>
 </main>
 
-<<<<<<< HEAD
 <?php include('includes/footer.inc.php'); ?>
-=======
-<?php include __DIR__ . '/includes/footer.inc.php'; ?>
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521

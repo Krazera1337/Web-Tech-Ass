@@ -1,14 +1,5 @@
 <?php
-<<<<<<< HEAD
 echo '<details class="catalogue-jump" id="catalogue-jump">
-=======
-/*
- * "Jump to a family, genus or species" quick links, shared by the Explore
- * hub and the three catalogue pages. All links point at root-level pages.
- */
-?>
-<details class="catalogue-jump" id="catalogue-jump">
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
       <summary>Jump to a family, genus or species<span class="jump-arrow" aria-hidden="true">&darr;</span></summary>
       <div class="catalogue-jump-grid">
         <div>
@@ -56,7 +47,4 @@ echo '<details class="catalogue-jump" id="catalogue-jump">
         </div>
       </div>
     </details>
-<<<<<<< HEAD
 ';
-=======
->>>>>>> c640d7d065b241793ef5ad0a2fa864cf43fa6521
